@@ -1,0 +1,149 @@
+/*
+** Default panels
+*/
+
+// term object
+%terms {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-decoration: none;
+
+  & a {
+    display: inline-block;
+    padding: 2px 8px;
+    color: $color-white;
+  }
+}
+
+// panel style
+.panel {
+  position: relative;
+  margin-bottom: 3rem;
+  padding: 2rem 1rem 5rem;
+  border: 1px solid $color-grey;
+
+
+  // title
+  &--title {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    font-size: rem-calc(28px);
+    font-weight: bold;
+
+    &--link {
+      color: $color-white;
+
+      &:hover {
+        color: $color-theme-main-dark;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // intro
+  &--intro {
+    margin-bottom: 1.4rem;
+
+    &--alert {
+      color: #31708f;
+      background-color: #d9edf7;
+      border: 1px solid #bce8f1;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+
+      & b {
+        font-weight: bold;
+      }
+    }
+  }
+
+  // Thumbnail
+  &--thumbnail {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+
+  // terms
+  &--categories {
+    & li {
+      @extend %terms;
+      background-color: $color-term-category;
+
+      &:hover {
+        background-color: darken($color-term-category, 10);
+      }
+    }
+  }
+
+  &--tag {
+    @extend %terms;
+    background-color: $color-term-tag;
+
+    &:hover {
+      background-color: darken($color-term-tag, 10);
+    }
+  }
+
+
+  // articleLink
+  &--articleLink {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 30%;
+    background-color: gold;
+    padding: 1rem;
+    text-align: center;
+    color: $color-white;
+    @include setTransition();
+
+    &:hover {
+      background-color: $color-theme-main;
+      color: $color-white;
+      @include setTransition();
+    }
+  }
+
+  &--button--holder {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+}
+
+
+/*
+** Primary panels
+*/
+.panel-primary {
+  padding: 0;
+  // @include border-radius(4px);
+  border: 1px solid $color-darkBlue;
+
+  & .panel {
+    &-heading {
+      margin-bottom: 1rem;
+      padding: 1rem 1.4rem;
+      color: $color-white;
+      font-weight: bold;
+      background-color: $color-darkBlue;
+    }
+
+    &-body {
+      padding: 0 2rem 1rem;
+
+      & .pull-right {
+        float: right;
+        text-align: right;
+      }
+    }
+  }
+}
