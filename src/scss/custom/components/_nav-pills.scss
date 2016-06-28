@@ -1,0 +1,26 @@
+ .nav-pills {
+   margin: 0 0 1rem 1rem;
+
+ 	&--item {
+ 		display: inline-block;
+ 		font-size: 1.4rem;
+    border: 1px solid $color-darkBlue;
+    padding: 3px 20px;
+
+    &:hover {
+      background-color: $color-blue;
+    }
+
+    &--link {
+      font-family: 'Open Sans', sans-serif;
+      color: $color-darkBlue;
+      margin: 0;
+      text-decoration: none;
+      font-weight: bolder;
+
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+}
