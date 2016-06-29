@@ -19,15 +19,11 @@
     flex-wrap: wrap;
 
     &--item {
-<<<<<<< HEAD
-
-=======
       display: block;
       list-style-type: none;
       list-style-position: outside;
       padding: 0;
       width: 100%;
->>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
     }
 
     &--item--link {
@@ -64,13 +60,10 @@
       flex-wrap: nowrap;
 
       &--item {
-<<<<<<< HEAD
         flex: 1 0 auto;
-=======
         display: table-cell;
         vertical-align: middle;
         width: auto;
->>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
       }
 
       &--item--link {

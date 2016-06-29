@@ -186,11 +186,8 @@
   &--introduction {
     &--comment-title {
       margin-top: 20px;
-<<<<<<< HEAD
-    @include font-size(1.3);
-=======
       @include font-size(1.5);
->>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
+
     }
     &--comment-text {
 
@@ -217,23 +214,19 @@
           @include font-size(1.5);
         }
     }
-<<<<<<< HEAD
 
-=======
     &--clinic-name {
       margin-top: 20px;
       @include font-size(2.4);
       line-height: 3rem;
       font-weight: bold;
     }
->>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
+
     .block-detail--contact--tel {
       @include font-size(3.2);
     }
   }
   // end of introduction
-<<<<<<< HEAD
-=======
 
   // for about reward
   &--about-reward {
@@ -267,5 +260,4 @@
         @include font-size(2);
       }
   }
->>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
 }
