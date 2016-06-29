@@ -71,11 +71,11 @@
     left: 0;
 
     & h5 {
-      font-size: 1.2rem;
+      @include font-size(1.2);
     }
 
     & a {
-      font-size: 1.1rem;
+      @include font-size(1.1);
       color: $color-white;
     }
 

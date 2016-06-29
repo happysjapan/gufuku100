@@ -1,14 +1,14 @@
 .button {
   margin-bottom: 10px;
   padding: 10px;
-  font-size: 1.4rem;
+  @include font-size(1.4);
   line-height: 2rem;
   font-weight: bold;
   color: #fff;
   background-color: $color-theme-main;
   @include border-radius(4px);
   @media screen and #{breakpoint(xmedium)} {
-    font-size: 1.6rem;
+    @include font-size(1.6);
     line-height: 2rem;
   }
 
@@ -20,7 +20,7 @@
   &__blue {
     @include border-radius(5px);
     padding: 1rem 2rem;
-    font-size: 2rem;
+    @include font-size(2);
     background-color: $color-blue;
 
     &:hover, &:focus {
@@ -32,7 +32,7 @@
   &__lightBlue {
     @include border-radius(5px);
     padding: 1rem 2rem;
-    font-size: 2rem;
+    @include font-size(2);
     background-color: $color-lightBlue;
 
     &:hover, &:focus {
@@ -45,7 +45,7 @@
   &__lightGreen {
     @include border-radius(5px);
     padding: 1rem 2rem;
-    font-size: 2rem;
+    @include font-size(2);
     background-color: $color-lightGreen;
 
     &:hover, &:focus {
@@ -93,7 +93,7 @@
   padding: 0;
   right: 1rem;
   bottom: 4rem;
-  font-size: 5rem;
+  @include font-size(5);
   background: transparent;
   opacity: 0;
   color: $color-black;

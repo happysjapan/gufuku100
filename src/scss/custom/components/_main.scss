@@ -7,7 +7,7 @@
 
   // title
   & h2 {
-    font-size: 1.6rem;
+    @include font-size(1.6);
     font-weight: bold;
     padding: 1rem;
     background-color: $color-theme-main-soft;
@@ -18,7 +18,7 @@
   }
 
   & h4 {
-    font-size: 1.8rem;
+    @include font-size(1.8);
     font-weight: bold;
   }
 
@@ -66,7 +66,7 @@
 
   // title
   & h2 {
-    font-size: 2.6rem;
+    @include font-size(2.6);
     font-weight: bold;
     padding: 0;
     margin: 0;
@@ -75,7 +75,7 @@
   }
 
   & h4 {
-    font-size: 1.8rem;
+    @include font-size(1.8);
     font-weight: bold;
   }
 
@@ -137,7 +137,7 @@
 .main_page {
 
   &--title {
-    font-size: 2rem;
+    @include font-size(2);
     line-height: 2;
     font-weight: bold;
     // color: $color-theme-main;
@@ -145,14 +145,14 @@
   }
 
   &--subtitle {
-    font-size: 1.8rem;
+    @include font-size(1.8);
     line-height: 1.8;
     font-weight: bold;
     color: $color-black;
   }
 
   &--phone a {
-    font-size: 3rem;
+    @include font-size(3);
     font-weight: bold;
     color: $color-theme-main;
   }
@@ -162,7 +162,7 @@
   &--form {
 
     &--title {
-      font-size: 2rem;
+      @include font-size(2);
       line-height: 2;
       font-weight: bold;
       color: $color-black;
@@ -175,7 +175,7 @@
       width: 100%;
       border-radius: 6px;
       padding: 1.4rem;
-      font-size: 1.6rem;
+      @include font-size(1.6);
       font-weight: bold;
     }
 
@@ -185,7 +185,7 @@
 
     & .label-danger {
       background-color: $color-danger;
-      font-size: 1rem;
+      @include font-size(1);
       font-weight: bold;
     }
 

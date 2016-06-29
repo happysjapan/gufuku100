@@ -11,19 +11,23 @@
 
   // Menu
   & .menu {
-    position: absolute;
     width: 100%;
     margin: 0;
-    top: 50px;
-    left: 0;
     background-color: $color-darkBlue;
     border-bottom: 4px solid $color-theme-main;
-    @media screen and #{breakpoint(medium)} {
-      top: auto;
-    }
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 
     &--item {
+<<<<<<< HEAD
 
+=======
+      display: block;
+      list-style-type: none;
+      list-style-position: outside;
+      padding: 0;
+      width: 100%;
+>>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
     }
 
     &--item--link {
@@ -55,9 +59,18 @@
       position: relative;
       margin: 1rem 0 0;
       border-bottom: none;
+      top: auto;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 
       &--item {
+<<<<<<< HEAD
         flex: 1 0 auto;
+=======
+        display: table-cell;
+        vertical-align: middle;
+        width: auto;
+>>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
       }
 
       &--item--link {
@@ -117,7 +130,6 @@
     font-size: rem-calc(16px);
     margin-right: 5px;
     color: #fff;
-    // background-color: $color-theme-main;
     background-color: $color-darkBlue;
 
     &:hover, &:focus {
@@ -161,30 +173,12 @@
       margin: 1rem;
     }
 
-      // &:before {
-      //   // content: "\f196";
-      // }
-      //
-      // &:hover {
-      //   .menu--item--icon:before {
-      //     // content: "\f0fe";
-      //   }
-      // }
-    }
   }
+}
 // end footer menu
 
 // Footer submenu
 .footer .submenu .menu {
-  &--item {
-
-    // &--icon {
-    //   &:before {
-    //     content: "\f067";
-    //   }
-    // }
-  }
-
     &--link {
       padding-left: 0.4rem;
 

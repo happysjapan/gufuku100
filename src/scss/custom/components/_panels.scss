@@ -10,7 +10,7 @@
   -webkit-border-radius: 4px;
   border-radius: 4px;
   font-size: 12px;
-  font-size: 1.2rem;
+  @include font-size(1.2);
   text-decoration: none;
 
   & a {
@@ -23,10 +23,14 @@
 // panel style
 .panel {
   position: relative;
+<<<<<<< HEAD
   margin-bottom: 3rem;
   // padding: 1.5rem 3rem;
   border: 1px solid $color-darkBlue;
 
+=======
+  padding: 1.5rem 3rem;
+>>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
 
   // header
   &--header {

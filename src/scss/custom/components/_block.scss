@@ -30,32 +30,32 @@
   &--profile {
     padding: 10px 0;
     &--title {
-      font-size: 2.4rem;
+      @include font-size(2.4);
       margin: 12px 0;
     }
     &--copy {
-      font-size: 1.5rem;
+      @include font-size(1.5);
     }
     &--reward {
     }
     &--target {
-      font-size: 1.6rem;
+      @include font-size(1.6);
       font-weight: bold;
     }
     &--tel {
       margin-top: 5px;
-      font-size: 2rem;
+      @include font-size(2);
       font-weight: bold;
       color: $color-theme-main-dark;
       @media screen and #{breakpoint(xmedium)} {
-        font-size: 3.2rem;
+        @include font-size(3.2);
         line-height: 3.6rem;
       }
     }
     .lp-tagline {
       display: inline-block;
       border-bottom: 2px solid $color-theme-main;
-      font-size: 1.6rem;
+      @include font-size(1.6);
       line-height: 2rem;
       .lp-jiko {
         color: $color-theme-main;
@@ -63,7 +63,7 @@
       }
     }
     .lp-tagline-sec {
-      font-size: 1.3rem;
+      @include font-size(1.3);
       line-height: 2rem;
       .lp-jiko2 {
         color: $color-theme-main;
@@ -81,19 +81,19 @@
       &__stronger {
         color: $color-theme-main;
         font-weight: bold;
-        font-size: 1.6rem;
+        @include font-size(1.6);
         line-height: 2.4rem;
         @media screen and #{breakpoint(medium)} {
-          font-size: 2.8rem;
+          @include font-size(2.8);
           line-height: 3.6rem;
         }
       }
       &__bold {
         font-weight: bold;
-        font-size: 1.3rem;
+        @include font-size(1.3);
         line-height: 1.6rem;
         @media screen and #{breakpoint(medium)} {
-          font-size: 1.6rem;
+          @include font-size(1.6);
           line-height: 2rem;
         }
 
@@ -101,10 +101,10 @@
       &__strong {
         color: $color-theme-main;
         font-weight: bold;
-        font-size: 1.6rem;
+        @include font-size(1.6);
         line-height: 2rem;
         @media screen and #{breakpoint(medium)} {
-            font-size: 2rem;
+            @include font-size(2);
             line-height: 3rem;
         }
       }
@@ -115,10 +115,10 @@
     &--tel {
         color: $color-theme-main-dark;
         font-weight: bold;
-        font-size: 2rem;
+        @include font-size(2);
         line-height: 2.6rem;
         @media screen and #{breakpoint(medium)} {
-          font-size: 4rem;
+          @include font-size(4);
           line-height: 4.6rem;
         }
     }
@@ -153,11 +153,11 @@
     &--box {
       height: 100%;
       border: 1px solid $color-theme-main;
-      font-size: 1.4rem;
+      @include font-size(1.4);
       &.row {
         @media screen and #{breakpoint(xmedium)} {
           margin: 0;
-          font-size: 1.6rem;
+          @include font-size(1.6);
         }
       }
     }
@@ -169,7 +169,7 @@
         font-weight: bold;
         background-color: $color-theme-main;
         color: #fff;
-        font-size: 1.6rem;
+        @include font-size(1.6);
         @media screen and #{breakpoint(large)} {
           height: auto;
         }
@@ -186,7 +186,11 @@
   &--introduction {
     &--comment-title {
       margin-top: 20px;
+<<<<<<< HEAD
     @include font-size(1.3);
+=======
+      @include font-size(1.5);
+>>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
     }
     &--comment-text {
 
@@ -208,15 +212,60 @@
     &--reward-link {
         display: inline-block;
         margin-top: 10px;
-        font-size: 1.3rem;
+        @include font-size(1.3);
         @media screen and #{breakpoint(medium)} {
-          font-size: 1.5rem;
+          @include font-size(1.5);
         }
     }
+<<<<<<< HEAD
 
+=======
+    &--clinic-name {
+      margin-top: 20px;
+      @include font-size(2.4);
+      line-height: 3rem;
+      font-weight: bold;
+    }
+>>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
     .block-detail--contact--tel {
-      font-size: 3.2rem;
+      @include font-size(3.2);
     }
   }
   // end of introduction
+<<<<<<< HEAD
+=======
+
+  // for about reward
+  &--about-reward {
+    padding: 20px;
+    background-color: $color-light-grey;
+  }
+  // end of  about reward
+
+  /* the other parts
+  --------------------- */
+  .reward-box {
+    display: inline-block;
+    padding: 6px 8px;
+    text-align: center;
+    color: $color-theme-main;
+    background-color: #ffdcd4;
+    border: 1px solid $color-theme-main;
+    font-weight: bold;
+    @include border-radius(4px);
+    p {margin-bottom: 0;}
+  }
+  &.contact-box {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffdcd4;
+    @include border-radius(4px);
+  }
+  .title-medium {
+    @include font-size(1.6);
+      @media screen and #{breakpoint(medium)} {
+        @include font-size(2);
+      }
+  }
+>>>>>>> f98adc73c996d78b1239d1c15c300c447d0a1c23
 }
