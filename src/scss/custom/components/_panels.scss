@@ -24,7 +24,7 @@
 .panel {
   position: relative;
   // margin-bottom: 3rem;
-  padding: 2rem 3rem 4rem;
+  padding: 1.5rem 3rem;
 
 
   // title
@@ -70,6 +70,7 @@
 
   //details
   &--details {
+    margin-top: 1rem;
       border-left: 5px solid $color-darkBlue;
       border-bottom: 1px solid $color-darkGrey;
   }
@@ -101,19 +102,19 @@
   // articleLink
   &--articleLink {
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    width: 30%;
+    bottom: 3rem;
+    left: 55%;
+    width: 20%;
     background-color: $color-gold;
     font-weight: bold;
     padding: 1rem;
     text-align: center;
     color: $color-white;
-    // @include setTransition();
+    @include border-radius(5px);
 
     &:hover {
-      background-color: $color-soft-blue;
-      color: $color-black;
+      background-color: darken($color-gold, 10);
+      color: #fff;
       // @include setTransition();
     }
   }

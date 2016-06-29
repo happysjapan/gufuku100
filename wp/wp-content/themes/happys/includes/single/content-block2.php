@@ -1,63 +1,96 @@
 <?php if ( is_single() ) : ?>
-  <div class="block-detail--information block-detail">
-    <div class="row">
-      <div class="columns small-12">
-        <h3 id="detail" class="title-medium">詳細情報</h3>
-
-        <table class="table table-striped table-bordered">
-          <tr>
-            <th class="col-xs-3">会社名</th>
-            <td>
-              <?php the_field("bengo_name"); ?>
-              <?php if (get_field("bengo_name_kana")) { ?>
-                 ( <?php the_field("bengo_name_kana"); ?> )
-              <?php } ?>
-            </td>
-          </tr>
-          <tr>
-            <th>代表者名</th>
-            <td><?php the_field(""); ?></td>
-          </tr>
-          <tr>
-            <th>事業紹介</th>
-            <td><?php the_field(""); ?></td>
-          </tr>
-          <tr>
-            <th>設立</th>
-            <td><?php the_field(""); ?></td>
-          </tr>
-          <tr>
-            <th>従業員数</th>
-            <td><?php the_field(""); ?></td>
-          </tr>
-          <tr>
-            <th>所在地</th>
-            <td><?php the_field(""); ?></td>
-          </tr>
-          <tr>
-            <th>定休日</th>
-            <td><?php the_field("bengo_holiday"); ?></td>
-          </tr>
-          <tr class="success">
-            <th>電話番号/FAX</th>
-            <td><?php the_field("bengo_tel"); ?></td>
-          </tr>
-          <tr>
-            <th>メールアドレス</th>
-            <td><?php the_field(""); ?></td>
-          </tr>
-          <tr>
-            <th>HP</th>
-            <td><a href="<?php the_field("bengo_hp"); ?>" target="_blank"><?php the_field("bengo_hp"); ?></a></td>
-          </tr>
-        </table>
-
+  <div class="block-detail--images-description">
+    <!-- images line1-->
+      <div class="row">
+        <div class="columns small-4">
+          <?php
+            $image = get_field("bengo_image2");
+            if ($image["url"] != "") {
+              echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
+            } else {
+              echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
+            }
+          ?>
+        </div>
+        <div class="columns small-4">
+          <?php
+            $image = get_field("bengo_image3");
+            if ($image["url"] != "") {
+              echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
+            } else {
+              echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
+            }
+          ?>
+        </div>
+        <div class="columns small-4">
+          <?php
+            $image = get_field("bengo_image4");
+            if ($image["url"] != "") {
+              echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
+            } else {
+              echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
+            }
+          ?>
+        </div>
       </div>
-    </div>
+    </div>　<!-- line1 end -->
+
+    <!-- images line2 -->
+      <div class="row">
+        <div class="columns small-4">
+          <?php
+            $image = get_field("bengo_image2");
+            if ($image["url"] != "") {
+              echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
+            } else {
+              echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
+            }
+          ?>
+        </div>
+        <div class="columns small-4">
+          <?php
+            $image = get_field("bengo_image3");
+            if ($image["url"] != "") {
+              echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
+            } else {
+              echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
+            }
+          ?>
+        </div>
+        <div class="columns small-4">
+          <?php
+            $image = get_field("bengo_image4");
+            if ($image["url"] != "") {
+              echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
+            } else {
+              echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
+            }
+          ?>
+        </div>
+      </div>
+    </div>　<!-- line2 end -->
+
+    <!-- message -->
+    <div class="block-detail--message">
+      <!-- images line1-->
+        <div class="row">
+          <hr>
+          <h3>皆様へメッセージ</h3>
+          <div>
+            <?php
+              $image = get_field("bengo_image2");
+              if ($image["url"] != "") {
+                echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
+              } else {
+                echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
+              }
+            ?>
+            <p>名前 <?php the_field(""); ?></p>
+
+            <hr>
+          </div>
+        </div>
+      </div>
 
 
-    <h3 id="stuff" class="title-medium"><?php the_field("bengo_name"); ?>編集部からのコメント</h3>
-    <?php include (TEMPLATEPATH . '/content-stuff.php'); ?>
-
-  </div>
-<?php endif; ?>
+  <?php endif; ?>

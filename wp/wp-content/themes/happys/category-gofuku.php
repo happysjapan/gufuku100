@@ -17,16 +17,6 @@
 <div id="container" class="innerBox page__wide">
   <h1 class="page--title"><?php echo $queried_object->name; ?></h1>
 
-  <!-- [ #content ] -->
-  <section id="content" class="content wide">
-    <!-- <p class="searchDescription"><?php echo do_shortcode('[contentblock id=office_description]'); ?></p> -->
-    <!-- [ #search ] -->
-    <!-- <section class="searchArea">
-      <?php get_template_part( 'includes/category', 'clinic-search' ); ?>
-      <?php echo do_shortcode('[contentblock id=panel_consult]'); ?>
-    </section> -->
-    <!-- [ /#search ] -->
-
     <?php
       parse_str($query_string, $query_array);
 

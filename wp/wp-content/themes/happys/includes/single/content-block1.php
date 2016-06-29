@@ -6,34 +6,35 @@
         <?php
           $image = get_field("bengo_image1");
           if ($image["url"] != "") {
-            echo '<img src="'.$image["sizes"]["large"].'" width="450" />';
+            echo '<img src="'.$image["sizes"]["large"].'" width="380" />';
           } else {
-            echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="448px" style="border:1px solid #cdcdcd;">';
+            echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
           }
         ?>
 
         <p class="block-detail--introduction--owner-name">代表名：<?php the_field(""); ?></p>
 
         <h5 class="block-detail--introduction--comment-title">
-          <!-- <i class="fa fa-comment" aria-hidden="true"></i> -->
           <b>プロフィール</b></h5>
-        <p class="block-detail--introduction--comment-text"><?php the_field("bengo_comment"); ?></p>
+        <p class="block-detail--introduction--comment-text"><?php the_field(""); ?></p>
       </div>
 
       <div class="columns small-12 medium-7 large-8">
+
         <div class="block-detail--introduction--information">
           <h3 class="points">理念</h3>
           <p><?php the_field(""); ?></p>
-
+        </div>
+        <div class="block-detail--introduction--information">
           <h3 class="points">100選ポイント</h3>
           <p><?php the_field(""); ?></p>
         </div>
-
       </div>
+
     </div>
   </div>
 
-
+<!--
   <?php
     $image = get_field("bengo_sub_image1");
     if ($image["url"] != "") {
@@ -91,34 +92,6 @@
     </div>
   </div>
 
-<!-- images -->
-  <div class="row">
-    <div class="columns small-4">
-      <?php
-        $image = get_field("bengo_image2");
-        if ($image["url"] != "") {
-          echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
-        }
-      ?>
-    </div>
-    <div class="columns small-4">
-      <?php
-        $image = get_field("bengo_image3");
-        if ($image["url"] != "") {
-          echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
-        }
-      ?>
-    </div>
-    <div class="columns small-4">
-      <?php
-        $image = get_field("bengo_image4");
-        if ($image["url"] != "") {
-          echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
-        }
-      ?>
-    </div>
-  </div>
-  <!-- image end -->
 
   <?php } ?>
   <?php
@@ -169,8 +142,6 @@
       </div>
     </div>
   </div>
-  <?php } ?>
-
-
+  <?php } ?> -->
 
 <?php endif; ?>
