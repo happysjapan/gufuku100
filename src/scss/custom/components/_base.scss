@@ -1,0 +1,50 @@
+*,*:before, *:after {
+  @include box-sizing(border-box);
+}
+
+html {
+	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ,Arial, Helvetica, sans-serif;
+	/* 計算しやすいようにroot要素に10px相当のサイズを指定 */
+  color: #333;
+}
+
+body {
+    background-color: #fff;
+    letter-spacing: 0;
+    @include font-size(1.4);
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+img {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+}
+a {
+    color: $color-blue;
+}
+
+hr {max-width: 100%;}
+.table-bordered tbody {
+    border: 1px solid #dbdbdb;
+    tr {border-bottom: 1px solid #dbdbdb;}
+    tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+    tr:nth-child(even) {
+        background-color:  #fff;
+    }
+    th,td {
+        border-left: 1px solid #dbdbdb;
+    }
+}

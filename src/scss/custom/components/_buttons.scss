@@ -1,0 +1,115 @@
+.button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: $color-theme-main;
+  @include border-radius(4px);
+  @media screen and #{breakpoint(xmedium)} {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  &:hover {
+    background-color: $color-theme-main-dark;
+  }
+
+  // blue
+  &__blue {
+    @include border-radius(5px);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: $color-blue;
+
+    &:hover, &:focus {
+      background-color: darken($color-blue, 10);
+    }
+  }
+
+  // lightBlue
+  &__lightBlue {
+    @include border-radius(5px);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: $color-lightBlue;
+
+    &:hover, &:focus {
+      background-color: darken($color-lightBlue, 10);
+    }
+  }
+
+
+  // lightGreen
+  &__lightGreen {
+    @include border-radius(5px);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: $color-lightGreen;
+
+    &:hover, &:focus {
+      background-color: darken($color-lightGreen, 10);
+    }
+  }
+}
+
+.contact-block {
+  display: table;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 102;
+
+  .contact-button {
+    display: table-cell;
+    padding: 12px 6px;
+    @include font-size(1.5);
+    @include line-height(2);
+    text-align: center;
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-theme-main-dark;
+
+    &.tel {
+      background-color: $color-lightGreen;
+    }
+
+    &:hover {
+      background-color: $color-theme-main;
+    }
+  }
+
+
+  @media screen and #{breakpoint(medium)} {
+    display: none;
+  }
+}
+
+.go-top {
+  position: fixed;
+  z-index: 1100;
+  padding: 0;
+  right: 1rem;
+  bottom: 4rem;
+  font-size: 5rem;
+  background: transparent;
+  opacity: 0;
+  color: $color-black;
+  @include setTransition();
+
+  @media screen and #{breakpoint(medium)} {
+    bottom: 1rem;
+  }
+
+  &.show {
+    @include setTransition();
+    opacity: 0.6;
+  }
+
+  &:hover, &:focus {
+    background: transparent;
+    color: lighten($color-black, 10);
+  }
+}

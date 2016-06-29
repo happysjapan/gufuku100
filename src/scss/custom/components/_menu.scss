@@ -1,0 +1,223 @@
+.navigation {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  @media screen and #{breakpoint(medium)} {
+    display: block;
+  }
+
+  // Menu
+  & .menu {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    top: 50px;
+    left: 0;
+    background-color: $color-darkBlue;
+    border-bottom: 4px solid $color-theme-main;
+    @media screen and #{breakpoint(medium)} {
+      top: auto;
+    }
+
+    &--item {
+      display: block;
+      width: 33.333%;
+      list-style-type: none;
+      list-style-position: outside;
+      padding: 0;
+    }
+
+    &--item--link {
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      text-align: right;
+      color: $color-white;
+      margin: 0;
+      padding: 1rem;
+      letter-spacing: 0px;
+      line-height: 110%;
+      text-decoration: none;
+      font-weight: bold;
+      border-top: 1px solid #e5e5e5;
+
+      &:hover {
+        background-color: $color-blue;
+      }
+      &.menu--item--link {
+        @include font-size(1.6);
+      }
+    }
+
+    &--item:first-child .menu--item--link {
+      border-top: none;
+    }
+
+    @media screen and #{breakpoint(medium)} {
+      position: relative;
+      display: table;
+      margin: 1rem 0 0;
+      border-bottom: none;
+
+      &--item {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      &--item--link {
+        text-align: center;
+        border-top: none;
+        border-right: 1px solid #e5e5e5;
+        padding: 1rem 0.2rem;
+
+        &:hover {
+          background-color: $color-blue;
+        }
+      }
+
+      &--item:first-child .menu--item--link {
+        border-left: 1px solid #e5e5e5;
+      }
+    }
+  }
+}
+  // end menu
+
+  // Submenu
+  & .is-dropdown-submenu {
+    margin: 0;
+
+    @media #{$mobile-medium} {
+      position: relative;
+      display: block;
+      border: none;
+      margin-left: 0;
+      //margin-right: 1.25rem;
+
+      &-item .menu--item--link {
+        background-color: $color-light-grey;
+        @include font-size(1.2)
+
+        &:hover {
+          background-color: darken($color-light-grey, 5);
+        }
+      }
+    }
+
+    &-item {
+      display: block;
+    }
+  }
+  // end submenu
+
+
+  // button
+  .navigation-button {
+    position: absolute;
+    top: .5rem;
+    right: 0;
+    padding: 1rem 1rem .8rem;
+    text-align: center;
+    font-size: rem-calc(16px);
+    margin-right: 5px;
+    color: #fff;
+    // background-color: $color-theme-main;
+    background-color: $color-darkBlue;
+
+    &:hover, &:focus {
+      background-color: darken($color-theme-main, 10);
+      color: #fff;
+    }
+
+    & .fa {
+      display: block;
+      font-size: rem-calc(20px);
+    }
+
+    @media screen and #{breakpoint(medium)} {
+        display: none;
+      }
+   }
+  // end button
+
+
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+  padding-right: 2rem;
+
+  @media screen and #{breakpoint(medium)} {
+    padding-right: 1.4rem;
+  }
+
+  &:after {
+    border-color: $color-black transparent transparent;
+  }
+}
+
+
+// Footer menu
+.footer .menu {
+  &--item {
+    vertical-align: top;
+
+    @media #{$mobile-medium} {
+      display: block;
+      margin: 1rem;
+    }
+
+      // &:before {
+      //   // content: "\f196";
+      // }
+      //
+      // &:hover {
+      //   .menu--item--icon:before {
+      //     // content: "\f0fe";
+      //   }
+      // }
+    }
+  }
+// end footer menu
+
+// Footer submenu
+.footer .submenu .menu {
+  &--item {
+
+    // &--icon {
+    //   &:before {
+    //     content: "\f067";
+    //   }
+    // }
+  }
+
+    &--link {
+      padding-left: 0.4rem;
+
+      &:hover {
+        .menu--item--icon:before {
+          content: "\f067";
+        }
+      }
+    }
+  }
+
+.footer .submenu {
+  @media #{$mobile-medium} {
+    position: relative;
+    display: block;
+    border: none;
+    margin-left: 2rem;
+  }
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+  padding-right: 2rem;
+
+    @media #{$mobile-medium} {
+      &:after {
+        display: none;
+      }
+    }
+}
+// end footer submenu

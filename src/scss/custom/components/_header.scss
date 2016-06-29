@@ -1,0 +1,236 @@
+.header--introduction {
+  background-color: $color-soft-blue;
+  @include font-size(1.2);
+  @include line-height(1.8);
+  .page-wrapper {
+    margin-top: 0;
+  }
+  @media screen and #{breakpoint(medium)} {
+      margin-top: 0;
+  }
+}
+.header {
+  width: 100%;
+  background-color: $color-soft-blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: visible;
+  border-bottom: 1px solid #ddd;
+
+  @media screen and #{breakpoint(medium)} {
+    padding: 0;
+    // margin-top: 1rem;
+    background-color: $color-soft-blue;
+    position: relative;
+    border-bottom: none;
+  }
+  &--inner {
+    max-width: 1020px;
+    padding: 0 10px 10px;
+    margin: 0 auto;
+    background-color: $color-soft-blue;
+  }
+  .row {
+    // background-color: $color-soft-blue;
+    // > div {
+    //   vertical-align: top;
+    // }
+  }
+  .for_pc {
+    display: none;
+    @media screen and #{breakpoint(medium)} {
+      display: inline-block;
+    }
+  }
+  .header {
+    &--logo  {
+      // logo
+      & .site-title {
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 2px;
+        padding: 0;
+        line-height: 1rem;
+        vertical-align: top;
+        img {
+          width: 150px;
+          height: auto;
+        }
+
+        &--link:hover {
+          opacity: 0.8;
+        }
+        &--sub {
+          color: #333;
+          @include font-size(1);
+          @include line-height(1.2);
+          font-weight: normal;
+        }
+      }
+    }
+    &--total-num {
+      display: inline-block;
+      padding: 4px 6px;
+      @include clearfix;
+      border: 1px solid #ddd;
+      @include border-radius(5px);
+      &--item {
+        margin-bottom: 0;
+        @include font-size(1);
+        @include line-height(1.3);
+        dt {
+          display: inline-block;
+          padding-right: 0;
+          font-weight: normal;
+        }
+        dd {
+          display: inline-block;
+        }
+      }
+      &--number {
+        color: $color-theme-main;
+        @include font-size(1.1);
+        @include line-height(1.4);
+        font-weight: bold;
+      }
+    }
+    &--contact {
+      display: inline-block;
+      width: 120px;
+      float: right;
+      &--text {
+        display: inline-block;
+        font-weight: bold;
+        @include font-size(1);
+        @include line-height(1.2);
+      }
+      &--tel {
+        display: inline-block;
+        margin: 0;
+        a {
+          color: $color-theme-main;
+          text-decoration: none;
+        }
+        &-number {
+          margin: 2px 0 0;
+          @include font-size(1.5);
+          @include line-height(1.6);
+          font-weight: bold;
+          font-family: helvetica,arial;
+        }
+
+        @media screen and #{breakpoint(medium)} {
+          margin: 0;
+          // padding-left: 45px;
+          @include font-size(2);
+          @include line-height(2);
+          // background: url(../images/icon_free_voice.gif) no-repeat scroll left center;
+          // background-size: 40px auto;
+          color: $color-phone;
+
+          & .fa-phone {
+            // display: none;
+          }
+        }
+      }
+      &--message {
+        display: none;
+      }
+
+    }
+
+    @media screen and #{breakpoint(medium)} { // for tablet
+      &--logo {
+        display: inline-block;
+        margin-right: 10px;
+        float: left;
+      }
+      &--total-num {
+        float: left;
+        border: 2px solid #ddd;
+        &--item {
+          @include font-size(1.1);
+          @include line-height(1.5);
+        }
+        &--number {
+          margin-right: 5px;
+          @include font-size(1.3);
+        }
+      }
+      &--contact {
+        width: auto;
+        text-align: right;
+        &--text {
+          display: block;
+          font-weight: bold;
+          @include font-size(1);
+          @include line-height(1.2);
+        }
+        &--tel {
+          &-number {
+            margin: 8px 0;
+            @include font-size(1.8);
+            @include line-height(2);
+            font-family: $font-header-tel;
+          }
+        }
+      }
+    }
+
+    @media screen and #{breakpoint(xmedium)} { // for PC
+      &--logo {
+        margin-right: 30px;
+        // logo
+        & .site-title {
+          margin: 5px 0;
+          img {
+            width: 180px;
+          }
+        }
+        &--sub {
+          font-weight: bold;
+        }
+      }
+      &--total-num {
+        padding: 8px 20px;
+        &--item {
+          @include font-size(1.3);
+          @include line-height(2);
+        }
+        &--number {
+          @include font-size(1.5);
+        }
+      }
+      &--contact {
+        &--text {
+        }
+        &--tel {
+          margin: 2px 8px 0;
+          &-number {
+            @include font-size(2.6);
+            @include line-height(2.6);
+          }
+        }
+        &--message {
+          display: block;
+          color: #333;
+          @include font-size(1.2);
+          @include line-height(1.6);
+        }
+      }
+    }
+  }
+
+}
+
+
+.banner {
+  margin-bottom: 2rem;
+
+  & img {
+    display: block;
+    width: 100%;
+  }
+}

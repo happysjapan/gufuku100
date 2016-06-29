@@ -1,0 +1,10 @@
+.breadcrumbs {
+
+  & li {
+  @include font-size(1.2);
+  }
+
+  & a {
+    text-transform: capitalize;
+  }
+}

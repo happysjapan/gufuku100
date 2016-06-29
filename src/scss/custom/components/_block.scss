@@ -1,0 +1,259 @@
+/*
+** Social block
+*/
+
+.social {
+
+  &--holder {
+    text-align: right;
+  }
+
+  &--list {
+    margin: 0 0 20px;
+  }
+
+  &--listitem {
+    display: inline-block;
+    margin-bottom: 0;
+    list-style: none;
+    vertical-align: top;
+  }
+}
+
+/*
+** block detail
+*/
+
+.block-detail {
+
+  // for profile
+  &--profile {
+    padding: 10px 0;
+    &--title {
+      font-size: 2.4rem;
+      margin: 12px 0;
+    }
+    &--copy {
+      font-size: 1.5rem;
+    }
+    &--reward {
+    }
+    &--target {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    &--tel {
+      margin-top: 5px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color-theme-main-dark;
+      @media screen and #{breakpoint(xmedium)} {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+      }
+    }
+    .lp-tagline {
+      display: inline-block;
+      border-bottom: 2px solid $color-theme-main;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      .lp-jiko {
+        color: $color-theme-main;
+        font-weight: bold;
+      }
+    }
+    .lp-tagline-sec {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      .lp-jiko2 {
+        color: $color-theme-main;
+        font-weight: bold;
+      }
+    }
+  }
+  // end of profile
+
+  // for contact
+  &--contact {
+    padding: 15px 0;
+    text-align: center;
+    &--text {
+      &__stronger {
+        color: $color-theme-main;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        @media screen and #{breakpoint(medium)} {
+          font-size: 2.8rem;
+          line-height: 3.6rem;
+        }
+      }
+      &__bold {
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        @media screen and #{breakpoint(medium)} {
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+
+      }
+      &__strong {
+        color: $color-theme-main;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        @media screen and #{breakpoint(medium)} {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+      }
+    }
+    &--row {
+      max-width: 640px;
+    }
+    &--tel {
+        color: $color-theme-main-dark;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        @media screen and #{breakpoint(medium)} {
+          font-size: 4rem;
+          line-height: 4.6rem;
+        }
+    }
+    &--button {
+    }
+  }
+  // end of contact
+
+  // for reason
+  &--reason {
+    padding: 15px 0;
+    &--title {
+      color: $color-blue;
+    }
+    &--text {
+    }
+    &--number {
+      margin-right: 10px;
+      padding: 2px 6px;
+      background-color: $color-blue;
+      color: #fff;
+      @include border-radius(16px);
+    }
+  }
+  // end of reason
+
+  // for relief
+  &--relief {
+    &--item {
+      margin-bottom: 10px;
+    }
+    &--box {
+      height: 100%;
+      border: 1px solid $color-theme-main;
+      font-size: 1.4rem;
+      &.row {
+        @media screen and #{breakpoint(xmedium)} {
+          margin: 0;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &--title {
+        height: 100%;
+        margin-bottom: 0;
+        padding: 8px;
+        text-align: center;
+        font-weight: bold;
+        background-color: $color-theme-main;
+        color: #fff;
+        font-size: 1.6rem;
+        @media screen and #{breakpoint(large)} {
+          height: auto;
+        }
+    }
+    &--text {
+        padding: 8px;
+        @media screen and #{breakpoint(xmedium)} {
+        }
+    }
+  }
+  // end of relief
+
+  // for introduction
+  &--introduction {
+    &--comment-title {
+      margin-top: 20px;
+      font-size: 1.5rem;
+    }
+    &--comment-text {
+
+    }
+
+    &--owner-name {
+      margin-top: 3px;
+    }
+
+    &--information {
+        .points {
+          padding-bottom: 2px;
+          border-bottom: 1px solid $color-darkGrey;
+          border-left: 5px solid $color-darkBlue;
+        }
+    }
+
+    &--reward-link {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 1.3rem;
+        @media screen and #{breakpoint(medium)} {
+          font-size: 1.5rem;
+        }
+    }
+    &--clinic-name {
+      margin-top: 20px;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      font-weight: bold;
+    }
+    .block-detail--contact--tel {
+      font-size: 3.2rem;
+    }
+  }
+  // end of introduction
+
+  // for about reward
+  &--about-reward {
+    padding: 20px;
+    background-color: $color-light-grey;
+  }
+  // end of  about reward
+
+  /* the other parts
+  --------------------- */
+  .reward-box {
+    display: inline-block;
+    padding: 6px 8px;
+    text-align: center;
+    color: $color-theme-main;
+    background-color: #ffdcd4;
+    border: 1px solid $color-theme-main;
+    font-weight: bold;
+    @include border-radius(4px);
+    p {margin-bottom: 0;}
+  }
+  &.contact-box {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffdcd4;
+    @include border-radius(4px);
+  }
+  .title-medium {
+    font-size: 1.6rem;
+      @media screen and #{breakpoint(medium)} {
+        font-size: 2rem;
+      }
+  }
+}

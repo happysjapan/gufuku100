@@ -1,0 +1,193 @@
+/*
+** Styling for main content
+** From wordpress edition
+*/
+
+.main_edition  {
+
+  // title
+  & h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: $color-theme-main-soft;
+    border: 1px solid $color-theme-main-dark;
+    margin: 1.6rem 0 1rem;
+
+    @include border-radius(5px);
+  }
+
+  & h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  // separator
+  & hr {
+    border-bottom: 1px solid $color-soft-grey;
+    margin: 2rem auto;
+  }
+
+  // images
+  & img {
+    width: 100%;
+  }
+
+  // list
+  & ul {
+    padding-left: 2rem;
+    margin: 1.6rem 0;
+
+    & li {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+  }
+
+  // links
+  & a {
+    color: $color-main-link;
+
+    &:hover {
+      color: $color-main-link-hover;
+    }
+  }
+}
+
+
+
+
+/*
+** Styling for page content
+** From wordpress edition
+*/
+
+.page_edition  {
+
+  // title
+  & h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+
+    @include border-radius(4px);
+  }
+
+  & h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  // separator
+  & hr {
+    max-width: 100%;
+    border-bottom: 1px solid $color-soft-grey;
+    margin: 2rem auto;
+  }
+
+  // images
+  & img {
+    width: 100%;
+  }
+
+  // list
+  & ul {
+    padding-left: 2rem;
+    margin: 1.6rem 0;
+
+    & li {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+  }
+
+  // links
+  & a {
+    color: $color-main-link;
+
+    &:hover {
+      color: $color-main-link-hover;
+    }
+  }
+
+  // Alert
+  & .alert {
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #d6e9c6;
+    @include border-radius(4px);
+
+    & p {
+      margin: 0;
+    }
+
+    &-success {
+      color: #3c763d;
+      background-color: #dff0d8;
+      border: 1px solid #d6e9c6;
+    }
+  }
+}
+
+
+/*
+** Styling for 404 page content
+*/
+.main_page {
+
+  &--title {
+    font-size: 2rem;
+    line-height: 2;
+    font-weight: bold;
+    // color: $color-theme-main;
+    color: $color-black;
+  }
+
+  &--subtitle {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  &--phone a {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color-theme-main;
+  }
+
+
+  // form
+  &--form {
+
+    &--title {
+      font-size: 2rem;
+      line-height: 2;
+      font-weight: bold;
+      color: $color-black;
+    }
+
+    & .wpcf7-submit {
+      color: $color-white;
+      background-color: #5cb85c;
+      border: none;
+      width: 100%;
+      border-radius: 6px;
+      padding: 1.4rem;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    & .table-bordered tbody th, & .table-bordered tbody td {
+      text-align: left;
+    }
+
+    & .label-danger {
+      background-color: $color-danger;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+  }
+}

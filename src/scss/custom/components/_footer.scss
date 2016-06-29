@@ -1,0 +1,38 @@
+.footer {
+  // margin-top: 8rem;
+  // padding: 2rem 0 0;
+  border-top: 1px solid $color-blue;
+  background-color: $color-darkBlue;
+
+  	.copyright_row {
+  		margin-top: 10px;
+  		&--address {
+        color: $color-white;
+  			text-align: center;
+  		}
+	}
+
+	@media only screen and #{breakpoint(xmedium)} {
+		.row_reward {
+			&--top {
+				&--title {
+				}
+				&--text {
+				}
+			}
+			&--bottom {
+				&--btn__default {
+					margin-right: 30px;
+					padding: 12px 30px;
+				}
+				&--btn__application {
+					padding: 12px 30px;
+				}
+			}
+		}
+		&--link_panel {
+			@include calc(width,'50% - 20px');
+			margin: 20px 10px 0 0;
+		}
+	}
+}

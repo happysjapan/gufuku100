@@ -1,0 +1,276 @@
+
+/* ===================================================
+	トップページ ▼
+===================================================  */
+.frontpage {
+	/* コンテンツ ▼
+	-------------------------------------------- */
+	.sectionBox p {
+		@include font-size(1.3);
+	}
+
+	/* 検索ボックス ▼
+	-------------------------------------------- */
+
+	.areaSearch {
+		margin-bottom: 40px;
+
+		> h2:first-child {
+			@extend %boxTitle;
+			padding: 8px 10px;
+		}
+		.searchTitle {
+			text-align: center;
+		}
+		.searchInner {
+			padding: 15px;
+			border: 1px solid $color-theme-main;
+			border-top: none;
+			@include border-radius(0 0 4px 4px);
+			ul {margin: 0;}
+			.listP {
+				> li{
+					display: inline-block;
+					vertical-align: top;
+				    margin-bottom: 20px;
+					width: 100%;
+					margin-right: 0;
+					margin-bottom: 12px;
+					&:last-child {margin-bottom: 0;}
+					h3 {
+						@include font-size(1.4);
+						margin: 0 0 5px;
+						padding: 0;
+						border: none;
+					}
+				}
+				.listC li {
+					display: inline-block;
+					margin-right: 8px;
+					margin-bottom: 2px;
+					a {
+						color: $color-blue;
+						text-decoration: none;
+						@include font-size(1.3);
+						&:hover {text-decoration: underline;}
+					}
+				}
+				.cSelect {
+					dt {
+						display: inline-block;
+						margin-right: 5px;
+						font-weight: bold;
+						@include font-size(1.2);
+						color: #333;
+					}
+					dd {
+						display: inline-block;
+						margin-bottom: 0;
+					}
+					.select-box {
+						margin-bottom: 10px;
+					}
+				}
+
+			}
+			.searchTerms {
+				margin: 25px 0 0;
+				.select-box {
+					margin-bottom: 15px;
+					@include clearfix;
+				}
+				.search--form {
+					&--label {
+						display: block;
+					}
+				}
+			}
+			.searchText {
+				margin: 0 0 5px;
+				input.topSearch { 
+					display: inline-block;
+					width: 70%;
+					vertical-align: top;
+				}
+				.button {
+					display: inline-block;
+				}
+
+			}
+    		@media #{$mobile-medium} {
+				padding: 10px;
+				.listP {
+					> li{
+						&:last-child {margin-bottom: 0;}
+					}
+					.listC li {
+						margin-right: 8px;
+						margin-bottom: 2px;
+					}
+				}
+				.searchTerms {
+					.search--form {
+						@include clearfix;
+						&--label {
+							max-width: 400px;
+						}
+						&--select {
+							float: right;
+						}
+					}
+				}
+			}
+    		@media screen and #{breakpoint(medium)} {
+				padding: 20px;
+				.listP {
+					> li{
+					    width: 48%;
+						&:nth-child(2n+1) {margin-right: 2%;}
+						&:last-child,&:nth-child(7) {margin-bottom: 0;}
+						h3 {
+							margin: 0 0 10px;
+						}
+
+					}
+					.listC li {
+						margin-right: 3px;
+						margin-bottom: 8px;
+					}
+				}
+				.searchTerms {
+					.search--form {
+						@include clearfix;
+						&--label {
+						}
+						&--select {
+							margin-top: 6px;
+						}
+					}
+				}
+			}
+
+
+		}
+		.innerSearchList {
+			padding: 50px 76px 40px 44px;
+    		@media #{$mobile-medium} {
+				padding: 25px 38px 20px 22px;
+			}
+			.searchListContent {
+				width: 100%;
+				display: table;
+    			@media #{$mobile-medium} {
+					display: block;
+				}
+				> * {
+					display: table-cell;
+					vertical-align: middle;
+					padding-bottom: 32px;
+
+    				@media #{$mobile-medium} {
+						margin: 0 auto;
+						text-align: center;
+						display: block;
+						padding-bottom: 16px;
+					}
+				}
+				.selectLabel {
+					@include font-size(1.5);
+					font-weight: bold;
+					width: 70%;
+    				@media #{$mobile-medium} {
+						@include font-size(1.2);
+						width: 100%;
+					}
+				}
+				.selectList {
+					width: 30%;
+					select {
+						width: 100%;
+					}
+    				@media #{$mobile-medium} {
+						width: 80%;
+					}
+				}
+			}
+			.searchText2 {
+				width: 100%;
+				form {
+					text-align:center;
+					.searchWord {
+						width: 100%;
+						margin-bottom: 34px;
+						text-align: left;
+    					@media #{$mobile-medium} {
+							margin-bottom: 17px;
+						}
+					}
+					.searchBtn {
+						max-width: 248px;
+						padding: 14px 20px;
+						margin: 0 auto;
+						@include font-size(1.8);
+						background-color: #3366cc;
+						width: 100%;
+
+    					@media #{$mobile-medium} {
+							padding: 8px 10px;
+							@include font-size(1.5);
+						}
+					}
+				}
+			}
+		}
+	}
+	.clinic-frontPanel {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #dbdbdb;
+		&--image {
+		}
+		&--reward {
+			margin-top: 10px;
+			padding: 6px 10px;
+			color: #3e88ad;
+			font-weight: bold;
+			background-color: #d9edf7;
+			border: 1px solid #94d8e6;
+			@include border-radius(4px);
+		    @include font-size(1.3);
+		}
+		&--title {
+			color: $color-blue;
+		    @include font-size(1.7);
+		}
+		&--detail {
+			tbody {
+				tr th {
+					width: 76px;
+			    	@include font-size(1.3);
+				}
+			}
+		}
+		&--button {
+			display: block;
+			margin: 10px 0 0;
+		    @include font-size(1.6);
+			@include border-radius(4px);
+		}
+	}
+	.widget_gofuku_clinic_date_widget { // Clinic list
+		.front-widget--title {
+			margin-bottom: 20px;
+			float: left;
+			font-weight: bold;
+		    color: $color-theme-main;
+		    @include font-size(1.7);
+		}
+		.more {
+			display: inline-block;
+			margin-top: 6px;
+		    @include font-size(1.3);
+		    @include line-height(1.5);
+			float: right;
+		}
+	}
+}

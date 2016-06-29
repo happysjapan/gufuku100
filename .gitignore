@@ -1,0 +1,13 @@
+dist/*
+node_modules/*
+tmphtml/*
+target/*
+wp/wp-admin/
+wp/wp-includes/
+wp/wp-content/languages/
+wp/wp-content/plugins/
+wp/wp-content/uploads/
+wp/wp-content/cache/autoptimize/
+wp/*.php
+wp/readme.html
+*.scssc

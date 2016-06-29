@@ -1,0 +1,288 @@
+
+/* ===================================================
+	全国の就労移行支援事業所を探す
+	セミナー・説明会検索  ▼
+===================================================  */
+
+.searchArea {
+	display: table;
+	@include clearfix;
+	width: 100%;
+	margin-bottom: 40px;
+	.searchDescription {
+		padding: 0;
+		@include font-size(1.4);
+	}
+	.searchBox {
+		width: 60%;
+		display: table-cell;
+		h2 {
+			@extend %boxTitle;
+			padding: 8px 10px;
+			text-align: center;
+			@media only screen and #{breakpoint(medium)} {
+				@include font-size(1.5);
+				@include line-height(2);
+			}
+		}
+		.inner {
+			border: 1px solid $color-grey;
+			border-top: none;
+			@include clearfix;
+			form#searchform {
+				label {
+					display: block;
+				}
+				input#s {
+					width: 100%;
+					margin-left: 0;
+					float: none;
+				}
+				input#searchsubmit {
+					display: block;
+					width: 160px;
+					margin: 20px auto 0;
+					padding: 12px;
+					background-color: $color-blue;
+					float: none;
+					@include font-size(1.7);
+					@include line-height(2.2);
+					&:hover {
+			    	  @include opacity(.9);
+					}
+				}
+			}
+
+			@media only screen and #{breakpoint(medium)} {
+				padding: 30px;
+				form#searchform {
+					.select-box {
+						@include clearfix;
+						.search--form--select {
+							float: right;
+							margin-left: 20px;
+						}
+					}
+					label {
+						margin-bottom: 20px;
+					}
+				}
+			}
+			@media only screen and #{breakpoint(medium)} {
+				padding: 20px;
+				form#searchform {
+					.select-box {
+						.search--form--select {
+							margin: 4px 0 16px;
+						}
+					}
+				}
+			}
+		}
+
+		&.for_experience {
+			.inner { //体験談 検索用スタイル
+				height: 224px;
+				padding: 30px 60px;
+				form#searchform {
+					display: inline-block;
+					max-width: 468px;
+					input#s {margin-top: 10px;}
+					input#searchsubmit {margin-top: 30px;}
+				}
+			}
+			@media only screen and #{breakpoint(medium)} {
+				.inner {
+					padding: 20px 20px 90px;
+					overflow: visible;
+					&:after {
+						content: "";
+						display: block;
+						clear: both;
+					}
+					form#searchform {
+						margin-top: 0;
+						float: none;
+						.select-box {
+							.search--form--select {
+								float: none;
+								margin-left: 0;
+								margin-top: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.consultBox {
+		vertical-align: top;
+		> div {
+			border: 1px solid $color-grey;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.tel {
+			display: inline-block;
+			color: $color-red;
+			font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+		}
+		.btn {
+			margin-top: 10px;
+			padding: 12px;
+			background-color: $color-lightBlue;
+			  &:hover {
+			      color: #fff;
+			      background-color: darken($color-lightBlue,10%);
+			  }
+		}
+	}
+	.btn {
+		display: block;
+		width: 160px;
+		margin: 0 auto;
+		text-align: center;
+		@include font-size(1.7);
+		@include line-height(2.2);
+	}
+
+    @media #{$mobile-medium} {
+		.consultBox {
+			display: table-cell;
+			padding-left: 40px;
+			@include calc(width,'40% - 40px');
+			> div {
+				display: table-cell;
+				height: 260px;
+				padding: 25px 20px;
+			}
+			.tel {
+				padding-left: 55px;
+				@include font-size(3.2);
+				@include line-height(3.6);
+				background: url("../images/icon_free_voice.gif") no-repeat scroll left center;
+				background-size: 50px auto;
+			}
+			.text {
+				@include font-size(1.7);
+				@include line-height(3);
+			}
+		}
+	}
+    @media #{$mobile-medium} {
+		.searchBox {
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+			padding-right: 0;
+		}
+		.consultBox {
+			display: block;
+			> div {
+				display: block;
+				height: auto;
+				padding: 20px 10px;
+			}
+			.tel {
+				padding-left: 45px;
+				@include font-size(2.4);
+				@include line-height(2.4);
+				background: url("../images/icon_free_voice.gif") no-repeat scroll left center;
+				background-size: 40px auto;
+			}
+			.text {
+				@include font-size(1.5);
+				@include line-height(2);
+			}
+		}
+	}
+
+}
+
+
+form#searchform {
+	background-color: transparent;
+	padding: 0;
+}
+
+/* 検索ボックス ▼
+-------------------------------------------- */
+.areaSearch, .searchArea {
+	select,input {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+	}
+	/* selectboxカスタム */
+	.select-box select {
+		@include border-radius(5px);
+		border: 0;
+		margin: 0;
+		width:140px;
+		padding: 3px 30px 3px 6px;
+		vertical-align: middle;
+		font-size: inherit;
+		color: #666666;
+		background: url(../images/select_arrow.png) right 50% no-repeat #eeeeee;
+		background-size: 26px, 100%;
+		@include font-size(1.1);
+	}
+
+	// Labels
+	& label {
+		font-size: 1.2rem;
+	}
+
+	/* inputカスタム */
+
+	.topSearch { // フリーワード検索ボックス
+		background: #eeeeee;
+		@include border-radius(5px);
+		padding: 5px;
+		border: none;
+		color: #333;
+		width: 60%;
+	}
+	input[type="submit"] {
+		@include border-radius(5px);
+		padding: 3px 20px;
+		border: none;
+		color: #fff;
+		background-color: $color-theme-main;
+		&:hover {
+			background-color: $color-theme-main-dark;
+		}
+	}
+}
+
+
+
+
+/*
+** Search form
+*/
+
+.search {
+
+	// Search list
+	&--list {
+		margin: 1rem 0;
+
+		&--title {
+			font-size: 1.2rem;
+		}
+	}
+
+	&--listitem {
+		display: inline-block;
+		padding: 0 0.8rem;
+		border-left: 1px solid $color-grey;
+		line-height: 1.2;
+
+		&:first-child {
+			border-left: none;
+			padding: 0 0.8rem 0 0;
+		}
+
+	}
+}

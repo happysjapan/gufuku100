@@ -1,0 +1,69 @@
+.aside {
+  &--title {
+    margin: 0;
+    background-color: $color-theme-main;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    font-size: 1.4rem;
+  }
+
+  // Item
+  &--item {
+    border-bottom: 1px dotted #ddd;
+    border-top: none;
+
+    &:last-child {
+      border-bottom: 1px solid #ddd;
+    }
+
+    &--title {
+      font-size: rem-calc(20px);
+      line-height: rem-calc(28px);
+    }
+
+    &--image {
+      width: 100%;
+    }
+  }
+  // end Item
+
+  // widget
+  &--widget {
+    margin-bottom: 1.5rem;
+    border: 1px solid $color-theme-main;
+    @include border-radius(4px);
+
+    &.widget_sp_image {
+      border: none;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  // link item
+  &--link {
+    box-sizing: border-box;
+    display: block;
+    padding: 6px 10px;
+    color: $color-blue;
+
+    &:hover, &:focus {
+      color: darken($color-theme-main, 10);
+    }
+  }
+
+  // more
+  &--more {
+    display: inline-block;
+    padding: 6px 10px;
+    color: $color-theme-main;
+    float: right;
+
+    &:hover, &:focus {
+      color: darken($color-theme-main, 10);
+    }
+  }
+}

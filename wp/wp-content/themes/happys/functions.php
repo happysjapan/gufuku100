@@ -140,25 +140,25 @@ if ( function_exists('register_sidebar') ) {
  /*	Custom post type _ add surgery
  /*-------------------------------------------*/
 
- add_post_type_support( 'surgery', 'front-end-editor' );
-
- add_action( 'init', 'gofuku_surgery_create_post_type', 0 );
- function gofuku_surgery_create_post_type() {
- 	$surgeryLabelName = '整形外科を検索';
- 	register_post_type( 'surgery', /* post-type */
- 	array(
- 		'labels' => array(
- 		'name' => $surgeryLabelName,
- 		'singular_name' => $surgeryLabelName
- 	),
- 	'public' => true,
- 	'menu_position' =>5,
- 	'has_archive' => true,
- 	'taxonomies' => array('category'),
- 	'supports' => array('title','editor','excerpt','thumbnail','author')
- 	)
- 	);
- }
+ // add_post_type_support( 'surgery', 'front-end-editor' );
+ //
+ // add_action( 'init', 'gofuku_surgery_create_post_type', 0 );
+ // function gofuku_surgery_create_post_type() {
+ // 	$surgeryLabelName = '整形外科を検索';
+ // 	register_post_type( 'surgery', /* post-type */
+ // 	array(
+ // 		'labels' => array(
+ // 		'name' => $surgeryLabelName,
+ // 		'singular_name' => $surgeryLabelName
+ // 	),
+ // 	'public' => true,
+ // 	'menu_position' =>5,
+ // 	'has_archive' => true,
+ // 	'taxonomies' => array('category'),
+ // 	'supports' => array('title','editor','excerpt','thumbnail','author')
+ // 	)
+ // 	);
+ // }
 
  /*-------------------------------------------*/
  /*	Custom post type _ add product
