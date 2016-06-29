@@ -23,11 +23,7 @@
     }
 
     &--item {
-      display: block;
-      width: 33.333%;
-      list-style-type: none;
-      list-style-position: outside;
-      padding: 0;
+
     }
 
     &--item--link {
@@ -57,13 +53,11 @@
 
     @media screen and #{breakpoint(medium)} {
       position: relative;
-      display: table;
       margin: 1rem 0 0;
       border-bottom: none;
 
       &--item {
-        display: table-cell;
-        vertical-align: middle;
+        flex: 1 0 auto;
       }
 
       &--item--link {

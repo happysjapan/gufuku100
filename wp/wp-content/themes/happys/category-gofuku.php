@@ -15,7 +15,10 @@
 
 <!-- [ #container ] -->
 <div id="container" class="innerBox page__wide">
-  <h1 class="page--title"><?php echo $queried_object->name; ?></h1>
+  <div class="page--title">
+      <h1><?php echo $queried_object->name; ?></h1>
+  </div>
+
 
     <?php
       parse_str($query_string, $query_array);

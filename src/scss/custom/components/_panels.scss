@@ -23,13 +23,22 @@
 // panel style
 .panel {
   position: relative;
-  // margin-bottom: 3rem;
-  padding: 1.5rem 3rem;
+  margin-bottom: 3rem;
+  // padding: 1.5rem 3rem;
+  border: 1px solid $color-darkBlue;
 
+
+  // header
+  &--header {
+    margin-bottom: 1rem;
+    padding: 3px 10px;
+    color: $color-white;
+    font-weight: bold;
+    background-color: $color-darkBlue;
+  }
 
   // title
   &--title {
-    padding: 0;
     font-size: rem-calc(28px);
     font-weight: bold;
 
@@ -72,8 +81,14 @@
   &--details {
     margin-top: 1rem;
       border-left: 5px solid $color-darkBlue;
-      border-bottom: 1px solid $color-darkGrey;
+
+      &--title {
+       margin-left: 5px;
+        border-bottom: 1px solid $color-darkGrey;
+        @include font-size(1.5);
+      }
   }
+
 
 
 
@@ -124,33 +139,4 @@
     text-align: center;
   }
 
-}
-
-
-/*
-** Primary panels
-*/
-.panel-primary {
-  padding: 0;
-  // @include border-radius(4px);
-  border: 1px solid $color-darkBlue;
-
-  & .panel {
-    &-heading {
-      margin-bottom: 1rem;
-      padding: 3px 10px;
-      color: $color-white;
-      font-weight: bold;
-      background-color: $color-darkBlue;
-    }
-
-    &-body {
-      padding: 0 2rem 1rem;
-
-      & .pull-right {
-        float: right;
-        text-align: right;
-      }
-    }
-  }
 }
