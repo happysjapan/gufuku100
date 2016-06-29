@@ -230,7 +230,7 @@ form#searchform {
 
 	// Labels
 	& label {
-		font-size: 1.2rem;
+		@include font-size(1.2);
 	}
 
 	/* inputカスタム */
@@ -269,7 +269,7 @@ form#searchform {
 		margin: 1rem 0;
 
 		&--title {
-			font-size: 1.2rem;
+			@include font-size(1.2);
 		}
 	}
 
