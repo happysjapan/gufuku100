@@ -14,21 +14,29 @@
 
         <p class="block-detail--introduction--owner-name">代表名：<?php the_field(""); ?></p>
 
-        <h5 class="block-detail--introduction--comment-title">
-          <b>プロフィール</b></h5>
-        <p class="block-detail--introduction--comment-text"><?php the_field(""); ?></p>
+        <div class="block-detail--introduction--profile">
+          <h5>プロフィール</h5>
+          <p class="block-detail--introduction--profile-text">text<?php the_field(""); ?></p>
+        </div>
+
       </div>
 
       <div class="columns small-12 medium-7 large-8">
 
         <div class="block-detail--introduction--information">
           <h3 class="points">理念</h3>
-          <p><?php the_field(""); ?></p>
         </div>
+        <div class="block-detail--introduction--information-text">
+          <p>text<?php the_field(""); ?></p>
+        </div>
+
         <div class="block-detail--introduction--information">
           <h3 class="points">100選ポイント</h3>
-          <p><?php the_field(""); ?></p>
         </div>
+        <div class="block-detail--introduction--information-text">
+          <p>text<?php the_field(""); ?></p>
+        </div>
+
       </div>
 
     </div>

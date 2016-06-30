@@ -1,12 +1,12 @@
 <?php if ( is_single() ) : ?>
-  <div class="block-detail--information block-detail">
+  <div class="block-detail--information page_wrapper">
     <div class="row">
       <div class="columns small-12">
-        <h3 id="detail" class="title-medium">詳細情報</h3>
+        <h3 id="detail" class="block-detail--information--title">詳細情報</h3>
 
-        <table class="table table-striped table-bordered">
+        <table class="table table-bordered">
           <tr>
-            <th class="col-xs-3">会社名</th>
+            <th width="200">会社名</th>
             <td>
               <?php the_field("bengo_name"); ?>
               <?php if (get_field("bengo_name_kana")) { ?>
@@ -52,12 +52,11 @@
           </tr>
         </table>
 
-      </div>
+        <h3 id="stuff" class="block-detail--information--title"><?php the_field("bengo_name"); ?>編集部からのコメント</h3>
+        <p>text<?php the_field(""); ?></p>
     </div>
-
-
-    <h3 id="stuff" class="title-medium"><?php the_field("bengo_name"); ?>編集部からのコメント</h3>
-    <?php include (TEMPLATEPATH . '/content-stuff.php'); ?>
-
   </div>
+</div>
+
+
 <?php endif; ?>
