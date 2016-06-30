@@ -26,23 +26,18 @@
 
   @media screen and #{breakpoint(medium)} {
     padding: 0;
-    // margin-top: 1rem;
-    background-color: $color-soft-blue;
     position: relative;
     border-bottom: none;
   }
   &--inner {
-    max-width: 1020px;
-    padding: 0 10px 10px;
     margin: 0 auto;
-    background-color: $color-soft-blue;
+
+    @media screen and #{breakpoint(medium)} {
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
   }
-  .row {
-    // background-color: $color-soft-blue;
-    // > div {
-    //   vertical-align: top;
-    // }
-  }
+
   .for_pc {
     display: none;
     @media screen and #{breakpoint(medium)} {
@@ -51,6 +46,9 @@
   }
   .header {
     &--logo  {
+      padding-top: 1rem;
+      padding-bottom: 0.7rem;
+      
       // logo
       & .site-title {
         display: inline-block;
