@@ -34,7 +34,7 @@
     <div id="top">
       <div id="header" class="header">
         <div class="header--introduction">
-          <p class="page-wrapper">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p class="row">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
 
       <!-- <div class="page-wrapper"> -->
