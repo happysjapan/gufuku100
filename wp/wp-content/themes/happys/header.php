@@ -31,46 +31,45 @@
 
   </head>
   <body>
-    <div id="top">
-      <div id="header" class="header">
-        <div class="header--introduction">
-          <p class="row">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    <?php include_once('svg-sprites.php'); ?>
+
+    <div id="top" class="header">
+      <div class="row">
+        <div class="header--introduction columns small-12">
+          <p class="header--introduction--content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
 
-      <!-- <div class="page-wrapper"> -->
-          <div class="header--inner">
+        <div class="header--inner columns small-12">
+          <!-- logo -->
+          <div class="header--logo">
+            <a class="site-title--link" href="<?php echo home_url(); ?>" title="全国呉服店100選" rel="home">
+              <h2 class="site-title">
+                <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/gofuku_logo.png" alt="全国呉服店100選" width="180" height="37" data-template="<?php echo home_url(); ?>">
+              </h2>
+            </a>
+          </div>
 
-              <div class="row">
-                <!-- logo -->
-                <div class="header--logo">
-                  <a class="site-title--link" href="<?php echo home_url(); ?>" title="全国呉服店100選" rel="home">
-                    <h2 class="site-title">
-                      <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/gofuku_logo.png" alt="全国呉服店100選" width="180" height="37" data-template="<?php echo home_url(); ?>">
-                    </h2>
-                  </a>
-                </div>
-              </div>
-
-            <div class="navigation--holder">
-              <a id="nav_button" class="navigation-button"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
-              <nav id="navigation" class="navigation">
-                <?php
-                $args = array(
-                 'theme_location' => 'navigation',
-                 'container' => false,
-                 'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>',
-                 'walker' => new description_walker()
-                );
-                wp_nav_menu( $args ) ;
-                ?>
-              </nav>
-            </div>
+          <div class="navigation--holder">
+            <a id="nav_button" class="navigation-button"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
+            <nav id="navigation" class="navigation">
+              <?php
+              $args = array(
+               'theme_location' => 'navigation',
+               'container' => false,
+               'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>',
+               'walker' => new description_walker()
+              );
+              wp_nav_menu( $args ) ;
+              ?>
+            </nav>
           </div>
         </div>
 
-        <div class="row">
-          <div class="columns">
-            <?php custom_breadcrumbs(); ?>
-          </div>
-        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="columns">
+        <?php custom_breadcrumbs(); ?>
+      </div>
     </div>

@@ -11,10 +11,11 @@ a, a:hover, a:active, a:focus { outline: 0; }
 /* layout style ▼
 -------------------------------- */
 .page_wrapper {
-  padding: 0 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   @media screen and #{breakpoint(xmedium)} {
-    padding: 0 20px;
+    padding-top: 0;
   }
 }
 
