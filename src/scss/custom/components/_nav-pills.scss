@@ -2,12 +2,11 @@
    margin: 0 0 1rem 1rem;
 
  	&--item {
-    width: 15%;
     text-align: center;
  		display: inline-block;
     border: 1px solid $color-darkBlue;
-    padding: 3px 15px;
-    
+    padding: 3px 25px;
+
     &:hover {
       background-color: $color-blue;
     }

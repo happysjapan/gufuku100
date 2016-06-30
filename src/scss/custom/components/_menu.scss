@@ -53,7 +53,6 @@
 
     @media screen and #{breakpoint(medium)} {
       position: relative;
-      display: table;
       margin: 1rem 0 0;
       border-bottom: none;
       top: auto;
@@ -61,6 +60,7 @@
       flex-wrap: nowrap;
 
       &--item {
+        flex: 1 0 auto;
         display: table-cell;
         vertical-align: middle;
         width: auto;
