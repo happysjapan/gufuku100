@@ -116,13 +116,12 @@
   // button
   .navigation-button {
     position: absolute;
-    top: .5rem;
-    right: 0;
-    padding: 1rem 1rem .8rem;
+    top: 0.4rem;
+    right: 0.4rem;
+    padding: 0.4rem 0.6rem 0.4rem;
     text-align: center;
-    font-size: rem-calc(16px);
-    margin-right: 5px;
-    color: #fff;
+    font-size: rem-calc(14px);
+    color: $color-white;
     background-color: $color-darkBlue;
 
     &:hover, &:focus {

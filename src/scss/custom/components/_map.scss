@@ -1,0 +1,81 @@
+/*
+** Map
+*/
+.japan_map {
+
+  &--small {
+    display: inline-block;
+    @media screen and #{breakpoint(large)} {
+      display: none;
+    }
+  }
+  
+  &--large {
+    display: none;
+    @media screen and #{breakpoint(large)} {
+      display: inline-block;
+    }
+  }
+
+  &--holder {
+    position: relative;
+    text-align: center;
+    padding: 0 1rem;
+
+    @media screen and #{breakpoint(large)} {
+      width: 752px;
+      max-width: 752px;
+      margin: 0 auto;
+      padding: 0 0 200px;
+    }
+  }
+
+  // Area block
+  &--area {
+    margin-bottom: 1rem;
+
+    @media screen and #{breakpoint(large)} {
+      position: absolute;
+      width: 150px;
+
+      &.area_1 { top: 24%; right: -3%; }
+      &.area_2 { bottom: 36%; right: -3%; }
+      &.area_3 { top: 25%; left: 41%; }
+      &.area_4 { bottom: 12%; left: 44%; }
+      &.area_5 { top: 37%; left: 20%; }
+      &.area_6 { bottom: 20%; left: 16%; }
+      &.area_7 { top: 36%; left: 0; }
+    }
+
+
+    // Area title
+    &--title {
+      text-align: center;
+      color: $color-white;
+      padding: 0.6rem 0.4rem;
+      @include font-size(1.4);
+      @include border-radius(6px);
+
+      .area_1 & { background-color: $area-color-1; }
+      .area_2 & { background-color: $area-color-2; }
+      .area_3 & { background-color: $area-color-3; }
+      .area_4 & { background-color: $area-color-4; }
+      .area_5 & { background-color: $area-color-5; }
+      .area_6 & { background-color: $area-color-6; }
+      .area_7 & { background-color: $area-color-7; }
+    }
+
+    // Area list
+    &--list {
+      margin: 0.6rem 0 0 0;
+      border-left: 2px solid $color-darkGrey;
+      text-align: left;
+
+      &.row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+  }
+}

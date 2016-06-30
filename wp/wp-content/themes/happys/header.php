@@ -31,10 +31,12 @@
 
   </head>
   <body>
+    <?php include_once('svg-sprites.php'); ?>
+
     <div id="top">
       <div id="header" class="header">
         <div class="header--introduction">
-          <p class="page-wrapper">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p class="header--introduction--content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
 
       <!-- <div class="page-wrapper"> -->
