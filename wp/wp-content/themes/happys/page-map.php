@@ -12,7 +12,7 @@ get_header(); ?>
 			<div class="japan_map--area--holder row">
 
 				<div class="columns small-6 medium-4 japan_map--area area_1">
-					<h3 class="japan_map--area--title">北海道・東北</h3>
+					<a href="#" class="japan_map--area--title--link" title=""><h3 class="japan_map--area--title">北海道・東北</h3></a>
 					<ul class="japan_map--area--list row">
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
@@ -25,7 +25,7 @@ get_header(); ?>
 				</div>
 
 				<div class="columns small-6 medium-4 japan_map--area area_2">
-					<h3 class="japan_map--area--title">関東</h3>
+					<a href="#" class="japan_map--area--title--link" title=""><h3 class="japan_map--area--title">関東</h3></a>
 					<ul class="japan_map--area--list row">
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
@@ -38,7 +38,7 @@ get_header(); ?>
 				</div>
 
 				<div class="columns small-6 medium-4 japan_map--area area_3">
-					<h3 class="japan_map--area--title">中部</h3>
+					<a href="#" class="japan_map--area--title--link" title=""><h3 class="japan_map--area--title">中部</h3></a>
 					<ul class="japan_map--area--list row">
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
@@ -53,7 +53,7 @@ get_header(); ?>
 				</div>
 
 				<div class="columns small-6 medium-4 japan_map--area area_4">
-					<h3 class="japan_map--area--title">近畿</h3>
+					<a href="#" class="japan_map--area--title--link" title=""><h3 class="japan_map--area--title">近畿</h3></a>
 					<ul class="japan_map--area--list row">
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
@@ -67,7 +67,7 @@ get_header(); ?>
 				</div>
 
 				<div class="columns small-6 medium-4 japan_map--area area_5">
-					<h3 class="japan_map--area--title">中国</h3>
+					<a href="#" class="japan_map--area--title--link" title=""><h3 class="japan_map--area--title">中国</h3></a>
 					<ul class="japan_map--area--list row">
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
@@ -78,7 +78,7 @@ get_header(); ?>
 				</div>
 
 				<div class="columns small-6 medium-4 japan_map--area area_6">
-					<h3 class="japan_map--area--title">四国</h3>
+					<a href="#" class="japan_map--area--title--link" title=""><h3 class="japan_map--area--title">四国</h3></a>
 					<ul class="japan_map--area--list row">
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
@@ -88,7 +88,7 @@ get_header(); ?>
 				</div>
 
 				<div class="columns small-6 medium-4 japan_map--area area_7">
-					<h3 class="japan_map--area--title">九州・沖縄</h3>
+					<a href="#" class="japan_map--area--title--link" title=""><h3 class="japan_map--area--title">九州・沖縄</h3></a>
 					<ul class="japan_map--area--list row">
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
 						<li class="japan_map--area--listitem columns small-6"><a href="#">Item</a></li>
