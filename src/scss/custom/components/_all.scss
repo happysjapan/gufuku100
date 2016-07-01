@@ -27,3 +27,17 @@ a, a:hover, a:active, a:focus { outline: 0; }
     @include font-size(1.8);
     @include border-radius(4px 4px 0 0);
 }
+
+/* small__gutter style ▼
+-------------------------------- */
+.small__gutter {
+  .row &.row {
+    margin-left: -0.3125rem;
+    margin-right: -0.3125rem;
+  }
+
+  & .column, & .columns {
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem;
+  }
+}

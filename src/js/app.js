@@ -1,6 +1,12 @@
 $(document).foundation();
 
 $(document).ready(function(){
+
+  if( $( window ).width() > 640 ){
+    $('#gallery').foundation('destroy');
+
+  }
+
   $('#nav_button').click(function(){
     $('#navigation').toggleClass('active');
   });
