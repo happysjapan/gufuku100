@@ -3,6 +3,8 @@
 
         <?php while ( have_posts() ) : the_post(); ?>
 
+          <h3 class="row columns"><?php the_title(); ?></h3>
+
           <?php get_template_part( 'includes/single/local', 'menu' ); ?>
           <?php get_template_part( 'includes/single/content', 'header' ); ?>
           <?php get_template_part( 'includes/single/content', 'gallary' ); ?>

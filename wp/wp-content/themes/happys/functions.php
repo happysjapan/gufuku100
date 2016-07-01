@@ -184,6 +184,30 @@ if ( function_exists('register_sidebar') ) {
   );
  }
 
+ /*-------------------------------------------*/
+ /*	Custom post type _ add recruitment
+ /*-------------------------------------------*/
+
+ add_post_type_support( 'recruitment', 'front-end-editor' );
+
+ add_action( 'init', 'gofuku_recruitment_create_post_type', 0 );
+ function gofuku_recruitment_create_post_type() {
+  $recruitmentLabelName = 'recruitment';
+  register_post_type( 'recruitment', /* post-type */
+  array(
+    'labels' => array(
+    'name' => $recruitmentLabelName,
+    'singular_name' => $recruitmentLabelName
+  ),
+  'public' => true,
+  'menu_position' =>5,
+  'has_archive' => true,
+  'taxonomies' => array('category'),
+  'supports' => array('title','editor','excerpt','thumbnail','author')
+  )
+  );
+ }
+
 
  /*-------------------------------------------*/
  /*	Global navigation
