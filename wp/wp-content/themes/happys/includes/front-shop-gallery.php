@@ -6,8 +6,11 @@ $custom_args = array(
   'has_password' => false,
   'posts_per_page' => -1
 );
-// $shops_array = get_posts( $custom_args );
-$wp_query = new WP_Query($custom_args);
+$shops_array = get_posts( $custom_args );
+// $wp_query = new WP_Query($custom_args);
+
+// echo "<pre>";
+// var_dump($shops_array);
 ?>
 
 <div class="gallery row">
@@ -18,9 +21,8 @@ $wp_query = new WP_Query($custom_args);
         <li class="gallery--slide orbit-slide columns medium-4 large-3">
           <div class="row">
 
-              <?php $i=0;$k=0; $lenght=count($wp_query->posts);
-              while ( $wp_query->have_posts() ) {
-                the_post(); ?>
+              <?php $i=0;$k=0; $lenght=count($shops_array);
+              foreach ($shops_array as $post) { ?>
                 <?php $thumbnail = get_field('shop_thumbnail'); ?>
                 <?php if( !$thumbnail ){
                   $thumbnail_url = get_template_directory_uri().'/images/thumbnail_default.jpg';
