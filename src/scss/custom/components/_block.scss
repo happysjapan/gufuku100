@@ -25,7 +25,7 @@
     }
 
     &--information {
-      border-left: 5px solid $color-darkBlue;
+      border-left: 5px solid $color-theme-main;
 
         .points {
           border-bottom: 1px solid $color-darkGrey;
@@ -55,4 +55,25 @@
   }
   // end of information
 
+}
+
+
+/*
+** block title
+*/
+.block_title {
+  position: relative;
+  margin-top: 1rem;
+  border-bottom: 1px solid $color-darkGrey;
+  @include font-size(1.4);
+
+  &:before{
+    background: $color-darkBlue;
+    width: 3px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    content: "";
+  }
 }

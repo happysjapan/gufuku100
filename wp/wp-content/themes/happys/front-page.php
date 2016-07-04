@@ -15,6 +15,12 @@ get_header(); ?>
   	</div>
   </div>
 
+  <div class="row">
+    <div class="front_section small-12 columns">
+      <?php dynamic_sidebar( 'home-front-widget-area' ); ?>
+    </div>
+  </div>
+
 </div>
 
 

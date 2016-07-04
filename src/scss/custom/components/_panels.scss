@@ -25,8 +25,9 @@
   position: relative;
   margin-top: 2rem;
   margin-bottom: 2rem;
+
   // padding: 1.5rem 3rem;
-  border: 1px solid $color-darkBlue;
+  border: 1px solid $color-theme-main;
 
   // header
   &--header {
@@ -34,7 +35,7 @@
     padding: 3px 10px;
     color: $color-white;
     font-weight: bold;
-    background-color: $color-darkBlue;
+    background-color: $color-theme-main;
   }
 
   // title
@@ -79,21 +80,11 @@
 
   //details
   &--details {
-      &--title {
-        position: relative;
-        margin-top: 1rem;
-        border-bottom: 1px solid $color-darkGrey;
-        @include font-size(1.5);
-      }
+    margin-top: 1rem;
+      border-left: 5px solid $color-theme-main;
 
-      &--title:before{
-        background: $color-darkBlue;
-        width: 3px;
-        height: 20px;
-        position: absolute;
-        top: 0;
-        left: -8px;
-        content: "";
+      &--title {
+        @include font-size(1.5);
       }
   }
 

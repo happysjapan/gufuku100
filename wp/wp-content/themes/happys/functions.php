@@ -136,29 +136,45 @@ if ( function_exists('register_sidebar') ) {
  	);
  }
 
- /*-------------------------------------------*/
- /*	Custom post type _ add surgery
- /*-------------------------------------------*/
 
- // add_post_type_support( 'surgery', 'front-end-editor' );
- //
- // add_action( 'init', 'gofuku_surgery_create_post_type', 0 );
- // function gofuku_surgery_create_post_type() {
- // 	$surgeryLabelName = '整形外科を検索';
- // 	register_post_type( 'surgery', /* post-type */
- // 	array(
- // 		'labels' => array(
- // 		'name' => $surgeryLabelName,
- // 		'singular_name' => $surgeryLabelName
- // 	),
- // 	'public' => true,
- // 	'menu_position' =>5,
- // 	'has_archive' => true,
- // 	'taxonomies' => array('category'),
- // 	'supports' => array('title','editor','excerpt','thumbnail','author')
- // 	)
- // 	);
- // }
+
+
+  /*-------------------------------------------*/
+  /*	Custom post type _ add news
+  /*-------------------------------------------*/
+
+  add_post_type_support( 'news', 'front-end-editor' );
+
+  add_action( 'init', 'gofuku_news_create_post_type', 0 );
+  function gofuku_news_create_post_type() {
+  	$newsLabelName = 'News';
+  	register_post_type( 'news', /* post-type */
+  	array(
+  		'labels' => array(
+  		'name' => $newsLabelName,
+  		'singular_name' => $newsLabelName
+  	),
+  	'public' => true,
+  	'menu_position' =>5,
+  	'has_archive' => true,
+  	'supports' => array('title','editor','excerpt','thumbnail','author')
+  	)
+  	);
+  	// Add newsrmation category
+  	register_taxonomy(
+  		'news-cat',
+  		'news',
+  		array(
+  			'hierarchical' => true,
+  			'update_count_callback' => '_update_post_term_count',
+  			'label' => $newsLabelName._x(' category','admin menu', 'biz-vektor'),
+  			'singular_label' => $newsLabelName._x(' category','admin menu', 'biz-vektor'),
+  			'public' => true,
+  			'show_ui' => true,
+  		)
+  	);
+  }
+
 
  /*-------------------------------------------*/
  /*	Custom post type _ add product
