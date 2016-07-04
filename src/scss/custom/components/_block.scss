@@ -68,7 +68,7 @@
   @include font-size(1.4);
 
   &:before{
-    background: $color-darkBlue;
+    background: $color-theme-main;
     width: 3px;
     height: 20px;
     position: absolute;

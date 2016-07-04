@@ -1,27 +1,29 @@
  .nav-pills {
    margin: 0 0 1rem 1rem;
 
- 	&--item {
-    text-align: center;
- 		display: inline-block;
-    border: 1px solid $color-theme-main;
-    padding: 3px 25px;
+   &.button-group .button:last-child {
+     margin-right: 1px;
+   }
 
-    &:hover {
+  &--button {
+    border: 1px solid $color-theme-main;
+    color: $color-theme-main;
+    background-color: $color-white;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-right: 1px;
+    padding: 0 1rem;
+    border-radius: 0;
+    @include font-size(1.4);
+
+    &:hover, &:active, &:focus {
+      color: #fff;
       background-color: $color-blue;
     }
 
-    &--link {
-      font-family: 'Open Sans', sans-serif;
-      color: $color-theme-main;
-      margin: 0;
-      text-decoration: none;
-      font-weight: bolder;
-      @include font-size(1.4);
-
-      &:hover{
-        color: #fff;
-      }
+    &.active {
+      color: #fff;
+      background-color: $color-blue;
     }
   }
 }
