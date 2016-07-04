@@ -25,7 +25,7 @@
   position: relative;
   margin-bottom: 3rem;
   // padding: 1.5rem 3rem;
-  border: 1px solid $color-darkBlue;
+  border: 1px solid $color-theme-main;
 
   // header
   &--header {
@@ -33,7 +33,7 @@
     padding: 3px 10px;
     color: $color-white;
     font-weight: bold;
-    background-color: $color-darkBlue;
+    background-color: $color-theme-main;
   }
 
   // title
@@ -79,7 +79,7 @@
   //details
   &--details {
     margin-top: 1rem;
-      border-left: 5px solid $color-darkBlue;
+      border-left: 5px solid $color-theme-main;
 
       &--title {
        margin-left: 5px;

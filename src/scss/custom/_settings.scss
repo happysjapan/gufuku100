@@ -4,8 +4,8 @@
 $mobile-medium: "screen and (max-width: 640px)";
 
 // Theming
-$color-theme-main: #FE4E24;
-$color-theme-main-soft: #FFB973;
+$color-theme-main: #355595;
+$color-theme-main-soft: #d2ddf1;
 $color-theme-main-lighter: lighten($color-theme-main, 40);
 $color-theme-main-light: lighten($color-theme-main, 5);
 $color-theme-main-dark: darken($color-theme-main, 10);
@@ -34,8 +34,6 @@ $color-danger: #d9534f;
 
 
 //gofuku colour
-$color-soft-blue: #d2ddf1;
-$color-darkBlue: #355595;
 $color-gold: #c6a02c;
 
 // map area colours
