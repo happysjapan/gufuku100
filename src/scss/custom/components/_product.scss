@@ -7,14 +7,22 @@
   border: 1px solid $color-darkBlue;
 
   &--title {
+      @include font-size(1.8);
+      font-weight: bold;
+      position: relative;
       margin-top: 1rem;
-      border-left: 5px solid $color-darkBlue;
+      border-bottom: 1px solid $color-darkGrey;
+      }
 
-        h4　{
-        margin-left: 5px;
-        border-bottom: 1px solid $color-darkGrey;
-        @include font-size(1.5);
-        }
+      &--title:before {
+        background: $color-darkBlue;
+        position:absolute;
+        display: block;
+        top: 0;
+        left: -8px;
+        width: 3px;
+        height: 22px;
+        content: "";
       }
 
   &--text{

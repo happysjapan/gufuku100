@@ -31,9 +31,9 @@
         </div>
 
         <div class="medium-9 columns">
-         <div class="panel--details">
+         <!-- <div class="panel--details"> -->
              <h4 class="panel--details--title">100選ポイント</h4>
-         </div>
+         <!-- </div> -->
          <p class="panel--details--comment"><?php the_field(""); ?></p>
          <a href="<?php the_permalink(); ?>"  title="詳しく見る" class="panel--articleLink">詳しく見る</a>
         </div>
