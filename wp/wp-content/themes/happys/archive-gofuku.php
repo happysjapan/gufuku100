@@ -16,7 +16,7 @@
 <!-- [ #container ] -->
 <div id="container" class="innerBox page__wide">
 
-      <h1 class="page--title"><?php echo $queried_object->name; ?></h1>
+      <h1 class="page_title"><?php echo $queried_object->name; ?></h1>
 
   <!-- [ #content ] -->
   <section id="content" class="content wide">

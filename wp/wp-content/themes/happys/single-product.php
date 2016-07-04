@@ -15,14 +15,12 @@
 
           <div class="row product">
             <!-- <div class="product"> -->
-               <div class="columns small-12 medium-8">
+               <article class="columns small-12 medium-8">
                     <!-- 商品名 -->
-                    <div class="product--title">
-                      <h4><?php the_sub_field('product_name'); ?></h4>
-                   </div>
+                    <h4 class="product--title"><?php the_sub_field('product_name'); ?></h4>
                    <!-- テキスト -->
                     <p class="product--text"><?php the_sub_field('product_description'); ?></p>
-                </div>
+                </article>
 
                 <!-- thumbnail -->
                 <div class="columns small-12 medium-4">
