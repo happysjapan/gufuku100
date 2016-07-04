@@ -38,9 +38,11 @@
       text-decoration: none;
       font-weight: bold;
       border-top: 1px solid #e5e5e5;
+      @include setTransition();
 
       &:hover {
         background-color: $color-blue;
+        @include setTransition();
       }
       &.menu--item--link {
         @include font-size(1.6);

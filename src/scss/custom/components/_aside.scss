@@ -27,17 +27,17 @@
 
   // list
   &--list {
-    border: 1px solid #a1a1a1;
+    border: 1px solid $color-lighter-grey;
     padding: 1rem;
   }
 
   // Item
   &--item {
-    border-bottom: 1px dotted #ddd;
+    border-bottom: 1px solid $color-soft-grey;
     border-top: none;
 
     &:last-child {
-      border-bottom: 1px solid #ddd;
+      border-bottom: none;
     }
 
     &--title {
