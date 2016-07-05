@@ -8,52 +8,49 @@
           <tr>
             <th width="200">会社名</th>
             <td>
-              <?php the_field("bengo_name"); ?>
-              <?php if (get_field("bengo_name_kana")) { ?>
-                 ( <?php the_field("bengo_name_kana"); ?> )
-              <?php } ?>
+              <?php echo post_custom("shop_company_name"); ?>
             </td>
           </tr>
           <tr>
             <th>代表者名</th>
-            <td><?php the_field(""); ?></td>
+            <td><?php echo post_custom("shop_member_name"); ?></td>
           </tr>
           <tr>
             <th>事業紹介</th>
-            <td><?php the_field(""); ?></td>
+            <td><?php echo post_custom("shop_description"); ?></td>
           </tr>
           <tr>
             <th>設立</th>
-            <td><?php the_field(""); ?></td>
+            <td><?php echo post_custom("shop_establish"); ?>年</td>
           </tr>
           <tr>
             <th>従業員数</th>
-            <td><?php the_field(""); ?></td>
+            <td><?php echo post_custom("shop_member_number"); ?>名</td>
           </tr>
           <tr>
             <th>所在地</th>
-            <td><?php the_field(""); ?></td>
+            <td><?php echo post_custom("shop_address"); ?></td>
           </tr>
           <tr>
             <th>定休日</th>
-            <td><?php the_field("bengo_holiday"); ?></td>
+            <td><?php echo post_custom("shop_date"); ?></td>
           </tr>
           <tr class="success">
             <th>電話番号/FAX</th>
-            <td><?php the_field("bengo_tel"); ?></td>
+            <td><?php echo post_custom("shop_tel"); ?></td>
           </tr>
           <tr>
             <th>メールアドレス</th>
-            <td><?php the_field(""); ?></td>
+            <td><?php echo post_custom("shop_email"); ?></td>
           </tr>
           <tr>
             <th>HP</th>
-            <td><a href="<?php the_field("bengo_hp"); ?>" target="_blank"><?php the_field("bengo_hp"); ?></a></td>
+            <td><a href="<?php the_field("shop_hp"); ?>" target="_blank"><?php echo post_custom("shop_hp"); ?></a></td>
           </tr>
         </table>
 
-        <h3 id="stuff" class="block-detail--information--title"><?php the_field("bengo_name"); ?>編集部からのコメント</h3>
-        <p>text<?php the_field(""); ?></p>
+        <h3 id="stuff" class="block-detail--information--title">編集部からのコメント</h3>
+        <p>text<?php echo post_custom("editor_comment"); ?></p>
     </div>
   </div>
 </div>

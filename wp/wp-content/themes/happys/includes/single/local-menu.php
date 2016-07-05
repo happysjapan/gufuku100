@@ -23,6 +23,7 @@ var_dump(get_post_type());
 
 
 
+
 <div class="row">
   <div class="columns">
 
