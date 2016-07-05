@@ -2,9 +2,13 @@
 ** product
 */
 
-.product{
+.product_panel {
   margin-bottom: 15px;
-  border: 1px solid $color-theme-main;
+
+  &.first {
+    border: 1px solid $color-darkGrey;
+    padding: 2rem;
+  }
 
   &--title {
       @include font-size(1.8);
@@ -12,10 +16,8 @@
       position: relative;
       margin-top: 1rem;
       border-bottom: 1px solid $color-darkGrey;
-      }
-      border-left: 5px solid $color-theme-main;
 
-      &--title:before {
+      &:before {
         background: $color-theme-main;
         position:absolute;
         display: block;
@@ -25,8 +27,9 @@
         height: 22px;
         content: "";
       }
+  }
 
-  &--text{
+  &--text {
     @include font-size(1.5);
   }
 }

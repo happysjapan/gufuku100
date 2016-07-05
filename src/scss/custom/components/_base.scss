@@ -36,15 +36,19 @@ a {
 
 hr {max-width: 100%;}
 .table-bordered tbody {
-    border: 1px solid #dbdbdb;
-    tr {border-bottom: 1px solid #dbdbdb;}
+    border: 1px solid $color-theme-main;
+    tr {border-bottom: 1px solid $color-theme-main;}
     tr:nth-child(odd) {
-        background-color: #f9f9f9;
+        background-color: #fff;
     }
     tr:nth-child(even) {
         background-color:  #fff;
     }
+    th {
+      background-color: $color-theme-main-soft;
+    }
     th,td {
-        border-left: 1px solid #dbdbdb;
+        border-left: 1px solid $color-theme-main;
+        text-align: left;
     }
 }

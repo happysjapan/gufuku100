@@ -11,25 +11,35 @@
 
 
 
-        <?php while ( have_rows("product") ) : the_row(); ?>
+        <?php
+        for ($i=0; $i < 12345; $i++) {
+          # code...
+        }
 
-          <div class="row product">
-            <!-- <div class="product"> -->
-               <article class="columns small-12 medium-8">
-                    <!-- 商品名 -->
-                    <h4 class="product--title"><?php the_sub_field('product_name'); ?></h4>
-                   <!-- テキスト -->
-                    <p class="product--text"><?php the_sub_field('product_description'); ?></p>
-                </article>
+        $i=0;
+        while ( have_rows("product") ) : the_row(); ?>
 
-                <!-- thumbnail -->
-                <div class="columns small-12 medium-4">
-                  <img src="<?php the_sub_field('product_thumbnail'); ?>" alt="<?php the_sub_field('product_name'); ?>">
+          <div class="row">
+            <div class="columns">
+              <div class="product_panel <?php if($i==0){echo 'first';} ?>">
+                <div class="row">
+                  <article class="columns small-12 medium-8">
+                       <!-- 商品名 -->
+                       <h4 class="product_panel--title"><?php the_sub_field('product_name'); ?></h4>
+                      <!-- テキスト -->
+                       <p class="product_panel--text"><?php the_sub_field('product_description'); ?></p>
+                   </article>
+
+                   <!-- thumbnail -->
+                   <div class="columns small-12 medium-4">
+                     <img src="<?php the_sub_field('product_thumbnail'); ?>" alt="<?php the_sub_field('product_name'); ?>">
+                   </div>
                 </div>
-          <!-- </div> -->
+              </div>
+            </div>
         </div>
 
-        <?php endwhile; ?>
+        <?php $i++; endwhile; ?>
 
   </div>
 

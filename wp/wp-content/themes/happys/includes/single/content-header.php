@@ -22,17 +22,12 @@
       </div>
 
       <div class="columns small-12 medium-7 large-8">
-
-        <div class="block-detail--introduction--information">
-          <h3 class="points">理念</h3>
-        </div>
+        <h3 class="block_title">理念</h3>
         <div class="block-detail--introduction--information-text">
           <p><?php the_field("shop_vision"); ?></p>
         </div>
 
-        <div class="block-detail--introduction--information">
-          <h3 class="points">100選ポイント</h3>
-        </div>
+        <h3 class="block_title">100選ポイント</h3>
         <div class="block-detail--introduction--information-text">
           <p><?php the_field("shop_point100"); ?></p>
         </div>
