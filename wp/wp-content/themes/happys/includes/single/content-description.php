@@ -6,7 +6,7 @@
 
         <table class="table table-bordered">
           <tr>
-            <th width="200">会社名</th>
+            <th width="200">治療院名</th>
             <td>
               <?php echo get_field("shop_company_name"); ?>
             </td>
@@ -16,12 +16,8 @@
             <td><?php the_field("shop_member_name"); ?></td>
           </tr>
           <tr>
-            <th>事業紹介</th>
+            <th>施術内容</th>
             <td><?php the_field("shop_description"); ?></td>
-          </tr>
-          <tr>
-            <th>設立</th>
-            <td><?php the_field("shop_establish"); ?>年</td>
           </tr>
           <tr>
             <th>従業員数</th>
@@ -30,6 +26,10 @@
           <tr>
             <th>所在地</th>
             <td><?php the_field("shop_address"); ?></td>
+          </tr>
+          <tr>
+            <th>治療時間</th>
+            <td><?php the_field("medical_time"); ?></td>
           </tr>
           <tr>
             <th>定休日</th>
@@ -50,7 +50,7 @@
         </table>
 
         <h3 id="stuff" class="block-detail--information--title">編集部からのコメント</h3>
-        <p>t<?php the_field("editor_comment"); ?></p>
+        <p><?php the_field("editor_comment"); ?></p>
     </div>
   </div>
 </div>

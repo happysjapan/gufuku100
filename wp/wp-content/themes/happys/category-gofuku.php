@@ -16,7 +16,7 @@
 <!-- [ #container ] -->
 <div id="container" class="page_wrapper">
     <div class="row columns">
-      <h1 class="product--title"><?php echo $queried_object->name; ?></h1>
+      <h2 class="product_panel--title"><?php echo $queried_object->name; ?></h2>
     </div>
 
 

@@ -224,6 +224,32 @@ if ( function_exists('register_sidebar') ) {
   );
  }
 
+ /*-------------------------------------------*/
+ /*	Custom post type _ add recruitment
+ /*-------------------------------------------*/
+
+ add_post_type_support( 'medical_list', 'front-end-editor' );
+
+ add_action( 'init', 'gofuku_medical_list_create_post_type', 0 );
+ function gofuku_medical_list_create_post_type() {
+  $medical_listLabelName = 'medical_list';
+  register_post_type( 'medical_list', /* post-type */
+  array(
+    'labels' => array(
+    'name' => $medical_listLabelName,
+    'singular_name' => $medical_listLabelName
+  ),
+  'public' => true,
+  'menu_position' =>5,
+  'has_archive' => true,
+  'taxonomies' => array('category'),
+  'supports' => array('title','editor','excerpt','thumbnail','author')
+  )
+  );
+ }
+
+
+
 
  /*-------------------------------------------*/
  /*	Global navigation
