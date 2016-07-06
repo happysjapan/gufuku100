@@ -159,12 +159,16 @@
 
 // Footer menu
 .footer .menu {
+  flex-wrap: wrap;
+
   &--item {
     vertical-align: top;
+    display: block;
+    margin: 0;
+    @include font-size(1.2);
 
-    @media #{$mobile-medium} {
-      display: block;
-      margin: 1rem;
+    @media screen and #{breakpoint(medium)} {
+      @include font-size(1.4);
     }
 
     &--link{
