@@ -29,7 +29,9 @@
 
         <h3 class="block_title">100選ポイント</h3>
         <div class="block-detail--introduction--information-text">
-          <p><?php the_field("shop_point100"); ?></p>
+          <p><?php the_field("shop_point1"); ?></p>
+          <p><?php the_field("shop_point2"); ?></p>
+          <p><?php the_field("shop_point3"); ?></p>
         </div>
 
       </div>

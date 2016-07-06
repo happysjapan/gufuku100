@@ -50,7 +50,7 @@
         </table>
 
         <h3 id="stuff" class="block-detail--information--title">編集部からのコメント</h3>
-        <p><?php the_field("editor_comment"); ?></p>
+        <p>t<?php the_field("editor_comment"); ?></p>
     </div>
   </div>
 </div>

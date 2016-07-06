@@ -21,12 +21,6 @@
           </div>
         </div>
       </div>
-
-       <!-- <div class="small-12 large-6 columns footer--fb_like_box">
-          <div class="fb-like-box" data-href="https://www.facebook.com/clinic.jiko24.jp" data-width="450" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
-          <!-- <div class="fb-page" data-href="https://www.facebook.com/clinic.jiko24.jp" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/clinic.jiko24.jp"><a href="https://www.facebook.com/clinic.jiko24.jp">交通事故病院</a></blockquote></div></div>
-        </div>
-      </div> -->
   </div>
 
   <div class="copyright_row row">

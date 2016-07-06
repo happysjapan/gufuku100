@@ -3,7 +3,8 @@
 */
 
 .product_panel {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
+  padding: 1rem;
 
   &.first {
     border: 1px solid $color-darkGrey;
