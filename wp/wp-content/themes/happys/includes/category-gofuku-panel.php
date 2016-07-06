@@ -5,6 +5,9 @@
           <h3 class="panel--title columns"><a href="<?php the_permalink(); ?>"  title="<?php the_title(); ?>" class="panel--title--link"><?php the_title(); ?></a></h3>
 
       </div>
+
+      <?php while (have_rows('medical_list')) : the_row(); ?>
+
       <div class="row">
         <div class="medium-3 columns">
           <?php
@@ -20,13 +23,15 @@
 
         <div class="medium-9 columns">
            <h4 class="panel--details--title block_title">100選ポイント</h4>
-           <p class="panel--details--comment"><?php the_sub_field("medical_list_point1"); ?></p>
-           <p class="panel--details--comment"><?php the_sub_field("medical_list_point2"); ?></p>
-           <p class="panel--details--comment"><?php the_sub_field("medical_list_point3"); ?></p>
+           <p class="panel--details--comment"><?php the_sub_field('medical_list_point1'); ?></p>
+           <p class="panel--details--comment"><?php the_sub_field('medical_list_point2'); ?></p>
+           <p class="panel--details--comment"><?php the_sub_field('medical_list_point3'); ?></p>
            <p class="panel--tab"><?php the_sub_field('medical_area'); ?></p>
            <a href="<?php the_permalink(); ?>"  title="詳しく見る" class="panel--articleLink">詳しく見る</a>
         </div>
       </div>
 
+      <?php endwhile; ?>
     </div>
+
 </article>

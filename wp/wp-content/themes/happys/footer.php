@@ -4,30 +4,30 @@
   <div class="page-wrapper">
     <a id="js_top" class="button go-top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
 
-    <div class="container">
-      <div class="row">
-          <div class="footer-sitemap--holder">
-            <nav id="footer-sitemap" class="footer-sitemap">
-              <?php
-              $args = array(
-               'theme_location' => 'footer-sitemap',
-               'container' => false,
-               'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>',
-               'walker' => new footer_walker()
-              );
-              wp_nav_menu( $args ) ;
-              ?>
-            </nav>
+      <div class="container">
+        <div class="row">
+          <div class="columns">
+            <div class="footer-sitemap--holder">
+              <nav id="footer-sitemap" class="footer-sitemap">
+                <?php
+                $args = array(
+                 'theme_location' => 'footer-sitemap',
+                 'container' => false,
+                 'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>',
+                 'walker' => new footer_walker()
+                );
+                wp_nav_menu( $args ) ;
+                ?>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-  </div>
 
   <div class="copyright_row row">
-    <div class="page-wrapper">
       <p class="small-12 large6 columns copyright_row--address">Copyright &copy 株式会社ハッピーズ All Rights Reserved.</p>
-    </div>
   </div>
+</div>
 
 </footer>
 

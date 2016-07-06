@@ -9,6 +9,7 @@
   		&--address {
         color: $color-white;
   			text-align: center;
+        @include font-size(1.3);
   		}
 	}
 

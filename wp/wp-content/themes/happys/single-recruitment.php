@@ -55,6 +55,18 @@
             <td><?php the_field("recruitment_access"); ?></td>
           </tr>
           <tr>
+            <th>給与</th>
+            <td><?php the_field("recruitment_salary"); ?></td>
+          </tr>
+          <tr>
+            <th>待遇</th>
+            <td><?php the_field("recruitment_condition"); ?></td>
+          </tr>
+          <tr>
+            <th>勤務時間</th>
+            <td><?php the_field("recruitment_working_time"); ?></td>
+          </tr>
+          <tr>
             <th>休日・休暇</th>
             <td><?php the_field("recruitment_holiday"); ?></td>
           </tr>
