@@ -24,8 +24,8 @@
   <div class="columns">
 
     <ul class="nav nav-pills button-group">
-      <li class="nav-pills--item"><a class="button nav-pills--button <?php echo $shop_active; ?>" href="<?php echo $link_shop; ?>">呉服店情報</a></li>
-      <li class="nav-pills--item"><a class="button nav-pills--button <?php echo $product_active; ?>" href="<?php echo $link_product; ?>">取り扱い商品</a></li>
+      <li class="nav-pills--item"><a class="button nav-pills--button <?php echo $shop_active; ?>" href="<?php echo $link_shop; ?>">治療院情報</a></li>
+      <li class="nav-pills--item"><a class="button nav-pills--button <?php echo $product_active; ?>" href="<?php echo $link_product; ?>">治療について</a></li>
       <li class="nav-pills--item"><a class="button nav-pills--button <?php echo $recruitment_active; ?>" href="<?php echo $link_recruitment; ?>">求人情報</a></li>
     </ul>
   </div>

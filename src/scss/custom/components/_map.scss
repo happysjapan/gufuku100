@@ -36,15 +36,15 @@
 
     @media screen and #{breakpoint(large)} {
       position: absolute;
-      width: 150px;
+      width: 176px;
 
-      &.area_1 { top: 24%; right: -3%; }
-      &.area_2 { bottom: 36%; right: -3%; }
-      &.area_3 { top: 25%; left: 41%; }
+      &.area_1 { top: 24%; right: -8%; }
+      &.area_2 { bottom: 38%; right: -8%; }
+      &.area_3 { top: 18%; left: 44%; }
       &.area_4 { bottom: 12%; left: 44%; }
-      &.area_5 { top: 37%; left: 20%; }
+      &.area_5 { top: 36%; left: 20%; }
       &.area_6 { bottom: 16%; left: 18%; }
-      &.area_7 { top: 36%; left: 0; }
+      &.area_7 { top: 34%; left: -3%; }
     }
 
 
@@ -126,5 +126,10 @@
       }
     }
 
+  }
+
+  &--textbox {
+    border: 1px solid $color-grey;
+    padding: 1rem;
   }
 }
