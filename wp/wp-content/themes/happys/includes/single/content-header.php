@@ -4,7 +4,7 @@
       <div class="columns small-12 medium-5 large-4">
 
         <?php
-          $image = get_field("shop_top_image");
+          $image = get_field("clinic_top_image");
           if ($image["url"] != "") {
             echo '<img src="'.$image["sizes"]["large"].'" width="380" />';
           } else {
@@ -12,11 +12,11 @@
           }
         ?>
 
-        <p class="block-detail--introduction--owner-name">代表名：<?php the_field("shop_representative"); ?></p>
+        <p class="block-detail--introduction--owner-name">代表名：<?php the_field("clinic_representative"); ?></p>
 
         <div class="block-detail--introduction--profile">
           <h5>プロフィール</h5>
-          <p class="block-detail--introduction--profile-text"><?php the_field("shop_profile"); ?></p>
+          <p class="block-detail--introduction--profile-text"><?php the_field("clinic_profile"); ?></p>
         </div>
 
       </div>
@@ -24,14 +24,14 @@
       <div class="columns small-12 medium-7 large-8">
         <h3 class="block_title">理念</h3>
         <div class="block-detail--introduction--information-text">
-          <p><?php the_field("shop_vision"); ?></p>
+          <p><?php the_field("clinic_vision"); ?></p>
         </div>
 
         <h3 class="block_title">100選ポイント</h3>
         <div class="block-detail--introduction--information-text">
-          <p><?php the_field("shop_point1"); ?></p>
-          <p><?php the_field("shop_point2"); ?></p>
-          <p><?php the_field("shop_point3"); ?></p>
+          <p><?php the_field("clinic_point1"); ?></p>
+          <p><?php the_field("clinic_point2"); ?></p>
+          <p><?php the_field("clinic_point3"); ?></p>
         </div>
 
       </div>
