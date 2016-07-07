@@ -24,9 +24,10 @@
 
     @media screen and #{breakpoint(large)} {
       width: 752px;
+      height: 850px;
       max-width: 752px;
       margin: 0 auto;
-      padding: 0 0 200px;
+      padding: 0;
     }
   }
 
@@ -131,5 +132,115 @@
   &--textbox {
     border: 1px solid $color-grey;
     padding: 1rem;
+  }
+
+  // icon
+  &--icon {
+    position: absolute;
+    stroke: #fff;
+    stroke-width: 0.2;
+
+    &--holder {
+      position: relative;
+      text-align: center;
+      padding: 0 1rem;
+      margin: 0 auto;
+      width: 332px;
+      height: 370px;
+
+      @media screen and #{breakpoint(medium)} {
+        width: 582px;
+        height: 660px;
+      }
+
+      @media screen and #{breakpoint(large)} {
+        width: 752px;
+        height: 850px;
+        max-width: 752px;
+        margin: 0 auto;
+        padding: 0;
+      }
+    }
+
+    &.icon-japan-1 {
+      z-index: 100;
+      fill: $area-color-1;
+      height: 46%;
+      width: 40%;
+      top: 0;
+      right: -5%;
+    }
+
+    &.icon-japan-2 {
+      z-index: 90;
+      fill: $area-color-2;
+      stroke-width: 0.3;
+      height: 16.5%;
+      width: 16%;
+      top: 46%;
+      right: 15.99%;
+    }
+
+    &.icon-japan-3 {
+      z-index: 80;
+      fill: $area-color-3;
+      stroke-width: 0.3;
+      height: 28.7%;
+      width: 29%;
+      top: 34.4%;
+      right: 26.66%;
+    }
+
+    &.icon-japan-4 {
+      z-index: 90;
+      fill: $area-color-4;
+      stroke-width: 0.3;
+      height: 17.7%;
+      width: 17%;
+      top: 51.4%;
+      left: 36.2%;
+    }
+
+    &.icon-japan-5 {
+      z-index: 90;
+      fill: $area-color-5;
+      stroke-width: 0.3;
+      height: 8.2%;
+      width: 12.8%;
+      top: 51.5%;
+      left: 23.3%;
+    }
+
+    &.icon-japan-6 {
+      z-index: 90;
+      fill: $area-color-6;
+      stroke-width: 0.3;
+      height: 8.2%;
+      width: 16.8%;
+      top: 62%;
+      left: 21.4%;
+    }
+
+    &.icon-japan-7 {
+      z-index: 90;
+      fill: $area-color-7;
+      stroke-width: 0.3;
+      height: 21%;
+      width: 17%;
+      top: 55%;
+      left: 0;
+    }
+
+    &--link {
+      &:hover, &:active, &:focus {
+        & .icon-japan-1 { fill: darken($area-color-1, 10); }
+        & .icon-japan-2 { fill: darken($area-color-2, 10); }
+        & .icon-japan-3 { fill: darken($area-color-3, 10); }
+        & .icon-japan-4 { fill: darken($area-color-4, 10); }
+        & .icon-japan-5 { fill: darken($area-color-5, 10); }
+        & .icon-japan-6 { fill: darken($area-color-6, 10); }
+        & .icon-japan-7 { fill: darken($area-color-7, 10); }
+      }
+    }
   }
 }

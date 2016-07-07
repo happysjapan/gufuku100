@@ -6,6 +6,7 @@ $mobile-medium: "screen and (max-width: 640px)";
 // Theming
 $color-theme-main: #ed6a1d;
 $color-theme-main-soft: #fdbc6a;
+$color-theme-main-medium: #f39800;
 $color-theme-main-lighter: lighten($color-theme-main, 40);
 $color-theme-main-light: lighten($color-theme-main, 5);
 $color-theme-main-dark: darken($color-theme-main, 10);
@@ -25,7 +26,7 @@ $color-red: #ce0004;
 $color-lighter-grey: #a1a1a1;
 $color-light-grey: #fdf1dd;
 $color-soft-grey: #fee0b9;
-$color-grey: #999;
+$color-grey: #858585;
 $color-darkGrey: #666;
 $color-black: #333;
 $color-white: #fff;
@@ -38,13 +39,13 @@ $color-light-green: #61ae17;
 
 
 // map area colours
-$area-color-1: #355595;
-$area-color-2: #3a9535;
-$area-color-3: #d87924;
-$area-color-4: #723595;
-$area-color-5: #ca2c82;
-$area-color-6: #953535;
-$area-color-7: #d14900;
+$area-color-1: #1974bf;
+$area-color-2: #22951c;
+$area-color-3: #ed6a1d;
+$area-color-4: #811dba;
+$area-color-5: #e21684;
+$area-color-6: #bb1010;
+$area-color-7: #1da6ed;
 
 
 // Fonts
