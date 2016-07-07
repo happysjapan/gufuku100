@@ -224,6 +224,31 @@ if ( function_exists('register_sidebar') ) {
   );
  }
 
+ /*-------------------------------------------*/
+ /*	Custom post type _ add care
+ /*-------------------------------------------*/
+
+ add_post_type_support( 'care', 'front-end-editor' );
+
+ add_action( 'init', 'gofuku_care_create_post_type', 0 );
+ function gofuku_care_create_post_type() {
+  $careLabelName = 'care';
+  register_post_type( 'care', /* post-type */
+  array(
+    'labels' => array(
+    'name' => $careLabelName,
+    'singular_name' => $careLabelName
+  ),
+  'public' => true,
+  'menu_position' =>5,
+  'has_archive' => true,
+  'taxonomies' => array('category'),
+  'supports' => array('title','editor','excerpt','thumbnail','author')
+  )
+  );
+ }
+
+
 
  /*-------------------------------------------*/
  /*	Global navigation

@@ -25,7 +25,7 @@
     </div>
 
   <div class="copyright_row row">
-      <p class="small-12 large6 columns copyright_row--address">Copyright &copy 株式会社ハッピーズ All Rights Reserved.</p>
+      <p class="small-12 large6 columns copyright_row--address">Copyright &copy; 株式会社ハッピーズ All Rights Reserved.</p>
   </div>
 
 
