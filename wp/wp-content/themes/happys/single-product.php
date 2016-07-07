@@ -24,10 +24,10 @@
               <div class="care_panel <?php if($i==0){echo 'first';} ?>">
                 <div class="row">
                   <article class="columns small-12 medium-8">
-                       <!-- 商品名 -->
-                       <h4 class="care_panel--title"><?php the_sub_field('care_name'); ?></h4>
-                      <!-- テキスト -->
-                       <p class="care_panel--text"><?php the_sub_field('care_description'); ?></p>
+                     <!-- 商品名 -->
+                     <h4 class="main_title"><?php the_sub_field('care_name'); ?></h4>
+                     <!-- テキスト -->
+                     <p class="care_panel--text"><?php the_sub_field('care_description'); ?></p>
                    </article>
 
                    <!-- thumbnail -->

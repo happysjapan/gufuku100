@@ -64,7 +64,6 @@
     &:hover {
       background-color: darken($color-lightGreen, 10);
       color: #fff;
-      // @include setTransition();
     }
 
     &--holder {

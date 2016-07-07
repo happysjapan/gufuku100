@@ -8,44 +8,44 @@
           <tr>
             <th width="200">治療院名</th>
             <td>
-              <?php echo get_field("shop_company_name"); ?>
+              <?php echo get_field("clinic_name"); ?>
             </td>
           </tr>
           <tr>
             <th>代表者名</th>
-            <td><?php the_field("shop_member_name"); ?></td>
+            <td><?php the_field("clinic_member_name"); ?></td>
           </tr>
           <tr>
             <th>施術内容</th>
-            <td><?php the_field("shop_description"); ?></td>
+            <td><?php the_field("clinic_description"); ?></td>
           </tr>
           <tr>
             <th>従業員数</th>
-            <td><?php the_field("shop_member_number"); ?>名</td>
+            <td><?php the_field("clinic_member_number"); ?>名</td>
           </tr>
           <tr>
             <th>所在地</th>
-            <td><?php the_field("shop_address"); ?></td>
+            <td><?php the_field("clinic_address"); ?></td>
           </tr>
           <tr>
             <th>治療時間</th>
-            <td><?php the_field("medical_time"); ?></td>
+            <td><?php the_field("clinic_time"); ?></td>
           </tr>
           <tr>
             <th>定休日</th>
-            <td><?php the_field("shop_date"); ?></td>
+            <td><?php the_field("clinic_holiday"); ?></td>
           </tr>
           <tr class="success">
             <th>電話番号/FAX</th>
-            <td><?php the_field("shop_tel"); ?></td>
+            <td><?php the_field("clinic_tel"); ?></td>
           </tr>
           <tr>
             <th>メールアドレス</th>
-            <td><?php the_field("shop_email"); ?></td>
+            <td><?php the_field("clinic_email"); ?></td>
           </tr>
           <tr>
             <th>HP</th>
-            <td><a href="<?php the_field("shop_hp"); ?>" target="_blank"><?php the_field("shop_hp"); ?></a></td>
+            <td><a href="<?php the_field("clinic_hp"); ?>" target="_blank"><?php the_field("clinic_hp"); ?></a></td>
           </tr>
         </table>
 
