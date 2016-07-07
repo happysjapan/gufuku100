@@ -12,7 +12,8 @@ get_header(); ?>
 			<div class="japan_map--area--holder row">
 
 				<div class="columns small-6 medium-4 japan_map--area area_1">
-					<a href="#" class="japan_map--area--title--link" title=""><h3 class="japan_map--area--title">北海道・東北</h3></a>
+					<a href="#" class="japan_map--area--title--link japan_map--icon--link" title=""><h3 class="japan_map--area--title">
+						北海道・東北</h3></a>
 					<ul class="japan_map--area--list row">
 						<li class="japan_map--area--listitem columns small-6"><a href="#">北海道</a></li>
 						<li class="japan_map--area--listitem columns small-6"><a href="#">青森</a></li>
@@ -104,6 +105,7 @@ get_header(); ?>
 
 			<!-- Map -->
 
+			<!--
 			<img class="japan_map--large" src="<?php echo get_template_directory_uri(); ?>/images/full-map.png" alt="Map of Japan" usemap="#japan_map" />
 			<map name="japan_map" id="japan_map">
 		    <area alt="" title="" href="#" shape="poly" coords="585,3,614,3,661,60,751,101,647,189,619,195,616,221,633,257,630,387,543,386,539,297,538,199,537,177,538,81,571,81" />
@@ -125,6 +127,33 @@ get_header(); ?>
 		    <area alt="" title="" href="#" shape="poly" coords="123,231,123,260,108,261,104,256,99,256,93,261,68,259,68,239,91,231" />
 		    <area alt="" title="" href="#" shape="poly" coords="17,203,17,221,25,222,3,257,1,274,10,274,28,280,41,275,42,267,47,265,48,271,56,264,56,203" />
 			</map>
+			-->
+
+
+			<div class="japan_map--icon--holder">
+				<a class="japan_map--icon--link" href="">
+					<svg class="japan_map--icon icon-japan-1"><use xlink:href="#icon-japan-1"></use></svg>
+				</a>
+				<a class="japan_map--icon--link" href="">
+					<svg class="japan_map--icon icon-japan-2"><use xlink:href="#icon-japan-2"></use></svg>
+				</a>
+				<a class="japan_map--icon--link" href="">
+					<svg class="japan_map--icon icon-japan-3"><use xlink:href="#icon-japan-3"></use></svg>
+				</a>
+				<a class="japan_map--icon--link" href="">
+					<svg class="japan_map--icon icon-japan-4"><use xlink:href="#icon-japan-4"></use></svg>
+				</a>
+				<a class="japan_map--icon--link" href="">
+					<svg class="japan_map--icon icon-japan-5"><use xlink:href="#icon-japan-5"></use></svg>
+				</a>
+				<a class="japan_map--icon--link" href="">
+					<svg class="japan_map--icon icon-japan-6"><use xlink:href="#icon-japan-6"></use></svg>
+				</a>
+				<a class="japan_map--icon--link" href="">
+					<svg class="japan_map--icon icon-japan-7"><use xlink:href="#icon-japan-7"></use></svg>
+				</a>
+			</div>
+
 		</div>
 	</div>
 
