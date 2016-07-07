@@ -1,33 +1,14 @@
 /*
-** product
+** care
 */
 
-.product_panel {
+.clinic_panel {
   margin-bottom: 1rem;
   padding: 1rem;
 
   &.first {
     border: 1px solid $color-darkGrey;
     padding: 2rem;
-  }
-
-  &--title {
-      @include font-size(1.8);
-      font-weight: bold;
-      position: relative;
-      margin-top: 1rem;
-      border-bottom: 1px solid $color-darkGrey;
-
-      &:before {
-        background: $color-theme-main;
-        position:absolute;
-        display: block;
-        top: 0;
-        left: -8px;
-        width: 3px;
-        height: 22px;
-        content: "";
-      }
   }
 
   &--text {

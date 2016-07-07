@@ -25,9 +25,11 @@
   position: relative;
   margin-top: 2rem;
   margin-bottom: 2rem;
-
-  // padding: 1.5rem 3rem;
   border: 1px solid $color-theme-main;
+
+  & > .row {
+    margin: 0;
+  }
 
   // header
   &--header {
@@ -112,25 +114,9 @@
     }
   }
 
+  // main
+  &--main {
 
-  // articleLink
-  &--articleLink {
-    position: absolute;
-    bottom: 5px;
-    left: 55%;
-    width: 20%;
-    background-color: $color-gold;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-    color: $color-white;
-    @include border-radius(5px);
-
-    &:hover {
-      background-color: darken($color-gold, 10);
-      color: #fff;
-      // @include setTransition();
-    }
   }
 
   &--button--holder {

@@ -4,8 +4,8 @@
 $mobile-medium: "screen and (max-width: 640px)";
 
 // Theming
-$color-theme-main: #355595;
-$color-theme-main-soft: #d2ddf1;
+$color-theme-main: #ed6a1d;
+$color-theme-main-soft: #fdbc6a;
 $color-theme-main-lighter: lighten($color-theme-main, 40);
 $color-theme-main-light: lighten($color-theme-main, 5);
 $color-theme-main-dark: darken($color-theme-main, 10);
@@ -33,8 +33,9 @@ $color-phone: $color-theme-main;
 $color-danger: #d9534f;
 
 
-//gofuku colour
-$color-gold: #c6a02c;
+//muchiuchi colour
+$color-light-green: #61ae17;
+
 
 // map area colours
 $area-color-1: #355595;
