@@ -3,36 +3,36 @@
       <div class="page_wrapper row"><!-- images line1-->
         <div class="columns small-4">
           <?php
-            $image = get_field("shop_image1");
+            $image = get_field("clinic_image1");
             if ($image["url"] != "") {
               echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
             } else {
               echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
             }
           ?>
-          <p><?php the_field("shop_image1_comment"); ?></p>
+          <p><?php the_field("clinic_image1_comment"); ?></p>
         </div>
         <div class="columns small-4">
           <?php
-            $image = get_field("shop_image2");
+            $image = get_field("clinic_image2");
             if ($image["url"] != "") {
               echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
             } else {
               echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
             }
           ?>
-          <p><?php the_field("shop_image2_comment"); ?></p>
+          <p><?php the_field("clinic_image2_comment"); ?></p>
         </div>
         <div class="columns small-4">
           <?php
-            $image = get_field("shop_image3");
+            $image = get_field("clinic_image3");
             if ($image["url"] != "") {
               echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
             } else {
               echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
             }
           ?>
-          <p><?php the_field("shop_image3_comment"); ?></p>
+          <p><?php the_field("clinic_image3_comment"); ?></p>
         </div>
       </div>
     </div>　<!-- line1 end -->
@@ -40,7 +40,7 @@
       <div class="page_wrapper row"><!-- images line2 -->
         <div class="columns small-4">
           <?php
-            $image = get_field("shop_image4");
+            $image = get_field("clinic_image4");
             if ($image["url"] != "") {
               echo '<img src="'.$image["sizes"]["thumbnail"].'" width="130" />';
             } else {
