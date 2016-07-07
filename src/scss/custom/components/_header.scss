@@ -1,54 +1,33 @@
 .header {
-  width: 100%;
-  background-color: $color-theme-main-soft;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  overflow: visible;
-  border-bottom: 1px solid #ddd;
+    width: 100%;
+    background-color: $color-theme-main-soft;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: visible;
+    border-bottom: 1px solid #ddd;
 
-  &--introduction {
-    display: none;
+    &--introduction {
+      display: none;
+    }
 
-    @media screen and #{breakpoint(medium)} {
-      display: block;
-      margin-top: 0;
-      background-color: $color-theme-main-soft;
-      @include font-size(1.2);
-      @include line-height(1.8);
+    &--inner {
+      margin: 0 auto;
+    }
 
-      &--content {
-        margin-top: 0;
+    .for_pc {
+      display: none;
+      @media screen and #{breakpoint(medium)} {
+        display: inline-block;
       }
     }
-  }
 
-  @media screen and #{breakpoint(medium)} {
-    padding: 0;
-    position: relative;
-    border-bottom: none;
-  }
-  &--inner {
-    margin: 0 auto;
-
-    @media screen and #{breakpoint(medium)} {
-      padding-top: 0;
-      padding-bottom: 10px;
-    }
-  }
-
-  .for_pc {
-    display: none;
-    @media screen and #{breakpoint(medium)} {
-      display: inline-block;
-    }
-  }
-  .header {
+    // logo
     &--logo  {
       padding-top: 1rem;
       padding-bottom: 0.7rem;
-      
+
       // logo
       & .site-title {
         display: inline-block;
@@ -57,14 +36,18 @@
         padding: 0;
         line-height: 1rem;
         vertical-align: top;
-        img {
-          width: 150px;
+
+        & img {
+          display: block;
+          width: 100%;
+          max-width: 200px;
           height: auto;
         }
 
         &--link:hover {
           opacity: 0.8;
         }
+
         &--sub {
           color: #333;
           @include font-size(1);
@@ -73,12 +56,15 @@
         }
       }
     }
+
+    // total-num
     &--total-num {
       display: inline-block;
       padding: 4px 6px;
       @include clearfix;
       border: 1px solid #ddd;
       @include border-radius(5px);
+
       &--item {
         margin-bottom: 0;
         @include font-size(1);
@@ -92,6 +78,7 @@
           display: inline-block;
         }
       }
+
       &--number {
         color: $color-theme-main;
         @include font-size(1.1);
@@ -99,23 +86,30 @@
         font-weight: bold;
       }
     }
+
+    // contact
     &--contact {
       display: inline-block;
       width: 120px;
       float: right;
+
       &--text {
         display: inline-block;
         font-weight: bold;
         @include font-size(1);
         @include line-height(1.2);
       }
+
+      // contact tel
       &--tel {
         display: inline-block;
         margin: 0;
+
         a {
           color: $color-theme-main;
           text-decoration: none;
         }
+
         &-number {
           margin: 2px 0 0;
           @include font-size(1.5);
@@ -138,18 +132,44 @@
           }
         }
       }
+
+      // contact message
       &--message {
         display: none;
       }
-
     }
 
     @media screen and #{breakpoint(medium)} { // for tablet
-      &--logo {
-        display: inline-block;
-        margin-right: 10px;
-        float: left;
+      padding: 0;
+      position: relative;
+      border-bottom: none;
+
+      &--introduction {
+        display: block;
+        margin-top: 0;
+        background-color: $color-theme-main-soft;
+        @include font-size(1.2);
+        @include line-height(1.8);
+
+        &--content {
+          margin-top: 0;
+        }
       }
+
+      &--inner {
+        padding-top: 0;
+        padding-bottom: 10px;
+      }
+
+      // logo
+      &--logo  {
+        & .site-title {
+          & img {
+            max-width: 300px;
+          }
+        }
+      }
+
       &--total-num {
         float: left;
         border: 2px solid #ddd;
@@ -162,15 +182,18 @@
           @include font-size(1.3);
         }
       }
+
       &--contact {
         width: auto;
         text-align: right;
+
         &--text {
           display: block;
           font-weight: bold;
           @include font-size(1);
           @include line-height(1.2);
         }
+
         &--tel {
           &-number {
             margin: 8px 0;
@@ -184,18 +207,14 @@
 
     @media screen and #{breakpoint(xmedium)} { // for PC
       &--logo {
-        margin-right: 30px;
         // logo
         & .site-title {
-          margin: 5px 0;
-          img {
-            width: 180px;
+          &--sub {
+            font-weight: bold;
           }
         }
-        &--sub {
-          font-weight: bold;
-        }
       }
+
       &--total-num {
         padding: 8px 20px;
         &--item {
@@ -206,6 +225,7 @@
           @include font-size(1.5);
         }
       }
+
       &--contact {
         &--text {
         }
@@ -224,8 +244,6 @@
         }
       }
     }
-  }
-
 }
 
 
