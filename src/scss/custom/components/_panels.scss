@@ -126,20 +126,26 @@
 
 }
 
+
  // care
 .care_panel {
   margin-bottom: 1rem;
   padding: 1rem;
+  border-bottom: 1.5px solid $color-darkGrey;
 
-    &.first {
-      border: 1px solid $color-theme-main;
-      padding: 2rem;
+  .page_wrapper .row:last-child & {
+    border-bottom: none;
+  }
 
-      & .main_title {
-        font-weight: bold;
-        @include font-size(2.2);
-      }
+  &.first {
+    border: 1px solid $color-theme-main;
+    padding: 2rem;
+
+    & .main_title {
+      font-weight: bold;
+      @include font-size(2.2);
     }
+  }
 
   &--text {
     font-weight: bolder;
@@ -150,12 +156,4 @@
     font-weight: bolder;
   }
 
-  // border
-  &--border {
-    border-top: 1.5px solid $color-darkGrey;
-
-    &.first {
-      border-top: none;
-    }
-  }
 }
