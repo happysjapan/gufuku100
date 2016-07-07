@@ -37,11 +37,11 @@
       line-height: 110%;
       text-decoration: none;
       font-weight: bold;
-      border-top: 1px solid #e5e5e5;
+      border-top: 1px solid $color-soft-grey;
       @include setTransition();
 
       &:hover {
-        background-color: $color-blue;
+        background-color: $color-theme-main-dark;
         @include setTransition();
       }
       &.menu--item--link {
@@ -70,17 +70,14 @@
 
       &--item--link {
         text-align: center;
-        border-top: none;
-        border-right: 1px solid #e5e5e5;
+        border-right: 1px solid $color-soft-grey;
+        border-bottom: 1px solid $color-soft-grey;
         padding: 1rem 0.2rem;
-
-        &:hover {
-          background-color: $color-blue;
-        }
       }
 
       &--item:first-child .menu--item--link {
-        border-left: 1px solid #e5e5e5;
+        border-left: 1px solid $color-soft-grey;
+        border-top: 1px solid $color-soft-grey;
       }
     }
   }
