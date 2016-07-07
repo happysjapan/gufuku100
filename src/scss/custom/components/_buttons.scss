@@ -55,16 +55,15 @@
 
   // panel_button
   &__panel {
-    background-color: $color-light-green;
+    background-color: $color-lightGreen;
     font-weight: bold;
     text-align: center;
     color: $color-white;
     padding: 0.6rem 1.2rem;
 
-    &:hover {
-      background-color: darken($color-light-green, 10);
+    &:hover
+      background-color: darken($color-lightGreen, 10);
       color: #fff;
-      // @include setTransition();
     }
 
     &--holder {
