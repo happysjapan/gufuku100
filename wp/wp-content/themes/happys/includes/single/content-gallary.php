@@ -47,7 +47,7 @@
               echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
             }
           ?>
-          <p><?php the_field("shop_image4_comment"); ?></p>
+          <p><?php the_field("clinic_image4_comment"); ?></p>
         </div>
         <div class="columns small-4">
           <?php
@@ -58,7 +58,7 @@
               echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
             }
           ?>
-          <p><?php the_field("shop_image5_comment"); ?></p>
+          <p><?php the_field("clinic_image5_comment"); ?></p>
         </div>
         <div class="columns small-4">
           <?php
@@ -69,7 +69,7 @@
               echo '<img src="'.get_template_directory_uri().'/images/noimage.jpg" width="380px" style="border:1px solid #cdcdcd;">';
             }
           ?>
-          <p><?php the_field("shop_image6_comment"); ?></p>
+          <p><?php the_field("clinic_image6_comment"); ?></p>
         </div>
       </div>
     </div>　<!-- line2 end -->
