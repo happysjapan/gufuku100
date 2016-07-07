@@ -184,7 +184,7 @@ if ( function_exists('register_sidebar') ) {
 
  add_action( 'init', 'gofuku_product_create_post_type', 0 );
  function gofuku_product_create_post_type() {
-  $productLabelName = 'product';
+  $productLabelName = '治療について';
   register_post_type( 'product', /* post-type */
   array(
     'labels' => array(
@@ -208,7 +208,7 @@ if ( function_exists('register_sidebar') ) {
 
  add_action( 'init', 'gofuku_recruitment_create_post_type', 0 );
  function gofuku_recruitment_create_post_type() {
-  $recruitmentLabelName = 'recruitment';
+  $recruitmentLabelName = '求人情報';
   register_post_type( 'recruitment', /* post-type */
   array(
     'labels' => array(
@@ -223,32 +223,6 @@ if ( function_exists('register_sidebar') ) {
   )
   );
  }
-
- /*-------------------------------------------*/
- /*	Custom post type _ add care
- /*-------------------------------------------*/
-
- add_post_type_support( 'care', 'front-end-editor' );
-
- add_action( 'init', 'gofuku_care_create_post_type', 0 );
- function gofuku_care_create_post_type() {
-  $careLabelName = 'care';
-  register_post_type( 'care', /* post-type */
-  array(
-    'labels' => array(
-    'name' => $careLabelName,
-    'singular_name' => $careLabelName
-  ),
-  'public' => true,
-  'menu_position' =>5,
-  'has_archive' => true,
-  'taxonomies' => array('category'),
-  'supports' => array('title','editor','excerpt','thumbnail','author')
-  )
-  );
- }
-
-
 
  /*-------------------------------------------*/
  /*	Global navigation
