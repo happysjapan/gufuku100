@@ -16,14 +16,10 @@
     border-radius: 0;
     @include font-size(1.4);
 
-    &:hover, &:active, &:focus {
-      color: #fff;
-      background-color: $color-blue;
-    }
-
+    &:hover, &:active, &:focus,
     &.active {
       color: #fff;
-      background-color: $color-blue;
+      background-color: $color-theme-main;
     }
   }
 }
