@@ -37,7 +37,7 @@
                 </div>
               </div>
 
-              <hr>
+                <div class="care_panel--line"></div>
 
             </div>
           </div>
