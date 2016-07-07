@@ -36,6 +36,9 @@
                    </div>
                 </div>
               </div>
+
+                <div class="care_panel--line"></div>
+
             </div>
           </div>
 
