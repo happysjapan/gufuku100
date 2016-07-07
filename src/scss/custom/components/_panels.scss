@@ -132,8 +132,13 @@
   padding: 1rem;
 
   &.first {
-    border: 1px solid $color-darkGrey;
+    border: 1px solid $color-theme-main;
     padding: 2rem;
+
+    & .main_title {
+      font-weight: bolder;
+      @include font-size(2.2);
+    }
   }
 
   &--text {
