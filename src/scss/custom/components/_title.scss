@@ -22,3 +22,24 @@
     height: 90%;
   }
 }
+
+
+/*
+** block title
+*/
+.block_title {
+  position: relative;
+  margin-top: 1rem;
+  border-bottom: 1px solid $color-darkGrey;
+  @include font-size(1.5);
+
+  &:before {
+    background: $color-theme-main;
+    width: 3px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    content: "";
+  }
+}

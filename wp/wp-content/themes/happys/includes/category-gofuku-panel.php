@@ -12,8 +12,14 @@
         <div class="small-12 columns">
           <div class="row">
             <div class="medium-3 columns">
-                <img class="panel--thumbnail" src="<?php echo the_field('clinic_top_image')["sizes"]["thumbnail"]; ?>" alt="<?php the_title(); ?>" />
+              <?php $thumbnail = get_field('clinic_top_image'); ?>
+              <?php if( !$thumbnail ){
+                $thumbnail_url = get_template_directory_uri().'/images/thumbnail_default.jpg';
+              } else {
+                $thumbnail_url = $thumbnail['sizes']['thumbnail'];
+              } ?>
 
+              <img class="panel--thumbnail" src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>" />
 
                 <!-- 代表名 -->
               <p>代表名：<?php echo get_field('clinic_representative'); ?></p>
