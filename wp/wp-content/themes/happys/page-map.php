@@ -3,6 +3,12 @@
   Template Name: Page Map
 */
 get_header(); ?>
+<?php
+	function clinicCategoryLink($type = "tokyo")
+	{
+			return get_category_link(get_category_by_slug($type)->term_id);
+	}
+?>
 
 <div class="page_wrapper page_map">
 	<div class="row">
@@ -17,7 +23,7 @@ get_header(); ?>
 						<a href="#" class="japan_map--area--title--link japan_map--icon--link" title=""><h3 class="japan_map--area--title">
 							北海道・東北</h3></a>
 						<ul class="japan_map--area--list row">
-							<li class="japan_map--area--listitem columns small-6"><a href="#">北海道</a></li>
+							<li class="japan_map--area--listitem columns small-6"><a href="<?php clinicCategoryLink('kanto'); ?>">北海道</a></li>
 							<li class="japan_map--area--listitem columns small-6"><a href="#">青森</a></li>
 							<li class="japan_map--area--listitem columns small-6"><a href="#">岩手</a></li>
 							<li class="japan_map--area--listitem columns small-6"><a href="#">秋田</a></li>
@@ -109,7 +115,7 @@ get_header(); ?>
 					<a class="japan_map--icon--link" href="">
 						<svg class="japan_map--icon icon-japan-1"><use xlink:href="#icon-japan-1"></use></svg>
 					</a>
-					<a class="japan_map--icon--link" href="">
+					<a class="japan_map--icon--link" href="<?php echo clinicCategoryLink('kanto'); ?>">
 						<svg class="japan_map--icon icon-japan-2"><use xlink:href="#icon-japan-2"></use></svg>
 					</a>
 					<a class="japan_map--icon--link" href="">
