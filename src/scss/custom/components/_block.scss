@@ -39,6 +39,11 @@
     &--gallary {
       border-top: 1.5px solid $color-darkGrey;
       padding-top: 1rem;
+
+      &.row {
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
   // end gallary
 
