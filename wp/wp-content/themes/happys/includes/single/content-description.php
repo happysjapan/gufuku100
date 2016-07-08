@@ -1,5 +1,4 @@
 <?php if ( is_single() ) : ?>
-  <div class="page_wrapper">
     <div class="row">
       <div class="columns small-12 block-detail--description">
         <h3 id="detail" class="block-detail--description--title">詳細情報</h3>
@@ -55,7 +54,6 @@
         <p><?php the_field("editor_comment"); ?></p>
     </div>
   </div>
-</div>
 
 
 <?php endif; ?>

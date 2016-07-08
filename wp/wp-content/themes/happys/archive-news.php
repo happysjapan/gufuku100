@@ -14,26 +14,18 @@
 ?>
 
 <!-- [ #container ] -->
-<div id="container" class="innerBox page__wide">
-
-      <h1 class="page_title"><?php echo $queried_object->name; ?></h1>
-
-  <!-- [ #content ] -->
-  <section id="content" class="content wide">
-    <p class="searchDescription"><?php echo do_shortcode('[contentblock id=office_description]'); ?></p>
-    <!-- [ #search ] -->
-    <section class="searchArea">
-      <!-- <?php get_template_part( 'includes/category', 'clinic-search' ); ?> -->
-
-      <?php echo do_shortcode('[contentblock id=panel_consult]'); ?>
-    </section>
-    <!-- [ /#search ] -->
+<div id="container" class="page_wrapper">
+    <div class="row">
+      <div class="columns">
+        <h1 class="main_title"><?php echo $queried_object->name; ?></h1>
+      </div>
+    </div>
 
     <?php
       parse_str($query_string, $query_array);
 
       $custom_args = array(
-        'post_type' => 'post',
+        'post_type' => 'news',
         'post_status' => 'publish',
         'orderby' => 'date',
         'has_password' => false,
@@ -46,7 +38,7 @@
 
       <!-- the loop -->
       <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-      	<?php get_template_part( 'includes/category', 'clinic-panel' ); ?>
+      	<?php get_template_part( 'includes/category', 'news-panel' ); ?>
       <?php endforeach;
       wp_reset_postdata();?>
       <!-- end of the loop -->

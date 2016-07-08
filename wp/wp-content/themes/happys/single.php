@@ -5,17 +5,17 @@
   </div>
 
   <div class="page_wrapper">
+    <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php while ( have_posts() ) : the_post(); ?>
+      <h1 class="row columns"><?php the_title(); ?></h1>
 
-          <h3 class="row columns"><?php the_title(); ?></h3>
+      <?php get_template_part( 'includes/single/local', 'menu' ); ?>
+      <?php get_template_part( 'includes/single/content', 'header' ); ?>
+      <?php get_template_part( 'includes/single/content', 'gallary' ); ?>
+      <?php get_template_part( 'includes/single/content', 'description' ); ?>
 
-          <?php get_template_part( 'includes/single/local', 'menu' ); ?>
-          <?php get_template_part( 'includes/single/content', 'header' ); ?>
-          <?php get_template_part( 'includes/single/content', 'gallary' ); ?>
-          <?php get_template_part( 'includes/single/content', 'description' ); ?>
+    <?php endwhile; ?>
 
-        <?php endwhile; ?>
 
     <div class="row">
       <div class="columns">
