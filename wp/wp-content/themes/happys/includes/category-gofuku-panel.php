@@ -12,8 +12,14 @@
         <div class="small-12 columns">
           <div class="row">
             <div class="medium-3 columns">
-                <img class="panel--thumbnail" src="<?php echo the_field('clinic_top_image')["sizes"]["thumbnail"]; ?>" alt="<?php the_title(); ?>" />
+              <?php $thumbnail = get_field('clinic_top_image'); ?>
+              <?php if( !$thumbnail ){
+                $thumbnail_url = get_template_directory_uri().'/images/thumbnail_default.jpg';
+              } else {
+                $thumbnail_url = $thumbnail['sizes']['thumbnail'];
+              } ?>
 
+              <img class="panel--thumbnail" src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>" />
 
                 <!-- 代表名 -->
               <p>代表名：<?php echo get_field('clinic_representative'); ?></p>
@@ -21,11 +27,9 @@
 
             <div class="medium-9 columns">
                <h2 class="panel--main--title main_title">100選ポイント</h2>
-               <ul>
-                 <li><?php echo get_field('clinic_point1'); ?></li>
-                 <li><?php echo get_field('clinic_point2'); ?></li>
-                 <li><?php echo get_field('clinic_point3'); ?></li>
-               </ul>
+               <div class="panel--main--content">
+                 <?php echo get_field('clinic_points'); ?>
+               </div>
 
                <div class="button__panel--holder">
                  <a href="<?php the_permalink(); ?>"  title="詳しく見る" class="button button__panel">詳しく見る</a>

@@ -13,8 +13,10 @@ $shops_array = get_posts( $custom_args );
 // var_dump($shops_array);
 ?>
 
+
 <div class="gallery row">
   <div class="gallery--holder columns">
+    <h2 class="main_title">全国むちうち治療院100選</h2>
 
     <div id="gallery" class="gallery orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
       <ul class="gallery--list small__gutter orbit-container row">
@@ -23,13 +25,20 @@ $shops_array = get_posts( $custom_args );
 
               <?php $i=0;$k=0; $lenght=count($shops_array);
               foreach ($shops_array as $post) { ?>
-                <?php $thumbnail = get_field('shop_thumbnail'); ?>
+                <?php $thumbnail = get_field('clinic_top_image'); ?>
                 <?php if( !$thumbnail ){
                   $thumbnail_url = get_template_directory_uri().'/images/thumbnail_default.jpg';
                 } else {
                   $thumbnail_url = $thumbnail['sizes']['thumbnail'];
                 } ?>
                         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="gallery--list_item columns small-4">
+                          <div class="gallery--tootltip">
+                            <div class="gallery--tootltip--inner">
+                              <img class="gallery--list_item--thumbnail" src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>">
+                              <h3 class="gallery--tootltip--title"><?php the_title(); ?></h3>
+                            </div>
+                          </div>
+
                           <img class="gallery--list_item--thumbnail" src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>">
                         </a>
                   <?php if( $i == $lenght ){ ?>

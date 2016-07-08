@@ -23,15 +23,13 @@
 
       <div class="columns small-12 medium-7 large-8">
         <h3 class="block_title">理念</h3>
-        <div class="block-detail--intro--information-text">
-          <p><?php the_field("clinic_vision"); ?></p>
+        <div class="block-detail--intro--content">
+          <p><?php echo get_the_content(); ?></p>
         </div>
 
         <h3 class="block_title">100選ポイント</h3>
-        <div class="block-detail--intro--information-text">
-          <p><?php the_field("clinic_point1"); ?></p>
-          <p><?php the_field("clinic_point2"); ?></p>
-          <p><?php the_field("clinic_point3"); ?></p>
+        <div class="block-detail--intro--content">
+          <?php echo get_field("clinic_points"); ?>
         </div>
 
       </div>

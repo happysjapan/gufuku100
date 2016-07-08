@@ -6,19 +6,40 @@
   margin: 0;
   color: $color-black;
   border-bottom: 1px solid $color-grey;
-  padding: 6px 6px;
-  margin-left: 6px;
+  padding: 6px 10px;
+  margin-left: 10px;
   margin-bottom: rem-calc(14px);
   @include font-size(1.8);
 
   &:after {
     position: absolute;
     display: block;
-    left: -14px;
-    top: 10%;
+    left: -10px;
+    top: 5%;
     content: '';
-    width: 7px;
+    width: 5px;
     background-color: $color-theme-main;
     height: 90%;
+  }
+}
+
+
+/*
+** block title
+*/
+.block_title {
+  position: relative;
+  margin-top: 1rem;
+  border-bottom: 1px solid $color-darkGrey;
+  @include font-size(1.5);
+
+  &:before {
+    background: $color-theme-main;
+    width: 3px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    content: "";
   }
 }

@@ -1,5 +1,5 @@
 .orbit {
-  margin: 3rem auto 0;
+  margin: 1.6rem auto 0;
   width: 100%;
   height: 500px;
   overflow: hidden;
@@ -117,8 +117,12 @@
   }
 
   &--list_item {
+    position: relative;
     display: block;
     margin-bottom: rem-calc(10px);
+    border: none;
+    cursor: pointer;
+
 
     &--thumbnail {
       width: 100%;
@@ -129,6 +133,53 @@
     }
   }
 
+  // tooltip
+  &--tootltip {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    top: -265%;
+    width: 200%;
+    left: -50%;
+
+    @media screen and #{breakpoint(large)} {
+      top: -250%;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border: inset 15px;
+      border-color: $color-black transparent transparent;
+      border-top-style: solid;
+      border-bottom-width: 0;
+      margin: 0 auto;
+    }
+
+    &--inner {
+      position: relative;
+      border: 1px solid $color-black;
+    }
+
+    &--title {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      margin: 0;
+      padding: rem-calc(5px) rem-calc(10px);
+      @include font-size(1.6);
+      color: $color-white;
+      background-color: rgba(0,0,0,0.6);
+    }
+  }
+
+  &--list_item:hover &--tootltip {
+    display: block;
+  }
+
+  // slide
   &--slide {
     @media screen and #{breakpoint(medium)} {
       display: block !important;
@@ -145,9 +196,11 @@
   & .orbit {
     height: auto;
     padding-bottom: 2.2rem;
+    overflow: hidden;
 
     &-container {
       height: auto !important;
+      overflow: hidden;
     }
 
     &-slide {
@@ -169,9 +222,11 @@
 
     @media screen and #{breakpoint(medium)} {
       height: auto !important;
+      overflow: visible;
 
       &-container {
         height: auto !important;
+        overflow: visible;
       }
 
       &-slide {

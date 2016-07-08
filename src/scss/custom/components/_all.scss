@@ -15,7 +15,7 @@ a, a:hover, a:active, a:focus { outline: 0; }
   padding-bottom: 1rem;
 
   @media screen and #{breakpoint(xmedium)} {
-    padding-top: 0;
+    padding-top: 0.4rem;
   }
 }
 
