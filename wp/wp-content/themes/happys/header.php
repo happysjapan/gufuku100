@@ -68,8 +68,8 @@
       </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="columns">
         <?php custom_breadcrumbs(); ?>
       </div>
-    </div>
+    </div> -->

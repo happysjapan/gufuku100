@@ -132,3 +132,26 @@
     color: lighten($color-black, 10);
   }
 }
+
+  // social buttons
+  .social {
+
+    &--listitem {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 1px 5px;
+
+      & .fb_iframe_widget {
+        top: -4px;
+      }
+
+      & .lineButtonPc {
+        position: relative;
+        top: -2px;
+      }
+    }
+
+
+
+
+  }

@@ -13,6 +13,11 @@
   }
 ?>
 
+
+  <div class="columns">
+    <?php custom_breadcrumbs(); ?>
+  </div>
+
 <!-- [ #container ] -->
 <div id="container" class="page_wrapper">
     <div class="row">
