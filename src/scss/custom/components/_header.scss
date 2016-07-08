@@ -144,6 +144,11 @@
       position: relative;
       border-bottom: none;
 
+      &--logo {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
       &--introduction {
         display: block;
         margin-top: 0;
