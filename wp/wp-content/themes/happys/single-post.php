@@ -13,4 +13,13 @@
         <?php endwhile; ?>
 
   </div>
+
+  <div class="page_wrapper">
+    <div class="row">
+      <div class="columns">
+        <?php custom_breadcrumbs(); ?>
+      </div>
+    </div>
+  </div>
+  
 <?php get_footer(); ?>
