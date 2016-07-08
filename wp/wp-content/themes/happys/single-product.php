@@ -12,10 +12,6 @@
 
 
         <?php
-        for ($i=0; $i < 12345; $i++) {
-          # code...
-        }
-
         $i=0;
         while ( have_rows("care") ) : the_row(); ?>
 
@@ -36,14 +32,20 @@
                    </div>
                 </div>
               </div>
-
-                <div class="care_panel--line"></div>
-
             </div>
           </div>
 
         <?php $i++; endwhile; ?>
 
-  </div>
+    </div>
+
+    <div class="page_wrapper">
+      <div class="row">
+        <div class="columns">
+          <?php custom_breadcrumbs(); ?>
+        </div>
+      </div>
+    </div>
+
 
 <?php get_footer(); ?>

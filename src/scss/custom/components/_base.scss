@@ -37,7 +37,7 @@ a {
 hr {
     max-width: 100%;
   }
-  
+
 .table-bordered tbody {
     border: 1px solid $color-theme-main;
     tr {border-bottom: 1px solid $color-theme-main;}
@@ -53,5 +53,6 @@ hr {
     th,td {
         border-left: 1px solid $color-theme-main;
         text-align: left;
+        padding-left: 1rem;
     }
 }

@@ -133,30 +133,34 @@
 
 }
 
+
  // care
 .care_panel {
   margin-bottom: 1rem;
   padding: 1rem;
+  border-bottom: 1.5px solid $color-darkGrey;
+
+  .page_wrapper .row:last-child & {
+    border-bottom: none;
+  }
 
   &.first {
     border: 1px solid $color-theme-main;
     padding: 2rem;
 
     & .main_title {
-      font-weight: bolder;
+      font-weight: bold;
       @include font-size(2.2);
     }
   }
 
   &--text {
-    @include font-size(1.5);
+    font-weight: bolder;
+    @include font-size(1.4);
   }
 
-  &--line {
-    border-top: 1.5px solid $color-darkGrey;
-
-    &.first {
-      border-top: none;
-    }
+  & .main_title{
+    font-weight: bolder;
   }
+
 }

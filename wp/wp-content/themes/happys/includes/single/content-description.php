@@ -1,8 +1,8 @@
 <?php if ( is_single() ) : ?>
-  <div class="block-detail--information page_wrapper">
+  <div class="page_wrapper">
     <div class="row">
-      <div class="columns small-12">
-        <h3 id="detail" class="block-detail--information--title">詳細情報</h3>
+      <div class="columns small-12 block-detail--description">
+        <h3 id="detail" class="block-detail--description--title">詳細情報</h3>
 
         <table class="table table-bordered">
           <tr>
@@ -49,7 +49,7 @@
           </tr>
         </table>
 
-        <h3 id="stuff" class="block-detail--information--title">編集部からのコメント</h3>
+        <h3 id="stuff" class="block-detail--description--comment">編集部からのコメント</h3>
         <p><?php the_field("editor_comment"); ?></p>
     </div>
   </div>
