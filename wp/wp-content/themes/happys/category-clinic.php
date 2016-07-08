@@ -17,7 +17,7 @@
 <div id="container" class="page_wrapper">
     <div class="row">
       <div class="columns">
-        <h2 class="main_title"><?php echo $queried_object->name; ?></h2>
+        <h1 class="main_title"><?php echo $queried_object->name; ?></h1>
       </div>
     </div>
 

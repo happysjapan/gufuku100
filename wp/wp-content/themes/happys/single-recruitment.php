@@ -3,7 +3,7 @@
     <div class="row">
       <div class="column">
 
-        <h3 class="row columns"><?php the_title(); ?></h3>
+        <h1 class="row columns"><?php the_title(); ?></h1>
         <?php get_template_part( 'includes/single/local', 'menu' ); ?>
 
       </div>

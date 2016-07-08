@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="page_wrapper page_map">
 	<div class="row">
 		<div class="columns">
-      <h2 class="main_title">全国のむちうち治療院100選</h2>
+      <h1 class="main_title">全国のむちうち治療院100選</h1>
 
 			<div class="japan_map--holder">
 				<!-- Area lists -->
