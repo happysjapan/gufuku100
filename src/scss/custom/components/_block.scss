@@ -93,3 +93,16 @@
     }
   // end of recruitment
 }
+
+
+/*
+** Block sponsor
+*/
+.block_sponsor {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &--article {
+    text-align: center;
+  }
+}
