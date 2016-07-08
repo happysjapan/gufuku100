@@ -15,7 +15,7 @@
     <div class="row clinic_recruitment">
       <div class="columns small-12 medium-4">
         <!-- thumbnail -->
-        <img src="<?php the_sub_field('recruitment_thumbnail'); ?>" alt="<?php the_sub_field('recruitment_name'); ?>">
+        <img src="<?php echo get_sub_field('recruitment_thumbnail')['sizes']['medium']; ?>" alt="<?php the_sub_field('recruitment_name'); ?>">
       </div>
 
       <article class="columns small-12 medium-8">

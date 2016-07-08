@@ -28,7 +28,8 @@
 
                    <!-- thumbnail -->
                    <div class="columns small-12 medium-4">
-                     <img src="<?php the_sub_field('care_thumbnail'); ?>" alt="<?php the_sub_field('care_name'); ?>">
+                     <img src="<?php
+                     echo get_sub_field('care_thumbnail')['sizes']['medium']; ?>" alt="<?php the_sub_field('care_name'); ?>">
                    </div>
                 </div>
               </div>
