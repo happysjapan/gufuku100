@@ -16,7 +16,7 @@
 
     <hr>
 
-    <h4 class="main_page--subtitle">お電話でのご紹介・ご相談</h4>
+    <h2 class="main_page--subtitle">お電話でのご紹介・ご相談</h2>
     <b>フリーボイス(無料)</b>
     <p class="main_page--phone">
       <a href="tel:<?php echo do_shortcode('[contentblock id=phone]'); ?>" class="header--contact--tel-link" title="電話で無料相談">

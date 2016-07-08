@@ -165,3 +165,36 @@
   }
 
 }
+
+
+/*
+** News panel
+*/
+.panel_news {
+  margin-bottom: 0.6rem;
+
+  &--title,
+  &--date {
+    @include font-size(1.4);
+    color: $color-black;
+    margin: 0;
+  }
+
+  &--title {
+    padding: 0.5rem 0;
+
+    &--holder {
+      padding-left: 0;
+    }
+  }
+
+  &--date {
+    padding: 0.5rem 1rem;
+    border-right: 1px solid $color-black;
+  }
+
+  &--link:hover &--title,
+  &--link:hover &--date {
+    color: $color-theme-main;
+  }
+}
