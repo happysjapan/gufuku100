@@ -1,21 +1,25 @@
 <?php get_header(); ?>
+  <div class="page_wrapper">
 
-<?php while ( have_posts() ) : the_post(); ?>
-  <div class="page--inner row">
-    <div class="page--main main_edition medium-8 columns">
-      <h4><?php the_title(); ?></h4>
-      <hr />
-      <div class="article">
-        <?php the_content(); ?>
-      </div>
-      <hr />
-    </div>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-		<div class="medium-4 aside--holder columns">
-			<aside class="aside">
-				<?php dynamic_sidebar( 'aside-widget-area' ); ?>
-			</aside>
-		</div>
+          <h3 class="row columns"><?php the_title(); ?></h3>
+
+          <?php get_template_part( 'includes/single/local', 'menu' ); ?>
+          <?php get_template_part( 'includes/single/content', 'header' ); ?>
+          <?php get_template_part( 'includes/single/content', 'gallary' ); ?>
+          <?php get_template_part( 'includes/single/content', 'description' ); ?>
+
+        <?php endwhile; ?>
+
   </div>
-<?php endwhile; ?>
+
+  <div class="page_wrapper">
+    <div class="row">
+      <div class="columns">
+        <?php custom_breadcrumbs(); ?>
+      </div>
+    </div>
+  </div>
+
 <?php get_footer(); ?>

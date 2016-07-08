@@ -78,9 +78,9 @@ $custom_query = new WP_Query( $merged_args );
   <section id="content" class="content wide">
     <p class="searchDescription"><?php echo do_shortcode('[contentblock id=office_description]'); ?></p>
     <!-- [ #search ] -->
-    <section class="searchArea">
+    <!-- <section class="searchArea">
       <?php get_template_part( 'includes/category', 'clinic-search' ); ?>
-    </section>
+    </section> -->
     <!-- [ /#search ] -->
 
     <?php if ( $custom_query->have_posts() ) { ?>

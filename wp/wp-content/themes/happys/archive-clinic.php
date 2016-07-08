@@ -46,7 +46,7 @@
 
       <!-- the loop -->
       <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-      	<?php get_template_part( 'includes/category', 'gofuku-panel' ); ?>
+      	<?php get_template_part( 'includes/category', 'clinic-panel' ); ?>
       <?php endforeach;
       wp_reset_postdata();?>
       <!-- end of the loop -->
