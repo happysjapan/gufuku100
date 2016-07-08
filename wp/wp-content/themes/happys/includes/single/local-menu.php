@@ -5,7 +5,7 @@
   $link_care = get_the_permalink(get_field('care_page')->ID);
   $link_recruitment = get_the_permalink(get_field('recruitment_page')->ID);
   $clinic_active = 'active';
-} else if ('product' == get_post_type()) {
+} else if ('care' == get_post_type()) {
   $link_clinic = get_the_permalink(get_field('care_clinic_page')->ID);
   $link_care = get_the_permalink();
   $link_recruitment = get_the_permalink(get_field('care_recruitment_page')->ID);

@@ -177,19 +177,19 @@ if ( function_exists('register_sidebar') ) {
 
 
  /*-------------------------------------------*/
- /*	Custom post type _ add product
+ /*	Custom post type _ add care
  /*-------------------------------------------*/
 
- add_post_type_support( 'product', 'front-end-editor' );
+ add_post_type_support( 'care', 'front-end-editor' );
 
- add_action( 'init', 'gofuku_product_create_post_type', 0 );
- function gofuku_product_create_post_type() {
-  $productLabelName = '治療について';
-  register_post_type( 'product', /* post-type */
+ add_action( 'init', 'gofuku_care_create_post_type', 0 );
+ function gofuku_care_create_post_type() {
+  $careLabelName = '治療について';
+  register_post_type( 'care', /* post-type */
   array(
     'labels' => array(
-    'name' => $productLabelName,
-    'singular_name' => $productLabelName
+    'name' => $careLabelName,
+    'singular_name' => $careLabelName
   ),
   'public' => true,
   'menu_position' =>5,
@@ -440,8 +440,8 @@ if ( function_exists('register_sidebar') ) {
       $breadcrums_class   = 'breadcrumbs';
       $home_title         = 'Home';
 
-      // If you have any custom post types with custom taxonomies, put the taxonomy name below (e.g. product_cat)
-      $custom_taxonomy    = 'product_cat';
+      // If you have any custom post types with custom taxonomies, put the taxonomy name below (e.g. care_cat)
+      $custom_taxonomy    = 'care_cat';
 
       // Get the query & post information
       global $post;
