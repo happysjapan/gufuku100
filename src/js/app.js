@@ -2,7 +2,7 @@ $(document).foundation();
 
 $(document).ready(function(){
 
-  if( $( window ).width() > 640 ){
+  if( $( window ).width() > 624 ){
     $('#gallery').foundation('destroy');
 
   }

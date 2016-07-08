@@ -21,11 +21,9 @@
 
             <div class="medium-9 columns">
                <h2 class="panel--main--title main_title">100選ポイント</h2>
-               <ul>
-                 <li><?php echo get_field('clinic_point1'); ?></li>
-                 <li><?php echo get_field('clinic_point2'); ?></li>
-                 <li><?php echo get_field('clinic_point3'); ?></li>
-               </ul>
+               <div class="panel--main--content">
+                 <?php echo get_field('clinic_points'); ?>
+               </div>
 
                <div class="button__panel--holder">
                  <a href="<?php the_permalink(); ?>"  title="詳しく見る" class="button button__panel">詳しく見る</a>

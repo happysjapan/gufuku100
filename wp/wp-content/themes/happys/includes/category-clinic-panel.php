@@ -36,7 +36,7 @@
         <div class="panel--intro">
           <div class="row">
             <div class="small-8 columns">
-              <?php echo get_field('bengo_comment'); ?>
+              <?php echo get_field('clinic_points'); ?>
             </div>
 
             <div class="small-4 columns">

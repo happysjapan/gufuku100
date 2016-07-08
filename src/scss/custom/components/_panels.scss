@@ -117,6 +117,13 @@
   // main
   &--main {
     padding-top: 1rem;
+
+    &--content {
+      & li {
+        list-style-type: disc;
+        list-style-position: inside;
+      }
+    }
   }
 
   &--button--holder {
