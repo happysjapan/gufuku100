@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+
+  <div class="columns">
+    <?php custom_breadcrumbs(); ?>
+  </div>
+
   <div class="page_wrapper">
     <div class="row">
       <div class="column">
@@ -38,9 +43,6 @@
 
         <?php $i++; endwhile; ?>
 
-    </div>
-
-    <div class="page_wrapper">
       <div class="row">
         <div class="columns">
           <?php custom_breadcrumbs(); ?>

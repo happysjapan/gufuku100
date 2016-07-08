@@ -10,6 +10,10 @@ get_header(); ?>
 	}
 ?>
 
+<div class="columns">
+	<?php custom_breadcrumbs(); ?>
+</div>
+
 <div class="page_wrapper page_map">
 	<div class="row">
 		<div class="columns">

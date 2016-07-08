@@ -1,41 +1,33 @@
 <?php get_header(); ?>
 
-<!-- [ #content ] -->
-<div id="content" class="page--inner page_edition">
-
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-<div id="post-<?php the_ID(); ?>" class="entry-content">
-	<?php the_content(); ?>
-	<?php wp_link_pages( array( 'before' => '<div class="page-link">' . 'Pages:', 'after' => '</div>' ) ); ?>
-</div><!-- .entry-content -->
-
-<?php edit_post_link(__('Edit', 'biz-vektor'),'<div class="adminEdit"><span class="linkBtn linkBtnS linkBtnAdmin">','</span></div>'); ?>
-
-<?php endwhile; ?>
-
-<?php // Child page list ?>
-<?php
-	if($post->ancestors){
-		foreach($post->ancestors as $post_anc_id){
-			$post_id = $post_anc_id;
-		}
-	} else {
-		$post_id = $post->ID;
-	}
-	if ($post_id) {
-		$children = wp_list_pages("title_li=&child_of=".$post_id."&echo=0");
-		if ($children) { ?>
-		<div class="childPageBox">
-		<h4><a href="<?php echo get_permalink($post_id); ?>"><?php echo get_the_title($post_id); ?></a></h4>
-		<ul>
-		<?php echo $children; ?>
-		</ul>
-		</div>
-		<?php } ?>
-<?php } ?>
-
+<div class="row">
+	<div class="columns">
+		<?php custom_breadcrumbs(); ?>
+	</div>
+	<div class="columns shrink">
+		<?php get_template_part( 'includes/social-buttons' ); ?>
+	</div>
 </div>
-<!-- [ /#content ] -->
 
+<!-- [ #content ] -->
+<div class="page_wrapper">
+
+	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+		<div class="row">
+			<div class="columns">
+				<h2 class="main_title"><?php the_title(); ?></h2>
+				<div class="main_edition">
+					<?php the_content(); ?>
+				</div>
+		 	</div>
+		</div>
+	<?php endwhile; ?>
+
+	<div class="row">
+		<div class="columns">
+			<?php custom_breadcrumbs(); ?>
+		</div>
+	</div>
+</div>
 
 <?php get_footer(); ?>

@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+
+  <div class="columns">
+    <?php custom_breadcrumbs(); ?>
+  </div>
+
   <div class="page_wrapper">
     <?php while ( have_posts() ) : the_post(); ?>
 

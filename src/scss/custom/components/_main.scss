@@ -5,6 +5,12 @@
 
 .main_edition  {
 
+  // fixed page
+  margin-top: 2rem;
+  border: 1px solid $color-darkGrey;
+  padding: 1rem;
+  font-weight: bold;
+
   // title
   & h2 {
     @include font-size(1.6);
