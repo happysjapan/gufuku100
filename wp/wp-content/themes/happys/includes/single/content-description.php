@@ -9,7 +9,7 @@
             <tr>
               <th>治療院名</th>
               <td>
-                <?php echo get_field("clinic_name"); ?>
+                <?php the_title(); ?>
               </td>
             </tr>
             <tr>

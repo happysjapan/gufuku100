@@ -24,7 +24,13 @@
       <div class="columns small-12 medium-7 large-8">
         <h3 class="block_title">理念</h3>
         <div class="block-detail--intro--content">
-          <p><?php echo get_the_content(); ?></p>
+          <p>
+            <?php
+              $page_info = get_page_by_path('post');
+              $page = get_post($page_info);
+              echo $page->post_content;
+            ?>
+          </p>
         </div>
 
         <h3 class="block_title">100選ポイント</h3>
