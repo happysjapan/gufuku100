@@ -14,9 +14,8 @@
     }
 
     &--profile {
-
        & h5 {
-          @include font-size(1.5);
+          @include font-size(1.8);
           margin-bottom: 0;
         }
     }
@@ -37,13 +36,13 @@
   // end of intro
 
   // for gallary
-  &--gallary {
-    border-top: 1.5px solid $color-darkGrey;
-    padding-top: 1rem;
+    &--gallary {
+      border-top: 1.5px solid $color-darkGrey;
+      padding-top: 1rem;
+    }
+  // end gallary
 
-  }
-
- // for message
+  // for message
       &--message {
         border-top: 1.5px solid $color-darkGrey;
 
@@ -71,6 +70,28 @@
     }
   }
   // end of description
+
+  // for recruitment
+    &--recruitment {
+
+      &--message {
+          border-top: 1.5px solid $color-darkGrey;
+          border-bottom: 1.5px solid $color-darkGrey;
+          padding: 1rem 0;
+          margin-bottom: 1rem;
+      }
+
+      &--title {
+        padding-bottom: 0.5rem;
+        font-weight:bolder;
+        @include font-size(1.7);
+      }
+
+      &--text {
+        @include font-size(1.3);
+      }
+    }
+  // end of recruitment
 }
 
 
