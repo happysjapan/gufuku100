@@ -36,7 +36,7 @@
 
     @media screen and #{breakpoint(large)} {
       position: absolute;
-      z-index: 300;
+      z-index: 1000;
       width: 176px;
 
       &.area_1 { top: 24%; right: -8%; }
@@ -48,6 +48,88 @@
       &.area_7 { top: 34%; left: -3%; }
     }
 
+    // link
+    &--link {
+      display: block;
+
+      .area_1 & {
+        & .japan_map--area--title {
+          background-color: $area-color-1;
+          @include setTransition();
+        }
+        &:hover .japan_map--area--title {
+          background-color: darken($area-color-1, 5);
+          @include setTransition();
+        }
+      }
+
+      .area_2 & {
+        & .japan_map--area--title {
+          background-color: $area-color-2;
+          @include setTransition();
+        }
+        &:hover .japan_map--area--title {
+          background-color: darken($area-color-2, 5);
+          @include setTransition();
+        }
+      }
+
+      .area_3 & {
+        & .japan_map--area--title {
+          background-color: $area-color-3;
+          @include setTransition();
+        }
+        &:hover .japan_map--area--title {
+          background-color: darken($area-color-3, 5);
+          @include setTransition();
+        }
+      }
+
+      .area_4 & {
+        & .japan_map--area--title {
+          background-color: $area-color-4;
+          @include setTransition();
+        }
+        &:hover .japan_map--area--title {
+          background-color: darken($area-color-4, 5);
+          @include setTransition();
+        }
+      }
+
+      .area_5 & {
+        & .japan_map--area--title {
+          background-color: $area-color-5;
+          @include setTransition();
+        }
+        &:hover .japan_map--area--title {
+          background-color: darken($area-color-5, 5);
+          @include setTransition();
+        }
+      }
+
+      .area_6 & {
+         & .japan_map--area--title {
+          background-color: $area-color-6;
+          @include setTransition();
+        }
+        &:hover .japan_map--area--title {
+          background-color: darken($area-color-6, 5);
+          @include setTransition();
+        }
+      }
+      
+      .area_7 & {
+        & .japan_map--area--title {
+          background-color: $area-color-7;
+          @include setTransition();
+        }
+        &:hover .japan_map--area--title {
+          background-color: darken($area-color-7, 5);
+          @include setTransition();
+        }
+      }
+    }
+
 
     // Area title
     &--title {
@@ -56,74 +138,6 @@
       padding: 0.6rem 0.4rem;
       @include font-size(1.4);
       @include border-radius(6px);
-
-      &--link {
-        display: block;
-      }
-
-      .area_1 & {
-        background-color: $area-color-1;
-        @include setTransition();
-
-        & .japan_map--area--title--link:hover {
-          background-color: darken($area-color-1, 5);
-          @include setTransition();
-        }
-      }
-      .area_2 & {
-        background-color: $area-color-2;
-        @include setTransition();
-
-        & .japan_map--area--title--link:hover {
-          background-color: darken($area-color-2, 5);
-          @include setTransition();
-        }
-      }
-      .area_3 & {
-        background-color: $area-color-3;
-        @include setTransition();
-
-        & .japan_map--area--title--link:hover {
-          background-color: darken($area-color-3, 5);
-          @include setTransition();
-        }
-      }
-      .area_4 & {
-        background-color: $area-color-4;
-        @include setTransition();
-
-        & .japan_map--area--title--link:hover {
-          background-color: darken($area-color-4, 5);
-          @include setTransition();
-        }
-      }
-      .area_5 & {
-        background-color: $area-color-5;
-        @include setTransition();
-
-        & .japan_map--area--title--link:hover {
-          background-color: darken($area-color-5, 5);
-          @include setTransition();
-        }
-      }
-      .area_6 & {
-        background-color: $area-color-6;
-        @include setTransition();
-
-        & .japan_map--area--title--link:hover {
-          background-color: darken($area-color-6, 5);
-          @include setTransition();
-        }
-      }
-      .area_7 & {
-        background-color: $area-color-7;
-        @include setTransition();
-
-        & .japan_map--area--title--link:hover {
-          background-color: darken($area-color-7, 5);
-          @include setTransition();
-        }
-      }
     }
 
     // Area list
