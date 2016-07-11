@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="row">
+<!-- <div class="row">
   <div class="banner columns">
     <?php echo do_shortcode('[contentblock id=banner]'); ?>
   </div>
-</div>
+</div> -->
 
 <div class="row">
   <div class="main_page small-12 medium-6 columns">
