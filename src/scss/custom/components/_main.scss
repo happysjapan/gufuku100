@@ -201,19 +201,13 @@
 /*
 ** Contact Form
 */
-
-.contact-title {
-  color: $color-theme-main;
-  font-weight: bold;
-  text-align: center;
-  @include font-size(2);
+.main_form {
+  margin: 0 auto
 }
 
 .wpcf7{
 
     & p {
-      width: 80%;
-      margin: 0 auto;
 
       & .contact-required {
         color: $color-red;
@@ -244,4 +238,5 @@
 .front_main {
   border: 1px solid $color-lighter-grey;
   padding: 1rem;
+  margin-bottom: 10px;
 }
