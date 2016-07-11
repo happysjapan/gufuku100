@@ -5,11 +5,13 @@
       <?php custom_breadcrumbs(); ?>
     </div>
   </div>
-  
+
   <div class="page_wrapper">
     <?php while ( have_posts() ) : the_post(); ?>
 
-      <h1 class="row columns"><?php the_title(); ?></h1>
+      <div class="row columns">
+        <h1 class=single_title><?php the_title(); ?></h1>
+      </div>
 
       <?php get_template_part( 'includes/single/local', 'menu' ); ?>
       <?php get_template_part( 'includes/single/content', 'header' ); ?>

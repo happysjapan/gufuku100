@@ -23,6 +23,13 @@
   }
 }
 
+/*
+** single title
+*/
+.single_title {
+  @include font-size(2.3);
+  font-weight: bold;
+}
 
 /*
 ** block title
