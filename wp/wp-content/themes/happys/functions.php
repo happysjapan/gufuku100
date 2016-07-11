@@ -438,7 +438,7 @@ if ( function_exists('register_sidebar') ) {
       // Settings
       $breadcrums_id      = 'breadcrumbs';
       $breadcrums_class   = 'breadcrumbs';
-      $home_title         = 'Home';
+      $home_title         = 'TOP';
 
       // If you have any custom post types with custom taxonomies, put the taxonomy name below (e.g. care_cat)
       $custom_taxonomy    = 'care_cat';
