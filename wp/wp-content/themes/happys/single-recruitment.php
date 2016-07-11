@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
-  <div class="columns">
-    <?php custom_breadcrumbs(); ?>
+  <div class="row">
+    <div class="columns">
+      <?php custom_breadcrumbs(); ?>
+    </div>
   </div>
 
   <div class="page_wrapper">
