@@ -26,30 +26,34 @@ get_header(); ?>
 				<div class="japan_map--area--holder row">
 
 					<div class="columns small-6 medium-4 japan_map--area area_1">
-						<a href="#" class="japan_map--area--title--link japan_map--icon--link" title=""><h3 class="japan_map--area--title">
-							北海道・東北</h3></a>
-						<ul class="japan_map--area--list row">
-							<li class="japan_map--area--listitem columns small-6"><a href="<?php clinicCategoryLink('kanto'); ?>">北海道</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">青森</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">岩手</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">秋田</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">宮城</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">山形</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">福島</a></li>
-						</ul>
+						<a href="#" class="japan_map--area--title--link japan_map--icon--link" title="">
+							<h3 class="japan_map--area--title">
+							北海道・東北</h3>
+							<ul class="japan_map--area--list row">
+								<li class="japan_map--area--listitem columns small-6">北海道</li>
+								<li class="japan_map--area--listitem columns small-6">青森</li>
+								<li class="japan_map--area--listitem columns small-6">岩手</li>
+								<li class="japan_map--area--listitem columns small-6">秋田</li>
+								<li class="japan_map--area--listitem columns small-6">宮城</li>
+								<li class="japan_map--area--listitem columns small-6">山形</li>
+								<li class="japan_map--area--listitem columns small-6">福島</li>
+							</ul>
+						</a>
 					</div>
 
 					<div class="columns small-6 medium-4 japan_map--area area_2">
-						<a href="#" class="japan_map--area--title--link" title=""><h3 class="japan_map--area--title">関東</h3></a>
-						<ul class="japan_map--area--list row">
-							<li class="japan_map--area--listitem columns small-6"><a href="#">東京</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">千葉</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">埼玉</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">茨城</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">群馬</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">栃木</a></li>
-							<li class="japan_map--area--listitem columns small-6"><a href="#">神奈川</a></li>
-						</ul>
+						<a href="<?php echo clinicCategoryLink('kanto'); ?>" class="japan_map--area--title--link" title="">
+							<h3 class="japan_map--area--title">関東</h3>
+							<ul class="japan_map--area--list row">
+								<li class="japan_map--area--listitem columns small-6">東京</li>
+								<li class="japan_map--area--listitem columns small-6">千葉</li>
+								<li class="japan_map--area--listitem columns small-6">埼玉</li>
+								<li class="japan_map--area--listitem columns small-6">茨城</li>
+								<li class="japan_map--area--listitem columns small-6">群馬</li>
+								<li class="japan_map--area--listitem columns small-6">栃木</li>
+								<li class="japan_map--area--listitem columns small-6">神奈川</li>
+							</ul>
+						</a>
 					</div>
 
 					<div class="columns small-6 medium-4 japan_map--area area_3">
