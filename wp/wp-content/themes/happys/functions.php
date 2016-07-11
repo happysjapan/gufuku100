@@ -482,11 +482,23 @@ if ( function_exists('register_sidebar') ) {
               // If post is a custom post type
               $post_type = get_post_type();
 
-							if( $post_type == 'care' || $post_type == 'recruitment' ) {
-								$post_type_archive_label = get_category_by_slug('clinic')->name;
-								$post_type_archive_link = get_category_link(get_category_by_slug('clinic')->term_id);
-
-								echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive_link . '" title="' . $post_type_archive_label . '">' . $post_type_archive_label . '</a></li>';
+              if( $post_type == 'post' ) {
+                $clinic_cat = get_the_category(get_the_ID())[0];
+                $post_type_archive_label = $clinic_cat->name;
+                $post_type_archive_link = get_category_link($clinic_cat->term_id);
+                echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive_link . '" title="' . $post_type_archive_label . '">' . $post_type_archive_label . '</a></li>';
+							}
+							else if( $post_type == 'care' || $post_type == 'recruitment' ) {
+                if( $post_type == 'care' ) {
+                  $clinic_page = get_field('care_clinic_page');
+								} else {
+                  $clinic_page = get_field('recruitment_clinic_page');
+                }
+                $clinic_id = $clinic_page->ID;
+                $clinic_cat = get_the_category($clinic_id)[0];
+                $post_type_archive_label = $clinic_cat->name;
+                $post_type_archive_link = get_category_link($clinic_cat->term_id);
+                echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive_link . '" title="' . $post_type_archive_label . '">' . $post_type_archive_label . '</a></li>';
 							}
 							else {
 								$post_type_object = get_post_type_object($post_type);
@@ -530,7 +542,7 @@ if ( function_exists('register_sidebar') ) {
 
               // Check if the post is in a category
               if(!empty($last_category)) {
-                  echo $cat_display;
+                  // echo $cat_display;
                   echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
 
               // Else if post is in a custom taxonomy
