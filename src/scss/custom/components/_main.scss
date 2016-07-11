@@ -201,24 +201,40 @@
 /*
 ** Contact Form
 */
+
+.contact-title {
+  color: $color-theme-main;
+  font-weight: bold;
+  text-align: center;
+  @include font-size(2);
+}
+
 .wpcf7{
 
-  & p {
-    width: 80%;
-    margin: 0 auto;
+    & p {
+      width: 80%;
+      margin: 0 auto;
+
+      & .contact-required {
+        color: $color-red;
+        margin-left: 1rem;
+
+        &:before {
+          content: "※";
+        }
+      }
   }
 
-  input[type="submit"] {
-    background-color: $color-theme-main;
-    color: $color-white;
-    border: none;
-    border-radius: 4px;
-    padding: 0.3rem 4rem;
-    display: block;
-    margin: 0 auto;
-    @include font-size(1.8);
-  }
-
+    input[type="submit"] {
+      background-color: $color-theme-main;
+      color: $color-white;
+      border: none;
+      border-radius: 4px;
+      padding: 0.3rem 4rem;
+      display: block;
+      margin: 0 auto;
+      @include font-size(1.8);
+    }
 }
 
 
