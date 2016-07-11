@@ -482,12 +482,11 @@ if ( function_exists('register_sidebar') ) {
               // If post is a custom post type
               $post_type = get_post_type();
 
-							if($post_type == 'post') {
-								// $post_type_object = get_post_type_object($post_type);
-								// $post_type_archive_label = "整骨院・接骨院・整体・鍼灸院";
-								// $post_type_archive_link = get_category_link(get_category_by_slug('clinic')->term_id);
-								//
-								// echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive_link . '" title="' . $post_type_archive_label . '">' . $post_type_archive_label . '</a></li>';
+							if( $post_type == 'care' || $post_type == 'recruitment' ) {
+								$post_type_archive_label = get_category_by_slug('clinic')->name;
+								$post_type_archive_link = get_category_link(get_category_by_slug('clinic')->term_id);
+
+								echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive_link . '" title="' . $post_type_archive_label . '">' . $post_type_archive_label . '</a></li>';
 							}
 							else {
 								$post_type_object = get_post_type_object($post_type);
