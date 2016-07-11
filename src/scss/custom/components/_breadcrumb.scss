@@ -7,4 +7,9 @@
   & a {
     text-transform: capitalize;
   }
+
+  & li:not(:last-child)::after {
+    content: '>';
+    top: -1px;
+  }
 }
