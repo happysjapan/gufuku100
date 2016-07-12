@@ -50,3 +50,13 @@
     content: "";
   }
 }
+
+/*
+** Contact Form title
+*/
+.form_title {
+  color: $color-theme-main;
+  font-weight: bold;
+  text-align: center;
+  @include font-size(2);
+}

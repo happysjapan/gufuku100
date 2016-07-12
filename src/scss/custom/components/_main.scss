@@ -201,24 +201,34 @@
 /*
 ** Contact Form
 */
+.main_form {
+  margin: 0 auto
+}
+
 .wpcf7{
 
-  & p {
-    width: 80%;
-    margin: 0 auto;
+    & p {
+
+      & .contact-required {
+        color: $color-red;
+        margin-left: 1rem;
+
+        &:before {
+          content: "※";
+        }
+      }
   }
 
-  input[type="submit"] {
-    background-color: $color-theme-main;
-    color: $color-white;
-    border: none;
-    border-radius: 4px;
-    padding: 0.3rem 4rem;
-    display: block;
-    margin: 0 auto;
-    @include font-size(1.8);
-  }
-
+    input[type="submit"] {
+      background-color: $color-theme-main;
+      color: $color-white;
+      border: none;
+      border-radius: 4px;
+      padding: 0.3rem 4rem;
+      display: block;
+      margin: 0 auto;
+      @include font-size(1.8);
+    }
 }
 
 
@@ -228,4 +238,5 @@
 .front_main {
   border: 1px solid $color-lighter-grey;
   padding: 1rem;
+  margin-bottom: 10px;
 }
