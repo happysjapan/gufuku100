@@ -25,7 +25,16 @@
             </tr>
             <tr>
               <th>所在地</th>
-              <td><?php the_field("clinic_address"); ?></td>
+              <td><?php the_field("clinic_address"); ?>
+                <?php $address = post_custom('clinic_address');
+                  if (!empty($address)) {
+                    $address2 = urlencode($address);
+                    $zoom = 15;
+                    $url = "http://maps.google.co.jp/maps?q={$address2}&z={$zoom}";
+                    echo "<a href=\"{$url}\" target=\"_blank\">[地図]</a>";
+                  }
+                  ?>
+              </td>
             </tr>
             <tr>
               <th>治療時間</th>
