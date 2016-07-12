@@ -32,8 +32,13 @@
 
              <!-- thumbnail -->
              <div class="columns small-12 medium-4">
-               <img src="<?php
-               echo get_sub_field('care_thumbnail')['sizes']['medium']; ?>" alt="<?php the_sub_field('care_name'); ?>">
+               <?php if($i==0){ ?>
+                  <?php get_template_part( 'includes/single-care', 'slider' ); ?>
+                <?php } else { ?>
+                 <img src="<?php
+                 echo get_sub_field('care_thumbnail')['sizes']['medium']; ?>" alt="<?php the_sub_field('care_name'); ?>">
+              <?php } ?>
+
              </div>
           </div>
         </div>

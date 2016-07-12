@@ -8,7 +8,7 @@
     height: 200px;
   }
 
-  &-previous, .orbit-next {
+  &-previous, &-next {
     color: $color-black;
     padding: 2rem;
     font-size: 2rem;
@@ -17,6 +17,11 @@
     @media screen and #{breakpoint(medium)} {
       color: $color-white;
       top: 50%;
+    }
+
+    .orbit_panel & {
+      padding: 1rem;
+      font-size: 1rem;
     }
   }
 
@@ -172,6 +177,11 @@
       @include font-size(1.6);
       color: $color-white;
       background-color: rgba(0,0,0,0.6);
+
+      & strong {
+        display: block;
+        @include font-size(1.1);
+      }
     }
   }
 

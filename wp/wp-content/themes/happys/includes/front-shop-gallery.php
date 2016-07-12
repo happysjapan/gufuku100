@@ -35,7 +35,9 @@ $shops_array = get_posts( $custom_args );
                           <div class="gallery--tootltip">
                             <div class="gallery--tootltip--inner">
                               <img class="gallery--list_item--thumbnail" src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>">
-                              <h3 class="gallery--tootltip--title"><?php the_title(); ?></h3>
+                              <h3 class="gallery--tootltip--title"><?php the_title(); ?>
+                                <strong class="gallery--tootltip--area"><?php echo get_field('clinic_area'); ?></strong>
+                              </h3>
                             </div>
                           </div>
 

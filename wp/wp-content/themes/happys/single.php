@@ -15,7 +15,7 @@
 
       <?php get_template_part( 'includes/single/local', 'menu' ); ?>
       <?php get_template_part( 'includes/single/content', 'header' ); ?>
-      <?php get_template_part( 'includes/single/content', 'gallary' ); ?>
+      <?php get_template_part( 'includes/single/content', 'gallery' ); ?>
       <?php get_template_part( 'includes/single/content', 'description' ); ?>
 
     <?php endwhile; ?>
