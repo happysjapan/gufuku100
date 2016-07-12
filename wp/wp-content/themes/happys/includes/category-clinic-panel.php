@@ -31,6 +31,8 @@
                  <?php echo get_field('clinic_points'); ?>
                </div>
 
+               <p>エリア：<?php echo get_field('clinic_area'); ?></p>
+
                <div class="button__panel--holder">
                  <a href="<?php the_permalink(); ?>"  title="詳しく見る" class="button button__panel">詳しく見る</a>
                </div>
