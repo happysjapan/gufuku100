@@ -9,10 +9,7 @@
   <div class="page_wrapper">
     <div class="row">
       <div class="column">
-
-        <div class="row columns">
-          <h1 class=single_title><?php the_title(); ?></h1>
-        </div>
+        <h1 class=single_title><?php the_title(); ?></h1>
         <?php get_template_part( 'includes/single/local', 'menu' ); ?>
 
       </div>

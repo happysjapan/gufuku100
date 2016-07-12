@@ -287,11 +287,11 @@ class happys_post_widget extends WP_Widget {
 
           <?php endwhile; } else { echo 'No result'; } ?>
         </ul>
-        <?php /* if( $post_type != "post" ){ 
+        <?php if( $post_type != "post" ){ ?>
           <a class="aside--more" href="<?php echo get_post_type_archive_link($post_type); ?>" title="もっと見る">もっと見る <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-          } else {
+          <?php } else { ?>
           <a class="aside--more" href="<?php echo get_category_link(get_category_by_slug('clinic')->term_id); ?>" title="もっと見る">もっと見る <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-        } */ ?>
+        <?php } ?>
 
       </div>
 
