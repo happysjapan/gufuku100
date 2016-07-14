@@ -8,7 +8,7 @@
     $slider_image = get_sub_field('care_slider_image')["sizes"]["medium"];
     ?>
     <li class="orbit-slide">
-      <img class="orbit-image" src="<?php echo $slider_image; ?>" alt="Space">
+      <img class="orbit-image" src="<?php echo $slider_image; ?>" alt="Care image">
     </li>
 
     <?php endwhile; ?>
