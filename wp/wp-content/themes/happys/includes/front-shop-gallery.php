@@ -32,11 +32,11 @@ $shops_array = get_posts( $custom_args );
                   $thumbnail_url = $thumbnail['sizes']['thumbnail'];
                 } ?>
                         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="gallery--list_item columns small-4">
-                          <div class="gallery--tootltip">
-                            <div class="gallery--tootltip--inner">
+                          <div class="gallery--tooltip">
+                            <div class="gallery--tooltip--inner">
                               <img class="gallery--list_item--thumbnail" src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>">
-                              <h3 class="gallery--tootltip--title"><?php the_title(); ?>
-                                <strong class="gallery--tootltip--area"><?php echo get_field('clinic_area'); ?></strong>
+                              <h3 class="gallery--tooltip--title"><?php the_title(); ?>
+                                <strong class="gallery--tooltip--area"><?php echo get_field('clinic_area'); ?></strong>
                               </h3>
                             </div>
                           </div>

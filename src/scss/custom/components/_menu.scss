@@ -162,6 +162,7 @@
     vertical-align: top;
     display: block;
     margin: 0;
+    font-weight: bold;
     @include font-size(1.2);
 
     @media screen and #{breakpoint(medium)} {

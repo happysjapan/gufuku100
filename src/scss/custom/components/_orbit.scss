@@ -1,103 +1,110 @@
-.orbit {
-  margin: 1.6rem auto 0;
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
+// .orbit {
+//   margin: 1.6rem auto 0;
+//   width: 100%;
+//   overflow: hidden;
+// }
 
-  @media screen and #{breakpoint(medium)} {
-    height: 200px;
+
+  // &-previous, &-next {
+  //   // color: $color-black;
+  //   padding: 2rem;
+  //   font-size: 2rem;
+
+    // @media screen and #{breakpoint(medium)} {
+    //   color: $color-white;
+    // }
+
+    // .orbit_panel & {
+    //   padding: 1rem;
+    //   font-size: 1rem;
+    // }
+
+
+  // &-image {
+  //   max-width: 100%;
+  //   float: left;
+  //   width: 50%;
+  //
+  //   @media screen and #{breakpoint(medium)} {
+  //     float: none;
+  //     width: 100%;
+  //   }
+  // }
+
+  // &-slide {
+  //   width: 100%;
+  //   height: 200px;
+  //
+  //   &-post {
+  //     overflow: hidden;
+  //     margin-bottom: 10px;
+  //
+  //     @media screen and #{breakpoint(medium)} {
+  //       margin-bottom: 0;
+  //     }
+  //
+  //     &--holder {
+  //       position: relative;
+  //       height: 130px;
+  //       overflow: hidden;
+  //
+  //       @media screen and #{breakpoint(medium)} {
+  //         height: 200px;
+  //       }
+  //     }
+  //   }
+  //
+  //   @media screen and #{breakpoint(medium)} {
+  //     height: 200px;
+  //   }
+  // }
+
+  // &-caption {
+  //   position: relative;
+  //   float: right;
+  //   width: 50%;
+  //   text-align: left;
+  //   color: $color-black;
+  //   background-color: transparent;
+  //   padding-left: 0.9375rem;
+  //   padding-right: 0.9375rem;
+  //   left: 0;
+  //
+  //   & h5 {
+  //     @include font-size(1.2);
+  //   }
+  //
+  //   & a {
+  //     @include font-size(1.1);
+  //     color: $color-white;
+  //   }
+  //
+  //   & small {
+  //     display: block;
+  //   }
+  //
+  //   @media screen and #{breakpoint(medium)} {
+  //     position: absolute;
+  //     float: none;
+  //     width: 100%;
+  //     text-align: center;
+  //     color: $color-white;
+  //     background-color: rgba(10, 10, 10, 0.7);
+  //   }
+  // }
+
+/*
+** Orbit Panel(care page top)
+*/
+
+.orbit_panel {
+  max-width: 250px;
+  margin: 0 auto;
+
+  & .orbit-image {
+    max-width: 250px;
+
   }
-
-  &-previous, &-next {
-    color: $color-black;
-    padding: 2rem;
-    font-size: 2rem;
-    top: 90%;
-
-    @media screen and #{breakpoint(medium)} {
-      color: $color-white;
-      top: 50%;
-    }
-
-    .orbit_panel & {
-      padding: 1rem;
-      font-size: 1rem;
-    }
-  }
-
-  &-image {
-    max-width: 100%;
-    float: left;
-    width: 50%;
-
-    @media screen and #{breakpoint(medium)} {
-      float: none;
-      width: 100%;
-    }
-  }
-
-  &-slide {
-    width: 100%;
-    height: 500px;
-
-    &-post {
-      overflow: hidden;
-      margin-bottom: 10px;
-
-      @media screen and #{breakpoint(medium)} {
-        margin-bottom: 0;
-      }
-
-      &--holder {
-        position: relative;
-        height: 130px;
-        overflow: hidden;
-
-        @media screen and #{breakpoint(medium)} {
-          height: 200px;
-        }
-      }
-    }
-
-    @media screen and #{breakpoint(medium)} {
-      height: 200px;
-    }
-  }
-
-  &-caption {
-    position: relative;
-    float: right;
-    width: 50%;
-    text-align: left;
-    color: $color-black;
-    background-color: transparent;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    left: 0;
-
-    & h5 {
-      @include font-size(1.2);
-    }
-
-    & a {
-      @include font-size(1.1);
-      color: $color-white;
-    }
-
-    & small {
-      display: block;
-    }
-
-    @media screen and #{breakpoint(medium)} {
-      position: absolute;
-      float: none;
-      width: 100%;
-      text-align: center;
-      color: $color-white;
-      background-color: rgba(10, 10, 10, 0.7);
-    }
-  }
-
 }
 
 
@@ -139,7 +146,7 @@
   }
 
   // tooltip
-  &--tootltip {
+  &--tooltip {
     position: absolute;
     z-index: 1000;
     display: none;
@@ -185,7 +192,7 @@
     }
   }
 
-  &--list_item:hover &--tootltip {
+  &--list_item:hover &--tooltip {
     display: block;
   }
 
@@ -223,6 +230,7 @@
       bottom: 0;
       padding: 0.8rem;
       font-size: 1rem;
+      color: $color-black;
       -ms-transform: translateY(0);
       transform: translateY(0);
       outline: 0;
