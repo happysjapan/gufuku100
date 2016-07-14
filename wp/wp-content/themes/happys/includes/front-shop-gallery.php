@@ -18,7 +18,7 @@ $shops_array = get_posts( $custom_args );
   <div class="gallery--holder columns">
     <h1 class="main_title">全国むちうち治療院100選</h1>
 
-    <div id="gallery" class="gallery orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+    <div id="gallery" class="gallery orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-auto-play="false">
       <ul class="gallery--list small__gutter orbit-container row">
         <li class="gallery--slide orbit-slide columns medium-4 large-3">
           <div class="row">
