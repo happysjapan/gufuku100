@@ -12,4 +12,17 @@
     content: '>';
     top: -1px;
   }
+
+  &--bottom {
+    @media #{$mobile-medium} {
+      display: none;
+    }
+  }
+
+  &--top {
+    @media #{$mobile-medium} {
+      margin-top: 25px;
+
+    }
+  }
 }

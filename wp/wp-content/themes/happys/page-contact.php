@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <div class="row">
-	<div class="columns">
+	<div class="columns breadcrumbs--top">
 		<?php custom_breadcrumbs(); ?>
 	</div>
 </div>
@@ -27,7 +27,7 @@ get_header(); ?>
 	<?php endwhile; ?>
 
 	<div class="row">
-		<div class="columns">
+		<div class="columns breadcrumbs--bottom">
 			<?php custom_breadcrumbs(); ?>
 		</div>
 	</div>

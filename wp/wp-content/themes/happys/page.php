@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <div class="row">
-	<div class="columns">
+	<div class="columns breadcrumbs--top">
 		<?php custom_breadcrumbs(); ?>
 	</div>
-	<div class="columns shrink">
+	<div class="columns shrink social--buttons">
 		<?php get_template_part( 'includes/social-buttons' ); ?>
 	</div>
 </div>
@@ -23,7 +23,7 @@
 		</div>
 	<?php endwhile; ?>
 
-	<div class="row">
+	<div class="row breadcrumbs--bottom">
 		<div class="columns">
 			<?php custom_breadcrumbs(); ?>
 		</div>

@@ -42,9 +42,9 @@
         <div class="header--inner columns small-12">
           <!-- logo -->
           <div class="header--logo">
-            <a class="site-title--link" href="<?php echo home_url(); ?>" title="全国呉服店100選" rel="home">
+            <a class="site-title--link" href="<?php echo home_url(); ?>" title="全国むちうち100選" rel="home">
               <h2 class="site-title">
-                <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/gofuku_logo.png" alt="全国呉服店100選" width="180" height="37" data-template="<?php echo home_url(); ?>">
+                <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/gofuku_logo.png" alt="全国むちうち100選" width="180" height="37" data-template="<?php echo home_url(); ?>">
               </h2>
             </a>
           </div>
