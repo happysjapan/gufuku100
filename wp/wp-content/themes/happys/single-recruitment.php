@@ -25,9 +25,9 @@
       </div>
 
       <article class="columns small-12 medium-8">
-        <h4 class="block_detail--recruitment--title"><?php the_sub_field('recruitment_name'); ?></h4>
+        <h4 class="block-detail--recruitment--title"><?php the_sub_field('recruitment_name'); ?></h4>
         <!-- テキスト -->
-        <p class="block_detail--recruitment--text"><?php the_sub_field('recruitment_text'); ?></p>
+        <p class="block-detail--recruitment--text"><?php the_sub_field('recruitment_text'); ?></p>
       </article>
     </div>
 

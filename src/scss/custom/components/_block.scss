@@ -91,9 +91,8 @@
       }
 
       &--title {
-        padding-bottom: 0.5rem;
-        font-weight:bolder;
-        @include font-size(1.7);
+        font-weight:bold;
+        @include font-size(1.8);
       }
 
       &--text {
