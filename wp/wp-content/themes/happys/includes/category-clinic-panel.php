@@ -11,7 +11,7 @@
       <div class="panel--main row">
         <div class="small-12 columns">
           <div class="row">
-            <div class="medium-3 columns">
+            <div class=" small-12 medium-3 columns">
               <?php $thumbnail = get_field('clinic_top_image'); ?>
               <?php if( !$thumbnail ){
                 $thumbnail_url = get_template_directory_uri().'/images/thumbnail_default.jpg';
@@ -25,7 +25,7 @@
               <p>代表名：<?php echo get_field('clinic_representative'); ?></p>
             </div>
 
-            <div class="medium-9 columns">
+            <div class=" small-12 medium-9 columns">
                <h2 class="panel--main--title main_title">100選ポイント</h2>
                <div class="panel--main--content">
                  <?php echo get_field('clinic_points'); ?>
