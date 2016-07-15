@@ -147,7 +147,7 @@ if ( function_exists('register_sidebar') ) {
 
   add_action( 'init', 'gofuku_news_create_post_type', 0 );
   function gofuku_news_create_post_type() {
-  	$newsLabelName = 'News';
+  	$newsLabelName = 'ニュース';
   	register_post_type( 'news', /* post-type */
   	array(
   		'labels' => array(

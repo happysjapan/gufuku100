@@ -59,8 +59,8 @@
           </tbody>
         </table>
 
-        <h3 id="stuff" class="block-detail--description--comment">編集部からのコメント</h3>
-        <p><?php the_field("editor_comment"); ?></p>
+        <h3 id="stuff" class="block-detail--description--comment_title">編集部からのコメント</h3>
+        <p class="block-detail--description--comment"><?php the_field("editor_comment"); ?></p>
     </div>
   </div>
 

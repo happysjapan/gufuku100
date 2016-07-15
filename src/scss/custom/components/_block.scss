@@ -69,9 +69,13 @@
       @include font-size(1.7);
     }
 
-    &--comment {
+    &--comment_title {
       font-weight:bold;
       @include font-size(1.6);
+    }
+
+    &--comment {
+      padding-left: 1rem;
     }
   }
   // end of description
