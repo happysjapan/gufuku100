@@ -25,4 +25,10 @@
 
   </div>
 
+  <div class="row breadcrumbs--bottom">
+		<div class="columns">
+			<?php custom_breadcrumbs(); ?>
+		</div>
+	</div>
+
 <?php get_footer(); ?>
