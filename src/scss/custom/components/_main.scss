@@ -173,28 +173,6 @@
       font-weight: bold;
       color: $color-black;
     }
-
-    // & .wpcf7-submit {
-    //   color: $color-white;
-    //   background-color: $color-theme-main;
-    //   border: none;
-    //   width: 100%;
-    //   border-radius: 6px;
-    //   padding: 1.4rem;
-    //   @include font-size(1.6);
-    //   font-weight: bold;
-    // }
-
-    // & .table-bordered tbody th, & .table-bordered tbody td {
-    //   text-align: left;
-    // }
-
-    // & .label-danger {
-    //   background-color: $color-danger;
-    //   @include font-size(1);
-    //   font-weight: bold;
-    // }
-
   }
 }
 
@@ -245,4 +223,9 @@
   border: 1px solid $color-lighter-grey;
   padding: 1rem;
   margin-bottom: 10px;
+
+  @media #{$mobile-medium} {
+    padding: 0.5rem;
+    margin-bottom: 0;
+  }
 }

@@ -107,5 +107,9 @@
 ** Front widget
 */
 .front-widget {
-  margin-top: rem-calc(22px);
+  margin-top: rem-calc(16px);
+
+  @media #{$mobile-medium} {
+    margin-top: 0.8rem;
+  }
 }

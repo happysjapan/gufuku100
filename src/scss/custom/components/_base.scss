@@ -55,5 +55,10 @@ hr {
         border-left: 1px solid $color-theme-main;
         text-align: left;
         padding-left: 1rem;
+
+        @media #{$mobile-medium} {
+          padding-left: 0.3rem;
+          @include font-size(1.2);
+        }
     }
 }
