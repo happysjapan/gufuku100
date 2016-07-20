@@ -60,6 +60,10 @@
     color: $color-white;
     padding: 0.6rem 2rem;
 
+    @media #{$mobile-medium} {
+      padding: 0.3rem 1.5rem;
+    }
+
     &:hover {
       background-color: darken($color-lightGreen, 10);
       color: #fff;
@@ -134,6 +138,10 @@
       display: table-cell;
       vertical-align: middle;
       padding: 1px 5px;
+
+      @media #{$mobile-medium} {
+        padding: 1px;
+      }
 
       & .fb_iframe_widget {
         top: -4px;

@@ -157,6 +157,10 @@
     border: 1px solid $color-theme-main;
     padding: 2rem;
 
+    @media #{$mobile-medium} {
+      padding: 1rem;
+    }
+
     & .main_title {
       font-weight: bold;
       @include font-size(2.2);
