@@ -87,13 +87,13 @@ if ( function_exists('register_sidebar') ) {
  /*	Get CSS / JS assets
  /*-------------------------------------------*/
  function gofuku_getCssAssets() {
-	 	 $filepath = glob("wp-content/themes/gofuku/css/app-v*.css");
+	 	 $filepath = glob("wp-content/themes/happys/css/app-v*.css");
 		 $filename = basename($filepath[count($filepath) - 1]).PHP_EOL;
 	 	 echo $filename;
  }
 
  function gofuku_getJsAssets() {
-		$filepath = glob("wp-content/themes/gofuku/js/min/app-v*.js");
+		$filepath = glob("wp-content/themes/happys/js/min/app-v*.js");
 		$filename = basename($filepath[count($filepath) - 1]).PHP_EOL;
 		echo $filename;
  }
