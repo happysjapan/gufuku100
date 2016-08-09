@@ -37,7 +37,7 @@
     <div id="top" class="header">
       <div class="row">
         <div class="header--introduction columns small-12">
-          <p class="header--introduction--content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p class="header--introduction--content"><?php the_field('front_top_text'); ?></p>
         </div>
 
         <div class="header--inner columns small-12">
