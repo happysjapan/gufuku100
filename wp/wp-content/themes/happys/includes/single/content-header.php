@@ -1,7 +1,7 @@
 <?php if ( is_single() ) : ?>
   <div class="block-detail--introduction block-detail">
     <div class="row">
-      <div class="columns small-12 medium-5 large-4">
+      <div class="columns small-12 medium-4 large-3">
 
         <?php
           $image = get_field("clinic_top_image");
@@ -21,7 +21,7 @@
 
       </div>
 
-      <div class="columns small-12 medium-7 large-8">
+      <div class="columns small-12 medium-8 large-9">
         <h3 class="block_title">理念</h3>
         <div class="block-detail--intro--content">
           <p>
