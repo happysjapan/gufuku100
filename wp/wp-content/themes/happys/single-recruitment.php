@@ -15,8 +15,8 @@
       </div>
     </div>
 
-
-    　<?php while(have_rows('recruitment')): the_row(); ?>
+    <?php if (have_rows('recruitment')): ?>
+    <?php while(have_rows('recruitment')): the_row(); ?>
 
     <div class="row clinic_recruitment">
       <div class="columns small-12 medium-4">
@@ -114,8 +114,14 @@
         </table>
       </div>
     </div>
-
     <?php endwhile; ?>
+    <?php else: ?>
+      <div class="row">
+        <div class="columns">
+          <p>現在、求人募集は行っておりません。</p>
+        </div>
+      </div>
+    <?php endif; ?>
 
     <div class="row">
       <div class="columns breadcrumbs--bottom">
