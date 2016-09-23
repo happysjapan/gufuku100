@@ -56,6 +56,10 @@
               <th>HP</th>
               <td><a href="<?php the_field("clinic_hp"); ?>" target="_blank"><?php the_field("clinic_hp"); ?></a></td>
             </tr>
+            <tr>
+              <th>HP2</th>
+              <td><a href="<?php the_field("clinic_hp2"); ?>" target="_blank"><?php the_field("clinic_hp2"); ?></a></td>
+            </tr>
           </tbody>
         </table>
 
